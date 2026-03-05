@@ -1,0 +1,15 @@
+site_name: Enqualify Public Docs
+theme:
+  name: material
+  palette:
+    primary: indigo
+    accent: indigo
+  features:
+    - navigation.tabs
+    - search.suggest
+    - search.highlight
+
+nav:
+  - Ana Sayfa: index.md
+  - Dokümanlar: 
+      - docs/
