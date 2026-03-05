@@ -1,16 +1,21 @@
-name: Confluence to GitHub Sync
+name: Sync and Deploy Docs
 
 on:
   schedule:
-    - cron: '0 * * * *' # Her saat başı otomatik çalışır
-  workflow_dispatch: # İstediğimiz an manuel çalıştırmak için buton ekler
+    - cron: '0 * * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
 
 jobs:
-  build:
+  build-and-deploy:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Repo
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
       - name: Set up Python
         uses: actions/setup-python@v4
@@ -18,7 +23,7 @@ jobs:
           python-version: '3.9'
 
       - name: Install Dependencies
-        run: pip install requests markdownify
+        run: pip install requests markdownify mkdocs-material
 
       - name: Run Sync Script
         env:
@@ -27,10 +32,5 @@ jobs:
           CONFLUENCE_API_TOKEN: ${{ secrets.CONFLUENCE_API_TOKEN }}
         run: python sync_docs.py
 
-      - name: Commit and Push
-        run: |
-          git config --global user.name "DocSyncBot"
-          git config --global user.email "bot@github.com"
-          git add docs/
-          git commit -m "Automated doc update: $(date)" || exit 0
-          git push
+      - name: Build and Deploy Site
+        run: mkdocs gh-deploy --force
