@@ -8,13 +8,13 @@
       
       
       
-        <link rel="canonical" href="https://enquratechnology.github.io/enqualify_public_docs/iOS%20SDK%3A%20%C4%B0mplementasyon%20Rehberi.html">
+        <link rel="canonical" href="https://enquratechnology.github.io/enqualify_public_docs/OCR%20Mod%C3%BCl%C3%BC.html">
       
       
-        <link rel="prev" href="VideoCall%20Mod%C3%BCl%C3%BC.html">
+        <link rel="prev" href="NFC%20Mod%C3%BCl%C3%BC.html">
       
       
-        <link rel="next" href="%F0%9F%93%B1%20Mobile%20SDKs%20-%20%C4%B0mplementasyon%20Dok%C3%BCmanlar%C4%B1.html">
+        <link rel="next" href="UI%20%C3%96zelle%C5%9Ftirme.html">
       
       
         
@@ -25,7 +25,7 @@
     
     
       
-        <title>iOS SDK: İmplementasyon Rehberi - Enqualify Ürün Dokümantasyonu</title>
+        <title>OCR Modülü - Enqualify Ürün Dokümantasyonu</title>
       
     
     
@@ -74,7 +74,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#ios-sdk-implementasyon-rehberi" class="md-skip">
+        <a href="#ocr-modulu" class="md-skip">
           Skip to content
         </a>
       
@@ -108,7 +108,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              iOS SDK: İmplementasyon Rehberi
+              OCR Modülü
             
           </span>
         </div>
@@ -295,8 +295,10 @@
   
   
   
+    
   
-    <li class="md-tabs__item">
+  
+    <li class="md-tabs__item md-tabs__item--active">
       <a href="OCR%20Mod%C3%BCl%C3%BC.html" class="md-tabs__link">
         
   
@@ -371,10 +373,8 @@
   
   
   
-    
   
-  
-    <li class="md-tabs__item md-tabs__item--active">
+    <li class="md-tabs__item">
       <a href="iOS%20SDK%3A%20%C4%B0mplementasyon%20Rehberi.html" class="md-tabs__link">
         
   
@@ -625,10 +625,37 @@
       
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="OCR%20Mod%C3%BCl%C3%BC.html" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    OCR Modülü
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="OCR%20Mod%C3%BCl%C3%BC.html" class="md-nav__link md-nav__link--active">
         
   
   
@@ -644,6 +671,225 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#kurulum" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Kurulum
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#hzl-baslangc" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Hızlı Başlangıç
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#delegate-implementasyonu" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Delegate Implementasyonu
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Delegate Implementasyonu">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#snfa-ekleme" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Sınıfa Ekleme
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tum-delegate-fonksiyonlar" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Tüm Delegate Fonksiyonları
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#initialize" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Initialize
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ocr-aks" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        OCR Akışı
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#fonksiyonlar" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fonksiyonlar
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Fonksiyonlar">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#iddoctypecheckstart-kimlik-tipi-tanma" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        idDocTypeCheckStart — Kimlik Tipi Tanıma
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#iddocfrontstart-kimlik-on-yuz-tarama" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        idDocFrontStart — Kimlik Ön Yüz Tarama
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#hologramcheckstart-hologram-tespiti" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        hologramCheckStart — Hologram Tespiti
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#iddocbackstart-kimlik-arka-yuz-tarama" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        idDocBackStart — Kimlik Arka Yüz Tarama
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#iddoccomplete-okuma-aksn-bitirme" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        idDocComplete — Okuma Akışını Bitirme
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sessionclose-oturumu-kapatma" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        sessionClose — Oturumu Kapatma
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#replacesound-ses-degistirme" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        replaceSound — Ses Değiştirme
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#hata-yonetimi" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Hata Yönetimi
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#okunan-verilere-erisim" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Okunan Verilere Erişim
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -733,37 +979,10 @@
       
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    iOS SDK: İmplementasyon Rehberi
-  
-
-    
-  </span>
-  
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="iOS%20SDK%3A%20%C4%B0mplementasyon%20Rehberi.html" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="iOS%20SDK%3A%20%C4%B0mplementasyon%20Rehberi.html" class="md-nav__link">
         
   
   
@@ -779,159 +998,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#bu-dokumanda-neler-var" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Bu Dokümanda Neler Var?
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#sdkya-genel-baks" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        SDK'ya Genel Bakış
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="SDK&#39;ya Genel Bakış">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#moduler-yap" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Modüler Yapı
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#hangi-module-ihtiyacnz-var" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Hangi Modüle İhtiyacınız Var?
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#minimum-gereksinimler" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Minimum Gereksinimler
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#kurulum-yontemleri" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Kurulum Yöntemleri
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#temel-kavramlar" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Temel Kavramlar
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Temel Kavramlar">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#initialization-lifecycle" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Initialization Lifecycle
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#delegate-yaps" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Delegate Yapısı
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#ssl-guvenligi" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        SSL Güvenliği
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#hzl-baslangc-admlar" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Hızlı Başlangıç Adımları
-      
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -1017,10 +1083,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#bu-dokumanda-neler-var" class="md-nav__link">
+  <a href="#kurulum" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Bu Dokümanda Neler Var?
+        Kurulum
       
     </span>
   </a>
@@ -1028,22 +1094,33 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#sdkya-genel-baks" class="md-nav__link">
+  <a href="#hzl-baslangc" class="md-nav__link">
     <span class="md-ellipsis">
       
-        SDK'ya Genel Bakış
+        Hızlı Başlangıç
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="SDK&#39;ya Genel Bakış">
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#delegate-implementasyonu" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Delegate Implementasyonu
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Delegate Implementasyonu">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#moduler-yap" class="md-nav__link">
+  <a href="#snfa-ekleme" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Modüler Yapı
+        Sınıfa Ekleme
       
     </span>
   </a>
@@ -1051,10 +1128,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#hangi-module-ihtiyacnz-var" class="md-nav__link">
+  <a href="#tum-delegate-fonksiyonlar" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Hangi Modüle İhtiyacınız Var?
+        Tüm Delegate Fonksiyonları
       
     </span>
   </a>
@@ -1067,10 +1144,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#minimum-gereksinimler" class="md-nav__link">
+  <a href="#initialize" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Minimum Gereksinimler
+        Initialize
       
     </span>
   </a>
@@ -1078,10 +1155,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#kurulum-yontemleri" class="md-nav__link">
+  <a href="#ocr-aks" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Kurulum Yöntemleri
+        OCR Akışı
       
     </span>
   </a>
@@ -1089,22 +1166,22 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#temel-kavramlar" class="md-nav__link">
+  <a href="#fonksiyonlar" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Temel Kavramlar
+        Fonksiyonlar
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Temel Kavramlar">
+    <nav class="md-nav" aria-label="Fonksiyonlar">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#initialization-lifecycle" class="md-nav__link">
+  <a href="#iddoctypecheckstart-kimlik-tipi-tanma" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Initialization Lifecycle
+        idDocTypeCheckStart — Kimlik Tipi Tanıma
       
     </span>
   </a>
@@ -1112,10 +1189,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#delegate-yaps" class="md-nav__link">
+  <a href="#iddocfrontstart-kimlik-on-yuz-tarama" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Delegate Yapısı
+        idDocFrontStart — Kimlik Ön Yüz Tarama
       
     </span>
   </a>
@@ -1123,10 +1200,54 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#ssl-guvenligi" class="md-nav__link">
+  <a href="#hologramcheckstart-hologram-tespiti" class="md-nav__link">
     <span class="md-ellipsis">
       
-        SSL Güvenliği
+        hologramCheckStart — Hologram Tespiti
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#iddocbackstart-kimlik-arka-yuz-tarama" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        idDocBackStart — Kimlik Arka Yüz Tarama
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#iddoccomplete-okuma-aksn-bitirme" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        idDocComplete — Okuma Akışını Bitirme
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sessionclose-oturumu-kapatma" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        sessionClose — Oturumu Kapatma
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#replacesound-ses-degistirme" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        replaceSound — Ses Değiştirme
       
     </span>
   </a>
@@ -1139,10 +1260,21 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#hzl-baslangc-admlar" class="md-nav__link">
+  <a href="#hata-yonetimi" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Hızlı Başlangıç Adımları
+        Hata Yönetimi
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#okunan-verilere-erisim" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Okunan Verilere Erişim
       
     </span>
   </a>
@@ -1166,151 +1298,309 @@
 
 
 
-<h1 id="ios-sdk-implementasyon-rehberi">iOS SDK: İmplementasyon Rehberi</h1>
-<p>EnQualify iOS SDK, mobil uygulamanıza uzaktan kimlik doğrulama yetenekleri kazandırır. OCR, NFC, yüz tanıma ve görüntülü görüşme modüllerinden oluşan bu SDK; self-servis, hibrit ve tam temsilci destekli akışları destekler.</p>
+<h1 id="ocr-modulu">OCR Modülü</h1>
+<p>OCR Modülü, arka kamera üzerinden kimlik kartı ve pasaport üzerindeki verileri okur. Görsel obje analizi, hologram tespiti, yüz fotoğrafı okuma, MRZ alanı okuma ve görsel güvenlik öğelerinin doğrulanması bu modül tarafından gerçekleştirilir.</p>
+<p>OCR Modülü'nü kullanmadan önce <strong>Core Modülü</strong> projeye eklenmiş ve yapılandırılmış olmalıdır. Detaylar için Core Modülü sayfasına bakınız.</p>
 <hr />
-<h2 id="bu-dokumanda-neler-var">Bu Dokümanda Neler Var?</h2>
-<table>
-<thead>
-<tr>
-<th>Bölüm</th>
-<th>Ne Bulursunuz?</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Başlarken</td>
-<td>Gereksinimler, kurulum yöntemleri, proje konfigürasyonu</td>
-</tr>
-<tr>
-<td>Core Modülü</td>
-<td>BaseModel, SessionModel, SSL sertifikası, ses dosyaları yönetimi</td>
-</tr>
-<tr>
-<td>OCR Modülü</td>
-<td>Kimlik kartı ve pasaport okuma</td>
-</tr>
-<tr>
-<td>NFC Modülü</td>
-<td>Temassız çip okuma (RFID)</td>
-</tr>
-<tr>
-<td>Face Modülü</td>
-<td>Canlılık kontrolü ve yüz karşılaştırma</td>
-</tr>
-<tr>
-<td>VideoCall Modülü</td>
-<td>Müşteri-temsilci görüntülü görüşme</td>
-</tr>
-<tr>
-<td>Utility Modülü</td>
-<td>Randevu, doküman imzalama, adres doğrulama, KYB</td>
-</tr>
-<tr>
-<td>UI Özelleştirme</td>
-<td>Backoffice üzerinden arayüz parametreleri</td>
-</tr>
-</tbody>
-</table>
+<h2 id="kurulum">Kurulum</h2>
+<p><code>Podfile</code>'a aşağıdaki bağımlılıkları ekleyin:</p>
+<p>ruby</p>
+<p>wide760pod 'TensorFlowLiteSwift' # Kimlik tespiti
+pod 'TensorFlowLiteSwift/Metal' # Kimlik tespiti
+pod 'OpenSSL-Universal', '3.3.2000' # Core Modülü</p>
+<p>XCFramework olarak eklenecekse: <code>OCRModule.xcframework</code> ve <code>CoreModule.xcframework</code> dosyalarını <strong>Embed and Sign</strong> olarak projeye dahil edin.</p>
+<p><code>post_install</code> build ayarları ve kurulum yöntemleri tüm modüller için ortaktır. Detaylar için Başlarken → SDK Kurulumu sayfasına bakınız.</p>
 <hr />
-<h2 id="sdkya-genel-baks">SDK'ya Genel Bakış</h2>
-<h3 id="moduler-yap">Modüler Yapı</h3>
-<p>EnQualify SDK bağımsız modüllerden oluşur. Her modül ayrı ayrı kurulabilir; ancak tümü <strong>Core Modülü</strong>'ne bağımlıdır.</p>
-<p>wide760CoreModule (zorunlu temel)
-├── OCRModule → Kimlik kartı / pasaport okuma
-├── NFCModule → NFC çip okuma
-├── FaceModule → Canlılık ve yüz karşılaştırma
-├── VideoCallModule → Görüntülü görüşme
-└── UtilityModule → Yardımcı servisler</p>
-<h3 id="hangi-module-ihtiyacnz-var">Hangi Modüle İhtiyacınız Var?</h3>
-<p>Uygulamanızın akışına göre modül seçimini yapabilirsiniz:</p>
-<table>
-<thead>
-<tr>
-<th>Akış Tipi</th>
-<th>Gerekli Modüller</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Sadece kimlik okuma (OCR)</td>
-<td>Core + OCR</td>
-</tr>
-<tr>
-<td>OCR + NFC çip doğrulama</td>
-<td>Core + OCR + NFC</td>
-</tr>
-<tr>
-<td>Tam self-servis (OCR + NFC + Yüz)</td>
-<td>Core + OCR + NFC + Face</td>
-</tr>
-<tr>
-<td>Görüntülü görüşmeli tam akış</td>
-<td>Core + OCR + NFC + Face + VideoCall</td>
-</tr>
-<tr>
-<td>Randevu / doküman imzalama</td>
-<td>Core + Utility</td>
-</tr>
-</tbody>
-</table>
-<blockquote>
-<p><strong>Not:</strong> VideoCall akışında OCR ve Face tekrarlatma özelliğini kullanmak istiyorsanız, OCR ve Face modülleri de projeye eklenmiş olmalıdır.</p>
-</blockquote>
+<h2 id="hzl-baslangc">Hızlı Başlangıç</h2>
+<p>OCR Modülü'nü projeye entegre etmek için şu adımları izleyin:</p>
+<ol>
+<li><strong>Info.plist'e kamera izni ekle</strong> → Başlarken → Info.plist İzinleri</li>
+<li><code>EnQualifyOCRDelegate</code><strong>'i sınıfa ekle</strong> ve delegate fonksiyonlarını implement et</li>
+<li><code>BaseModelOCR</code> <strong>ve</strong> <code>SessionModelOCR</code><strong>'ı tanımla</strong> → Core Modülü → BaseModel ve Core Modülü → SessionModel</li>
+<li><code>EnQualifyOCR.initialize()</code><strong>'ı çağır</strong></li>
+<li><code>initializeCompleted</code> <strong>delegate'ini bekle</strong>, ardından OCR akışını başlat</li>
+</ol>
 <hr />
-<h2 id="minimum-gereksinimler">Minimum Gereksinimler</h2>
+<h2 id="delegate-implementasyonu">Delegate Implementasyonu</h2>
+<h3 id="snfa-ekleme">Sınıfa Ekleme</h3>
+<p>swift</p>
+<p>wide760class ViewController: UIViewController, EnQualifyOCRDelegate {</p>
+<h3 id="tum-delegate-fonksiyonlar">Tüm Delegate Fonksiyonları</h3>
+<p>swift</p>
+<p>wide760// OCR İşlem Callback'leri
+func idDocTypeCheckVerified(isFront: Bool) {} // Kimlik tipi tespit edildi
+func idDocFrontCompleted() {} // Ön yüz okuma tamamlandı
+func idDocBackCompleted() {} // Arka yüz okuma tamamlandı
+func idDocCompleted() {} // Tüm okuma tamamlandı, veri backoffice'e gönderildi
+func hologramCheckVerified() {} // Hologram doğrulandı
+func idDocFailed(error: EnQualifyOcrError) {} // Hata
+// Signing
+func signingSetCompleted() {}
+func signingCompleted() {}
+func signingSetFailed(error: String) {}
+// Token / Session / Settings (tüm modüllerde ortaktır)
+func initializeCompleted(moduleName: String) {}
+func initializeFailed(with key: CustomNSError) {}
+func tokenCreateCompleted() {}
+func tokenCreateFailed() {}
+func sessionAddFailed() {}
+func settingGetFailed() {}
+func sessionCloseCompleted(status: String) {}
+func sessionCloseFailed() {}
+func integrationAddCompleted() {}
+func integrationAddFailed() {}</p>
+<p>Token / Session / Settings delegate'lerinin açıklamaları için Core Modülü → Ortak Delegate'ler sayfasına bakınız.</p>
+<hr />
+<h2 id="initialize">Initialize</h2>
+<p>swift</p>
+<p>wide760EnQualifyOCR.initialize(
+self,
+sessionModel: sessionModel, // SessionModelOCR
+baseModel: baseModel // BaseModelOCR
+)</p>
 <table>
 <thead>
 <tr>
 <th>Parametre</th>
-<th>Değer</th>
+<th>Tip</th>
+<th>Açıklama</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>Xcode</td>
-<td>16.0 ve üzeri</td>
+<td><code>sender</code></td>
+<td><code>Any?</code></td>
+<td>Delegate metodlarını karşılayacak <code>UIViewController</code></td>
 </tr>
 <tr>
-<td>Minimum iOS</td>
-<td>14.0</td>
+<td><code>sessionModel</code></td>
+<td><code>SessionModelOCR</code></td>
+<td>Oturum bilgileri. Detay: Core Modülü → SessionModel</td>
 </tr>
 <tr>
-<td>Desteklenen Mimariler</td>
-<td>arm64 (fiziksel cihaz), x86_64 (Intel Mac simülatör)</td>
+<td><code>baseModel</code></td>
+<td><code>BaseModelOCR</code></td>
+<td>Sertifika ve sunucu bilgileri. Detay: Core Modülü → BaseModel</td>
+</tr>
+</tbody>
+</table>
+<p><code>initialize()</code> çağrıldıktan sonra SDK sırasıyla token oluşturma, oturum açma ve ayarları alma adımlarını otomatik yönetir. Tüm adımlar tamamlandığında <code>initializeCompleted(moduleName:)</code> tetiklenir. Initialization lifecycle detayları için Core Modülü → Initialization Lifecycle sayfasına bakınız.</p>
+<hr />
+<h2 id="ocr-aks">OCR Akışı</h2>
+<p><code>initializeCompleted</code> geldikten sonra kimlik okuma adımları sırasıyla çağrılır. Tipik bir akış aşağıdaki gibidir:</p>
+<p>wide760idDocTypeCheckStart() → idDocTypeCheckVerified()
+│
+▼
+idDocFrontStart() → idDocFrontCompleted()
+│
+▼
+hologramCheckStart() → hologramCheckVerified() ← opsiyonel
+│
+▼
+idDocBackStart() → idDocBackCompleted()
+│
+▼
+idDocComplete() → idDocCompleted() ← veri backoffice'e gönderildi</p>
+<p>💡 Kullanıcıya her adım öncesinde bilgilendirme ekranı gösterilmesi önerilir.</p>
+<hr />
+<h2 id="fonksiyonlar">Fonksiyonlar</h2>
+<h3 id="iddoctypecheckstart-kimlik-tipi-tanma"><code>idDocTypeCheckStart</code> — Kimlik Tipi Tanıma</h3>
+<p>swift</p>
+<p>wide760EnQualifyOCR.idDocTypeCheckStart(in: self, isFront: true)</p>
+<p>Kimlik tipini (T.C. Kimlik Kartı / Pasaport) tespit eder.</p>
+<table>
+<thead>
+<tr>
+<th>Parametre</th>
+<th>Açıklama</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>in</code></td>
+<td>İşlemin yapılacağı <code>UIViewController</code></td>
 </tr>
 <tr>
-<td>Simülatör Desteği</td>
-<td>Derlenir; ancak kamera/NFC gerektiren akışlar çalışmaz</td>
+<td><code>isFront</code></td>
+<td><code>true</code> → ön yüz taraması, <code>false</code> → arka yüz taraması</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Callback:</strong> <code>idDocTypeCheckVerified(isFront: Bool)</code></p>
+<hr />
+<h3 id="iddocfrontstart-kimlik-on-yuz-tarama"><code>idDocFrontStart</code> — Kimlik Ön Yüz Tarama</h3>
+<p>swift</p>
+<p>wide760EnQualifyOCR.idDocFrontStart(in: self, withVisualAnalysis: true)</p>
+<p>Kimliğin ön yüzündeki verileri okur.</p>
+<table>
+<thead>
+<tr>
+<th>Parametre</th>
+<th>Açıklama</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>in</code></td>
+<td>İşlemin yapılacağı <code>UIViewController</code></td>
+</tr>
+<tr>
+<td><code>withVisualAnalysis</code></td>
+<td><code>true</code> → görsel güvenlik öğeleri analizi de yapılır</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Callback:</strong> <code>idDocFrontCompleted()</code></p>
+<hr />
+<h3 id="hologramcheckstart-hologram-tespiti"><code>hologramCheckStart</code> — Hologram Tespiti</h3>
+<p>swift</p>
+<p>wide760EnQualifyOCR.hologramCheckStart(in: self)</p>
+<p>Kimlik ön yüzündeki hologramı tespit eder.</p>
+<p><strong>Callback:</strong> <code>hologramCheckVerified()</code></p>
+<hr />
+<h3 id="iddocbackstart-kimlik-arka-yuz-tarama"><code>idDocBackStart</code> — Kimlik Arka Yüz Tarama</h3>
+<p>swift</p>
+<p>wide760EnQualifyOCR.idDocBackStart(in: self, withVisualAnalysis: true)</p>
+<p>Kimliğin arka yüzündeki MRZ alanı dahil tüm verileri okur.</p>
+<table>
+<thead>
+<tr>
+<th>Parametre</th>
+<th>Açıklama</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>in</code></td>
+<td>İşlemin yapılacağı <code>UIViewController</code></td>
+</tr>
+<tr>
+<td><code>withVisualAnalysis</code></td>
+<td><code>true</code> → görsel güvenlik öğeleri analizi de yapılır</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Callback:</strong> <code>idDocBackCompleted()</code></p>
+<hr />
+<h3 id="iddoccomplete-okuma-aksn-bitirme"><code>idDocComplete</code> — Okuma Akışını Bitirme</h3>
+<p>swift</p>
+<p>wide760EnQualifyOCR.idDocComplete(withDelay: 0.0)</p>
+<p>Tüm kimlik okuma adımları tamamlandığında çağrılır. Kamera analizi durdurulur, okunan veriler backoffice'e gönderilir.</p>
+<table>
+<thead>
+<tr>
+<th>Parametre</th>
+<th>Açıklama</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>withDelay</code></td>
+<td>Kamera oturumunun kapatılması için bekleme süresi (saniye)</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Callback:</strong> Veriler backoffice'e ulaştığında <code>idDocCompleted()</code> tetiklenir.</p>
+<hr />
+<h3 id="sessionclose-oturumu-kapatma"><code>sessionClose</code> — Oturumu Kapatma</h3>
+<p>swift</p>
+<p>wide760EnQualifyOCR.sessionClose(finished: false)</p>
+<p>Session kapatıldıktan sonra modül tekrar kullanılacaksa <code>initialize()</code> yeniden çağrılmalıdır.</p>
+<hr />
+<h3 id="replacesound-ses-degistirme"><code>replaceSound</code> — Ses Değiştirme</h3>
+<p>Belirli bir adımda çalınacak sesi dinamik olarak değiştirir veya sessize alır.</p>
+<p>swift</p>
+<p>wide760EnQualifyOCR.replaceSound(
+currentVoice: ["fail_ocr_voice"],
+newVoice: "go_to_videocall"
+)</p>
+<table>
+<thead>
+<tr>
+<th>Parametre</th>
+<th>Tip</th>
+<th>Açıklama</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>currentVoice</code></td>
+<td><code>[String]</code></td>
+<td>Değiştirilecek ses dosyasının adı. Dizi olarak alır çünkü aynı adımda birden fazla ses tetiklenebilir.</td>
+</tr>
+<tr>
+<td><code>newVoice</code></td>
+<td><code>String</code></td>
+<td>Yerine çalınacak ses. Boş string <code>""</code> verilirse o adım sessiz geçer.</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Kullanım senaryosu:</strong> Örneğin üçüncü başarısız OCR denemesinde <code>"fail_ocr_voice"</code> yerine <code>"go_to_videocall"</code> sesini çalmak için:</p>
+<p>swift</p>
+<p>wide760replaceSound(currentVoice: ["fail_ocr_voice"], newVoice: "go_to_videocall")</p>
+<hr />
+<h2 id="hata-yonetimi">Hata Yönetimi</h2>
+<p>swift</p>
+<p>wide760func idDocFailed(error: EnQualifyOcrError) {
+switch error {
+case .timeout(let state, let message):
+// Zaman aşımı — state: hangi adımda olduğu
+case .idDocFailed(let state, let message):
+// Kimlik tanıma başarısız
+case .idDocSave(let message):
+// Veri kaydetme hatası
+case .cameraSetup(let message):
+// Kamera başlatma hatası
+}
+}</p>
+<table>
+<thead>
+<tr>
+<th>Hata</th>
+<th>Açıklama</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>.timeout(OCRState, String)</code></td>
+<td>Belirlenen sürede işlem tamamlanamadı</td>
+</tr>
+<tr>
+<td><code>.idDocFailed(OCRState, String)</code></td>
+<td>Kimlik doğrulama başarısız</td>
+</tr>
+<tr>
+<td><code>.idDocSave(String)</code></td>
+<td>Okunan veriler kaydedilemedi</td>
+</tr>
+<tr>
+<td><code>.cameraSetup(String)</code></td>
+<td>Kamera başlatılamadı</td>
 </tr>
 </tbody>
 </table>
 <hr />
-<h2 id="kurulum-yontemleri">Kurulum Yöntemleri</h2>
-<p>SDK üç farklı yöntemle projeye eklenebilir. Detaylı adımlar Başlarken sayfasındadır.</p>
-<p><strong>CocoaPods</strong> — Önerilen yöntem. Private repo erişimi için SSH key gereklidir.</p>
-<p><strong>Swift Package Manager (SPM)</strong> — Xcode üzerinden SSH ile private repo'ya bağlanarak eklenir.</p>
-<p><strong>Doğrudan XCFramework</strong> — <code>.xcframework</code> dosyaları manuel olarak projeye eklenir; bağımlılıklar CocoaPods ile kurulur.</p>
+<h2 id="okunan-verilere-erisim">Okunan Verilere Erişim</h2>
+<p>OCR akışı tamamlandıktan sonra <code>CustomerIdentity.shared</code> üzerinden okunan verilere erişilebilir.</p>
+<p>swift</p>
+<p>wide760func showOCRResults() {
+let doc = CustomerIdentity.shared
+let name = doc.getName()
+let surname = doc.getSurname()
+let birthDate = doc.getFrontDateOfBirthDay()
+let idNumber = doc.getIdentityNumber()
+let docNumber = doc.getDocumentNumber()
+let gender = doc.getGender()
+let nationality = doc.getNationality()
+let expiryDate = doc.getExpiryDate()
+// Görsel veriler
+let holoImage = doc.getHoloFrontImage()?.image
+let frontImage = doc.getFrontImage()?.image
+let backImage = doc.getBackImage()?.image
+}</p>
+<p><code>CustomerIdentity</code> singleton yapıdadır. Veriler <code>idDocCompleted()</code> delegate'i tetiklendikten sonra erişilebilir hale gelir.</p>
 <hr />
-<h2 id="temel-kavramlar">Temel Kavramlar</h2>
-<h3 id="initialization-lifecycle">Initialization Lifecycle</h3>
-<p>Her modül aynı başlatma döngüsünü izler: <code>initialize()</code> çağrıldıktan sonra SDK sırasıyla <strong>token oluşturma → oturum açma → ayarları alma</strong> adımlarını otomatik olarak yönetir. Tüm adımlar tamamlandığında <code>initializeCompleted(moduleName:)</code> delegate'i tetiklenir; bu noktadan itibaren modüle ait işlemler başlatılabilir.</p>
-<p>Hata durumunda her adım için ayrı delegate mevcuttur: <code>tokenCreateFailed()</code>, <code>sessionAddFailed()</code>, <code>settingGetFailed()</code>. Detaylar için Core Modülü sayfasına bakınız.</p>
-<h3 id="delegate-yaps">Delegate Yapısı</h3>
-<p>SDK, sonuçları ve hataları <code>delegate</code> pattern'i üzerinden iletir. Her modülün kendi delegate protokolü vardır ve ilgili <code>UIViewController</code>'a atanması gerekir. Utility Modülü bu yapıdan farklı olarak <code>@escaping closure</code> kullanır.</p>
-<h3 id="ssl-guvenligi">SSL Güvenliği</h3>
-<p>SDK iki katmanlı güvenlik uygular: SSL pinning (ortadaki adam saldırılarına karşı) ve oturum başına yenilenen RSA imzalama. SSL sertifikasının kurulumu Başlarken → SSL Sertifikası Kurulumu bölümünde anlatılmaktadır. Canlı ortamlarda SSL pinning'in devre dışı bırakılması <strong>kesinlikle önerilmez</strong>.</p>
-<hr />
-<h2 id="hzl-baslangc-admlar">Hızlı Başlangıç Adımları</h2>
-<p>Projenize ilk kez EnQualify SDK ekliyorsanız şu sırayı takip edin:</p>
-<ol>
-<li>Başlarken → SSH key oluştur, CocoaPods veya SPM kurulumu yap</li>
-<li>Başlarken → Proje Konfigürasyonu → Info.plist izinleri, NFC entitlement, SSL sertifikası ekle</li>
-<li>Core Modülü → <code>BaseModel</code> ve <code>SessionModel</code> tanımla</li>
-<li>İlgili modülün sayfasına geç → Initialize et, delegate'leri implement et, akışı başlat</li>
-</ol>
-<hr />
-<p><em>Sorularınız veya entegrasyon sırasında karşılaştığınız sorunlar için destek ekibimizle iletişime geçebilirsiniz.</em></p>
+<p>Sonraki adım: NFC Modülü</p>
 
 
 
