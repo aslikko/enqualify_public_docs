@@ -8,13 +8,13 @@
       
       
       
-        <link rel="canonical" href="https://enquratechnology.github.io/enqualify_public_docs/iOS%20SDK%3A%20%C4%B0mplementasyon%20Rehberi.html">
+        <link rel="canonical" href="https://enquratechnology.github.io/enqualify_public_docs/iOS%20-%20VideoCall%20Mod%C3%BCl%C3%BC.html">
       
       
-        <link rel="prev" href="iOS%20-%20VideoCall%20Mod%C3%BCl%C3%BC.html">
+        <link rel="prev" href="iOS%20-%20Utility%20Mod%C3%BCl%C3%BC.html">
       
       
-        <link rel="next" href="%F0%9F%93%B1%20Mobile%20SDKs%20-%20%C4%B0mplementasyon%20Dok%C3%BCmanlar%C4%B1.html">
+        <link rel="next" href="iOS%20SDK%3A%20%C4%B0mplementasyon%20Rehberi.html">
       
       
         
@@ -25,7 +25,7 @@
     
     
       
-        <title>iOS SDK: İmplementasyon Rehberi - Enqualify Ürün Dokümantasyonu</title>
+        <title>iOS - VideoCall Modülü - Enqualify Ürün Dokümantasyonu</title>
       
     
     
@@ -74,7 +74,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#ios-sdk-implementasyon-rehberi" class="md-skip">
+        <a href="#ios-videocall-modulu" class="md-skip">
           Skip to content
         </a>
       
@@ -108,7 +108,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              iOS SDK: İmplementasyon Rehberi
+              iOS - VideoCall Modülü
             
           </span>
         </div>
@@ -504,8 +504,10 @@
   
   
   
+    
   
-    <li class="md-tabs__item">
+  
+    <li class="md-tabs__item md-tabs__item--active">
       <a href="iOS%20-%20VideoCall%20Mod%C3%BCl%C3%BC.html" class="md-tabs__link">
         
   
@@ -523,10 +525,8 @@
   
   
   
-    
   
-  
-    <li class="md-tabs__item md-tabs__item--active">
+    <li class="md-tabs__item">
       <a href="iOS%20SDK%3A%20%C4%B0mplementasyon%20Rehberi.html" class="md-tabs__link">
         
   
@@ -1074,33 +1074,6 @@
       
   
   
-  
-  
-    <li class="md-nav__item">
-      <a href="iOS%20-%20VideoCall%20Mod%C3%BCl%C3%BC.html" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    iOS - VideoCall Modülü
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-    
-      
-      
-  
-  
     
   
   
@@ -1120,7 +1093,7 @@
   <span class="md-ellipsis">
     
   
-    iOS SDK: İmplementasyon Rehberi
+    iOS - VideoCall Modülü
   
 
     
@@ -1131,14 +1104,14 @@
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <a href="iOS%20SDK%3A%20%C4%B0mplementasyon%20Rehberi.html" class="md-nav__link md-nav__link--active">
+      <a href="iOS%20-%20VideoCall%20Mod%C3%BCl%C3%BC.html" class="md-nav__link md-nav__link--active">
         
   
   
   <span class="md-ellipsis">
     
   
-    iOS SDK: İmplementasyon Rehberi
+    iOS - VideoCall Modülü
   
 
     
@@ -1164,10 +1137,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#bu-dokumanda-neler-var" class="md-nav__link">
+  <a href="#kurulum" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Bu Dokümanda Neler Var?
+        Kurulum
       
     </span>
   </a>
@@ -1175,22 +1148,33 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#sdkya-genel-baks" class="md-nav__link">
+  <a href="#hzl-baslangc" class="md-nav__link">
     <span class="md-ellipsis">
       
-        SDK'ya Genel Bakış
+        Hızlı Başlangıç
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="SDK&#39;ya Genel Bakış">
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#delegate-implementasyonu" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Delegate Implementasyonu
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Delegate Implementasyonu">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#moduler-yap" class="md-nav__link">
+  <a href="#snfa-ekleme" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Modüler Yapı
+        Sınıfa Ekleme
       
     </span>
   </a>
@@ -1198,10 +1182,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#hangi-module-ihtiyacnz-var" class="md-nav__link">
+  <a href="#tum-delegate-fonksiyonlar" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Hangi Modüle İhtiyacınız Var?
+        Tüm Delegate Fonksiyonları
       
     </span>
   </a>
@@ -1214,10 +1198,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#minimum-gereksinimler" class="md-nav__link">
+  <a href="#initialize" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Minimum Gereksinimler
+        Initialize
       
     </span>
   </a>
@@ -1225,10 +1209,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#kurulum-yontemleri" class="md-nav__link">
+  <a href="#videocall-aks" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Kurulum Yöntemleri
+        VideoCall Akışı
       
     </span>
   </a>
@@ -1236,22 +1220,22 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#temel-kavramlar" class="md-nav__link">
+  <a href="#fonksiyonlar" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Temel Kavramlar
+        Fonksiyonlar
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Temel Kavramlar">
+    <nav class="md-nav" aria-label="Fonksiyonlar">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#initialization-lifecycle" class="md-nav__link">
+  <a href="#startvideocall-gorusmeyi-baslatma" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Initialization Lifecycle
+        startVideoCall — Görüşmeyi Başlatma
       
     </span>
   </a>
@@ -1259,10 +1243,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#delegate-yaps" class="md-nav__link">
+  <a href="#temsilci-tarafndan-tetiklenen-retry-akslar" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Delegate Yapısı
+        Temsilci Tarafından Tetiklenen Retry Akışları
       
     </span>
   </a>
@@ -1270,10 +1254,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#ssl-guvenligi" class="md-nav__link">
+  <a href="#sessionclose-oturumu-kapatma" class="md-nav__link">
     <span class="md-ellipsis">
       
-        SSL Güvenliği
+        sessionClose — Oturumu Kapatma
       
     </span>
   </a>
@@ -1286,10 +1270,60 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#hzl-baslangc-admlar" class="md-nav__link">
+  <a href="#picture-in-picture-pip" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Hızlı Başlangıç Adımları
+        Picture in Picture (PiP)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Picture in Picture (PiP)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#gereksinimler" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Gereksinimler
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#delegate-kullanm" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Delegate Kullanımı
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#hata-yonetimi" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Hata Yönetimi
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#videocallfinished-kapans-durumu" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        videoCallFinished — Kapanış Durumu
       
     </span>
   </a>
@@ -1300,6 +1334,33 @@
   
 </nav>
       
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="iOS%20SDK%3A%20%C4%B0mplementasyon%20Rehberi.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    iOS SDK: İmplementasyon Rehberi
+  
+
+    
+  </span>
+  
+  
+
+      </a>
     </li>
   
 
@@ -1385,10 +1446,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#bu-dokumanda-neler-var" class="md-nav__link">
+  <a href="#kurulum" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Bu Dokümanda Neler Var?
+        Kurulum
       
     </span>
   </a>
@@ -1396,22 +1457,33 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#sdkya-genel-baks" class="md-nav__link">
+  <a href="#hzl-baslangc" class="md-nav__link">
     <span class="md-ellipsis">
       
-        SDK'ya Genel Bakış
+        Hızlı Başlangıç
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="SDK&#39;ya Genel Bakış">
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#delegate-implementasyonu" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Delegate Implementasyonu
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Delegate Implementasyonu">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#moduler-yap" class="md-nav__link">
+  <a href="#snfa-ekleme" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Modüler Yapı
+        Sınıfa Ekleme
       
     </span>
   </a>
@@ -1419,10 +1491,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#hangi-module-ihtiyacnz-var" class="md-nav__link">
+  <a href="#tum-delegate-fonksiyonlar" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Hangi Modüle İhtiyacınız Var?
+        Tüm Delegate Fonksiyonları
       
     </span>
   </a>
@@ -1435,10 +1507,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#minimum-gereksinimler" class="md-nav__link">
+  <a href="#initialize" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Minimum Gereksinimler
+        Initialize
       
     </span>
   </a>
@@ -1446,10 +1518,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#kurulum-yontemleri" class="md-nav__link">
+  <a href="#videocall-aks" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Kurulum Yöntemleri
+        VideoCall Akışı
       
     </span>
   </a>
@@ -1457,22 +1529,22 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#temel-kavramlar" class="md-nav__link">
+  <a href="#fonksiyonlar" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Temel Kavramlar
+        Fonksiyonlar
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Temel Kavramlar">
+    <nav class="md-nav" aria-label="Fonksiyonlar">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#initialization-lifecycle" class="md-nav__link">
+  <a href="#startvideocall-gorusmeyi-baslatma" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Initialization Lifecycle
+        startVideoCall — Görüşmeyi Başlatma
       
     </span>
   </a>
@@ -1480,10 +1552,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#delegate-yaps" class="md-nav__link">
+  <a href="#temsilci-tarafndan-tetiklenen-retry-akslar" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Delegate Yapısı
+        Temsilci Tarafından Tetiklenen Retry Akışları
       
     </span>
   </a>
@@ -1491,10 +1563,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#ssl-guvenligi" class="md-nav__link">
+  <a href="#sessionclose-oturumu-kapatma" class="md-nav__link">
     <span class="md-ellipsis">
       
-        SSL Güvenliği
+        sessionClose — Oturumu Kapatma
       
     </span>
   </a>
@@ -1507,10 +1579,60 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#hzl-baslangc-admlar" class="md-nav__link">
+  <a href="#picture-in-picture-pip" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Hızlı Başlangıç Adımları
+        Picture in Picture (PiP)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Picture in Picture (PiP)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#gereksinimler" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Gereksinimler
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#delegate-kullanm" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Delegate Kullanımı
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#hata-yonetimi" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Hata Yönetimi
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#videocallfinished-kapans-durumu" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        videoCallFinished — Kapanış Durumu
       
     </span>
   </a>
@@ -1534,151 +1656,254 @@
 
 
 
-<h1 id="ios-sdk-implementasyon-rehberi">iOS SDK: İmplementasyon Rehberi</h1>
-<p>EnQualify iOS SDK, mobil uygulamanıza uzaktan kimlik doğrulama yetenekleri kazandırır. OCR, NFC, yüz tanıma ve görüntülü görüşme modüllerinden oluşan bu SDK; self-servis, hibrit ve tam temsilci destekli akışları destekler.</p>
+<h1 id="ios-videocall-modulu">iOS - VideoCall Modülü</h1>
+<p>VideoCall Modülü, son kullanıcı ile kimlik doğrulama temsilcisi arasında gerçek zamanlı görüntülü görüşme başlatır. Temsilci eşleşmesi, bekleme kuyruğu, tekrar deneme akışları ve Picture in Picture (PiP) modu bu modül tarafından yönetilir.</p>
+<p>VideoCall Modülü'nü kullanmadan önce <strong>Core Modülü</strong> projeye eklenmiş ve yapılandırılmış olmalıdır. Detaylar için Core Modülü sayfasına bakınız.</p>
+<p>Görüşme sırasında temsilcinin OCR veya Face adımlarını tekrarlatması isteniyorsa, projeye <strong>OCR Modülü</strong> ve <strong>Face Modülü</strong> de eklenmiş olmalıdır.</p>
 <hr />
-<h2 id="bu-dokumanda-neler-var">Bu Dokümanda Neler Var?</h2>
-<table>
-<thead>
-<tr>
-<th>Bölüm</th>
-<th>Ne Bulursunuz?</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Başlarken</td>
-<td>Gereksinimler, kurulum yöntemleri, proje konfigürasyonu</td>
-</tr>
-<tr>
-<td>Core Modülü</td>
-<td>BaseModel, SessionModel, SSL sertifikası, ses dosyaları yönetimi</td>
-</tr>
-<tr>
-<td>OCR Modülü</td>
-<td>Kimlik kartı ve pasaport okuma</td>
-</tr>
-<tr>
-<td>NFC Modülü</td>
-<td>Temassız çip okuma (RFID)</td>
-</tr>
-<tr>
-<td>Face Modülü</td>
-<td>Canlılık kontrolü ve yüz karşılaştırma</td>
-</tr>
-<tr>
-<td>VideoCall Modülü</td>
-<td>Müşteri-temsilci görüntülü görüşme</td>
-</tr>
-<tr>
-<td>Utility Modülü</td>
-<td>Randevu, doküman imzalama, adres doğrulama, KYB</td>
-</tr>
-<tr>
-<td>UI Özelleştirme</td>
-<td>Backoffice üzerinden arayüz parametreleri</td>
-</tr>
-</tbody>
-</table>
+<h2 id="kurulum">Kurulum</h2>
+<p><code>Podfile</code>'a aşağıdaki bağımlılıkları ekleyin:</p>
+<p>wide760pod 'OpenSSL-Universal', '3.3.2000'
+pod 'GoogleWebRTC'</p>
+<p>XCFramework olarak eklenecekse: <code>VideoCallModule.xcframework</code> ve <code>CoreModule.xcframework</code> dosyalarını <strong>Embed and Sign</strong> olarak projeye dahil edin.</p>
+<p><code>post_install</code> build ayarları ve kurulum yöntemleri tüm modüller için ortaktır. Detaylar için Başlarken → SDK Kurulumu sayfasına bakınız.</p>
 <hr />
-<h2 id="sdkya-genel-baks">SDK'ya Genel Bakış</h2>
-<h3 id="moduler-yap">Modüler Yapı</h3>
-<p>EnQualify SDK bağımsız modüllerden oluşur. Her modül ayrı ayrı kurulabilir; ancak tümü <strong>Core Modülü</strong>'ne bağımlıdır.</p>
-<p>wide760CoreModule (zorunlu temel)
-├── OCRModule → Kimlik kartı / pasaport okuma
-├── NFCModule → NFC çip okuma
-├── FaceModule → Canlılık ve yüz karşılaştırma
-├── VideoCallModule → Görüntülü görüşme
-└── UtilityModule → Yardımcı servisler</p>
-<h3 id="hangi-module-ihtiyacnz-var">Hangi Modüle İhtiyacınız Var?</h3>
-<p>Uygulamanızın akışına göre modül seçimini yapabilirsiniz:</p>
-<table>
-<thead>
-<tr>
-<th>Akış Tipi</th>
-<th>Gerekli Modüller</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Sadece kimlik okuma (OCR)</td>
-<td>Core + OCR</td>
-</tr>
-<tr>
-<td>OCR + NFC çip doğrulama</td>
-<td>Core + OCR + NFC</td>
-</tr>
-<tr>
-<td>Tam self-servis (OCR + NFC + Yüz)</td>
-<td>Core + OCR + NFC + Face</td>
-</tr>
-<tr>
-<td>Görüntülü görüşmeli tam akış</td>
-<td>Core + OCR + NFC + Face + VideoCall</td>
-</tr>
-<tr>
-<td>Randevu / doküman imzalama</td>
-<td>Core + Utility</td>
-</tr>
-</tbody>
-</table>
-<blockquote>
-<p><strong>Not:</strong> VideoCall akışında OCR ve Face tekrarlatma özelliğini kullanmak istiyorsanız, OCR ve Face modülleri de projeye eklenmiş olmalıdır.</p>
-</blockquote>
+<h2 id="hzl-baslangc">Hızlı Başlangıç</h2>
+<ol>
+<li><strong>Info.plist'e kamera ve mikrofon izni ekle</strong> → Başlarken → Info.plist İzinleri</li>
+<li><strong>PiP kullanılacaksa capability'leri ekle</strong> → Başlarken → Picture in Picture</li>
+<li><code>EnQualifyVideoCallDelegate</code><strong>'i sınıfa ekle</strong> ve delegate fonksiyonlarını implement et</li>
+<li><code>BaseModelVideoCall</code> <strong>ve</strong> <code>SessionModelVideoCall</code><strong>'ı tanımla</strong> → Core Modülü → BaseModel ve Core Modülü → SessionModel</li>
+<li><code>EnQualifyVideoCall.initialize()</code><strong>'ı çağır</strong></li>
+<li><code>initializeCompleted</code> <strong>delegate'ini bekle</strong> ve <code>moduleName == "EnQualifyVideoCall"</code> doğrulamasını yap, ardından görüşmeyi başlat</li>
+</ol>
 <hr />
-<h2 id="minimum-gereksinimler">Minimum Gereksinimler</h2>
+<h2 id="delegate-implementasyonu">Delegate Implementasyonu</h2>
+<h3 id="snfa-ekleme">Sınıfa Ekleme</h3>
+<p>wide760class ViewController: UIViewController, EnQualifyVideoCallDelegate {</p>
+<h3 id="tum-delegate-fonksiyonlar">Tüm Delegate Fonksiyonları</h3>
+<p>wide760// Görüşme Akışı
+func videoCallStarted() {} // Görüşme başladı, temsilci bağlandı
+func videoCallFinished(status: String) {} // Görüşme tamamlandı
+func videoCallFailed(error: EnQualifyVideoCallError) {} // Hata
+// Bekleme ve Kuyruk
+func waitingForAgent() {} // Uygun temsilci bekleniyor
+func waitingForAgentTimeout() {} // Bekleme süresi doldu, temsilci bulunamadı
+// Temsilci Tekrar Deneme Akışları
+func retryOCR() {} // Temsilci OCR adımını yeniden başlattı
+func retryFace() {} // Temsilci Face adımını yeniden başlattı
+func retryNFC() {} // Temsilci NFC adımını yeniden başlattı
+// Picture in Picture
+func pipStarted() {} // PiP modu başladı
+func pipStopped() {} // PiP modu sona erdi
+// Token / Session / Settings (tüm modüllerde ortaktır)
+func initializeCompleted(moduleName: String) {}
+func initializeFailed(with key: CustomNSError) {}
+func tokenCreateCompleted() {}
+func tokenCreateFailed() {}
+func sessionAddFailed() {}
+func settingGetFailed() {}
+func sessionCloseCompleted(status: String) {}
+func sessionCloseFailed() {}
+func integrationAddCompleted() {}
+func integrationAddFailed() {}</p>
+<p>Token / Session / Settings delegate'lerinin açıklamaları için Core Modülü → Ortak Delegate'ler sayfasına bakınız.</p>
+<hr />
+<h2 id="initialize">Initialize</h2>
+<p>wide760EnQualifyVideoCall.initialize(
+self,
+sessionModel: sessionModel, // SessionModelVideoCall
+baseModel: baseModel // BaseModelVideoCall
+)</p>
 <table>
 <thead>
 <tr>
 <th>Parametre</th>
-<th>Değer</th>
+<th>Tip</th>
+<th>Açıklama</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>Xcode</td>
-<td>16.0 ve üzeri</td>
+<td><code>sender</code></td>
+<td><code>Any?</code></td>
+<td>Delegate metodlarını karşılayacak <code>UIViewController</code></td>
 </tr>
 <tr>
-<td>Minimum iOS</td>
-<td>14.0</td>
+<td><code>sessionModel</code></td>
+<td><code>SessionModelVideoCall</code></td>
+<td>Oturum bilgileri. Detay: Core Modülü → SessionModel</td>
 </tr>
 <tr>
-<td>Desteklenen Mimariler</td>
-<td>arm64 (fiziksel cihaz), x86_64 (Intel Mac simülatör)</td>
+<td><code>baseModel</code></td>
+<td><code>BaseModelVideoCall</code></td>
+<td>Sertifika ve sunucu bilgileri. Detay: Core Modülü → BaseModel</td>
+</tr>
+</tbody>
+</table>
+<p><code>initialize()</code> çağrıldıktan sonra SDK sırasıyla token oluşturma, oturum açma ve ayarları alma adımlarını otomatik yönetir. Tüm adımlar tamamlandığında <code>initializeCompleted(moduleName:)</code> tetiklenir.</p>
+<p><code>initializeCompleted</code> geldikten sonra <code>moduleName == "EnQualifyVideoCall"</code> kontrolü yapılmalıdır. Bu doğrulama yapılmadan <code>startVideoCall()</code> çağrılırsa görüşme başlamaz.</p>
+<p>wide760func initializeCompleted(moduleName: String) {
+if moduleName == "EnQualifyVideoCall" {
+EnQualifyVideoCall.startVideoCall(in: self)
+}
+}</p>
+<hr />
+<h2 id="videocall-aks">VideoCall Akışı</h2>
+<p>wide760initialize()
+│
+▼
+initializeCompleted(moduleName: "EnQualifyVideoCall")
+│
+▼
+startVideoCall()
+│
+▼
+waitingForAgent() ← uygun temsilci bekleniyor
+│
+├─ Temsilci bulundu → videoCallStarted()
+│ │
+│ [Görüşme devam ediyor]
+│ │
+│ ┌────────────┴────────────┐
+│ │ │
+│ retryOCR() / retryFace() videoCallFinished()
+│ retryNFC() │
+│ │ sessionClose()
+│ [İlgili modül akışı]
+│ [Tamamlanınca geri dön]
+│
+└─ Temsilci bulunamadı → waitingForAgentTimeout()
+│
+sessionClose()</p>
+<hr />
+<h2 id="fonksiyonlar">Fonksiyonlar</h2>
+<h3 id="startvideocall-gorusmeyi-baslatma"><code>startVideoCall</code> — Görüşmeyi Başlatma</h3>
+<p>wide760EnQualifyVideoCall.startVideoCall(in: self)</p>
+<p>Temsilci kuyruğuna girer ve uygun temsilci beklenir. Temsilci bulunduğunda görüşme otomatik olarak başlar.</p>
+<table>
+<thead>
+<tr>
+<th>Parametre</th>
+<th>Açıklama</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>in</code></td>
+<td>İşlemin yapılacağı <code>UIViewController</code></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Callback'ler:</strong> <code>waitingForAgent()</code> → <code>videoCallStarted()</code> veya <code>waitingForAgentTimeout()</code></p>
+<hr />
+<h3 id="temsilci-tarafndan-tetiklenen-retry-akslar">Temsilci Tarafından Tetiklenen Retry Akışları</h3>
+<p>Görüşme sırasında temsilci, backoffice üzerinden kullanıcıdan OCR, Face veya NFC adımlarını tekrar yapmasını isteyebilir. Bu durumda ilgili delegate tetiklenir ve uygulamanın ilgili modülü yeniden başlatması beklenir.</p>
+<p>wide760func retryOCR() {
+// OCR modülünü yeniden initialize et ve akışı başlat
+EnQualifyOCR.initialize(self, sessionModel: sessionModel, baseModel: baseModel)
+}
+func retryFace() {
+// Face modülünü yeniden initialize et ve akışı başlat
+EnQualifyFace.initialize(self, sessionModel: sessionModel, baseModel: baseModel)
+}
+func retryNFC() {
+// NFC modülünü yeniden initialize et ve akışı başlat
+EnQualifyNFC.initialize(self, sessionModel: sessionModel, baseModel: baseModel)
+}</p>
+<p>Retry akışları için OCR, Face ve NFC modüllerinin projeye eklenmiş olması gerekir. Eklenmeden bu delegate'ler tetiklenirse akış kırılır.</p>
+<p>İlgili modül akışı tamamlandıktan sonra (<code>idDocCompleted</code>, <code>livenessCompleted</code>, <code>nfcReadCompleted</code>) görüşme otomatik olarak kaldığı yerden devam eder, <code>startVideoCall()</code> tekrar çağrılmasına gerek yoktur.</p>
+<hr />
+<h3 id="sessionclose-oturumu-kapatma"><code>sessionClose</code> — Oturumu Kapatma</h3>
+<p>wide760EnQualifyVideoCall.sessionClose(finished: false)</p>
+<p>Görüşme tamamlandığında (<code>videoCallFinished</code>) veya zaman aşımı durumunda (<code>waitingForAgentTimeout</code>) çağrılmalıdır.</p>
+<p>Session kapatıldıktan sonra modül tekrar kullanılacaksa <code>initialize()</code> yeniden çağrılmalıdır.</p>
+<hr />
+<h2 id="picture-in-picture-pip">Picture in Picture (PiP)</h2>
+<p>PiP modu, görüşme sırasında kullanıcı uygulamayı arka plana aldığında ya da başka bir ekrana geçtiğinde görüşme penceresini küçük bir kayan panel olarak sürdürür.</p>
+<h3 id="gereksinimler">Gereksinimler</h3>
+<p>PiP özelliğinin çalışması için capability ayarlarının yapılmış olması gerekir. Detaylar için Başlarken → Picture in Picture sayfasına bakınız.</p>
+<p>Bu ayarlar yapılmadan PiP moduna geçildiğinde görüntü yerine gri ekran görünür.</p>
+<h3 id="delegate-kullanm">Delegate Kullanımı</h3>
+<p>wide760func pipStarted() {
+// Görüşme PiP moduna geçti
+// Gerekiyorsa UI güncellemesi yapılabilir
+}
+func pipStopped() {
+// PiP modu sona erdi, görüşme tam ekrana döndü
+}</p>
+<hr />
+<h2 id="hata-yonetimi">Hata Yönetimi</h2>
+<p>wide760func videoCallFailed(error: EnQualifyVideoCallError) {
+switch error {
+case .timeout(let message):
+// Bağlantı zaman aşımına uğradı
+case .connectionFailed(let message):
+// Görüşme bağlantısı kurulamadı veya koptu
+case .cameraSetup(let message):
+// Kamera başlatılamadı
+case .microphoneSetup(let message):
+// Mikrofon başlatılamadı
+}
+}</p>
+<table>
+<thead>
+<tr>
+<th>Hata</th>
+<th>Açıklama</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>.timeout(String)</code></td>
+<td>Bağlantı veya kuyruk zaman aşımı</td>
 </tr>
 <tr>
-<td>Simülatör Desteği</td>
-<td>Derlenir; ancak kamera/NFC gerektiren akışlar çalışmaz</td>
+<td><code>.connectionFailed(String)</code></td>
+<td>WebRTC bağlantısı kurulamadı veya koptu</td>
+</tr>
+<tr>
+<td><code>.cameraSetup(String)</code></td>
+<td>Kamera başlatılamadı</td>
+</tr>
+<tr>
+<td><code>.microphoneSetup(String)</code></td>
+<td>Mikrofon başlatılamadı</td>
 </tr>
 </tbody>
 </table>
 <hr />
-<h2 id="kurulum-yontemleri">Kurulum Yöntemleri</h2>
-<p>SDK üç farklı yöntemle projeye eklenebilir. Detaylı adımlar Başlarken sayfasındadır.</p>
-<p><strong>CocoaPods</strong> — Önerilen yöntem. Private repo erişimi için SSH key gereklidir.</p>
-<p><strong>Swift Package Manager (SPM)</strong> — Xcode üzerinden SSH ile private repo'ya bağlanarak eklenir.</p>
-<p><strong>Doğrudan XCFramework</strong> — <code>.xcframework</code> dosyaları manuel olarak projeye eklenir; bağımlılıklar CocoaPods ile kurulur.</p>
+<h2 id="videocallfinished-kapans-durumu"><code>videoCallFinished</code> — Kapanış Durumu</h2>
+<p>Görüşme tamamlandığında <code>videoCallFinished(status: String)</code> tetiklenir. <code>status</code> parametresi görüşmenin nasıl sonuçlandığını taşır.</p>
+<table>
+<thead>
+<tr>
+<th><code>status</code> Değeri</th>
+<th>Açıklama</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>"Approved"</code></td>
+<td>Temsilci kimlik doğrulamayı onayladı</td>
+</tr>
+<tr>
+<td><code>"Rejected"</code></td>
+<td>Temsilci kimlik doğrulamayı reddetti</td>
+</tr>
+<tr>
+<td><code>"Cancelled"</code></td>
+<td>Görüşme iptal edildi</td>
+</tr>
+<tr>
+<td><code>"Timeout"</code></td>
+<td>Görüşme zaman aşımına uğradı</td>
+</tr>
+</tbody>
+</table>
+<p><code>status</code> değerleri backoffice konfigürasyonuna göre farklılık gösterebilir. Mevcut değerlerin tam listesi için Enqura ekibiyle iletişime geçin.</p>
 <hr />
-<h2 id="temel-kavramlar">Temel Kavramlar</h2>
-<h3 id="initialization-lifecycle">Initialization Lifecycle</h3>
-<p>Her modül aynı başlatma döngüsünü izler: <code>initialize()</code> çağrıldıktan sonra SDK sırasıyla <strong>token oluşturma → oturum açma → ayarları alma</strong> adımlarını otomatik olarak yönetir. Tüm adımlar tamamlandığında <code>initializeCompleted(moduleName:)</code> delegate'i tetiklenir; bu noktadan itibaren modüle ait işlemler başlatılabilir.</p>
-<p>Hata durumunda her adım için ayrı delegate mevcuttur: <code>tokenCreateFailed()</code>, <code>sessionAddFailed()</code>, <code>settingGetFailed()</code>. Detaylar için Core Modülü sayfasına bakınız.</p>
-<h3 id="delegate-yaps">Delegate Yapısı</h3>
-<p>SDK, sonuçları ve hataları <code>delegate</code> pattern'i üzerinden iletir. Her modülün kendi delegate protokolü vardır ve ilgili <code>UIViewController</code>'a atanması gerekir. Utility Modülü bu yapıdan farklı olarak <code>@escaping closure</code> kullanır.</p>
-<h3 id="ssl-guvenligi">SSL Güvenliği</h3>
-<p>SDK iki katmanlı güvenlik uygular: SSL pinning (ortadaki adam saldırılarına karşı) ve oturum başına yenilenen RSA imzalama. SSL sertifikasının kurulumu Başlarken → SSL Sertifikası Kurulumu bölümünde anlatılmaktadır. Canlı ortamlarda SSL pinning'in devre dışı bırakılması <strong>kesinlikle önerilmez</strong>.</p>
-<hr />
-<h2 id="hzl-baslangc-admlar">Hızlı Başlangıç Adımları</h2>
-<p>Projenize ilk kez EnQualify SDK ekliyorsanız şu sırayı takip edin:</p>
-<ol>
-<li>Başlarken → SSH key oluştur, CocoaPods veya SPM kurulumu yap</li>
-<li>Başlarken → Proje Konfigürasyonu → Info.plist izinleri, NFC entitlement, SSL sertifikası ekle</li>
-<li>Core Modülü → <code>BaseModel</code> ve <code>SessionModel</code> tanımla</li>
-<li>İlgili modülün sayfasına geç → Initialize et, delegate'leri implement et, akışı başlat</li>
-</ol>
-<hr />
-<p><em>Sorularınız veya entegrasyon sırasında karşılaştığınız sorunlar için destek ekibimizle iletişime geçebilirsiniz.</em></p>
+<p>Sonraki adım: Utility Modülü</p>
 
 
 
