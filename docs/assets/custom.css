@@ -163,10 +163,10 @@ body,
 }
 .md-nav__item--active > .md-nav__link,
 .md-nav__link--active {
-  background: var(--eq-blue-light) !important;
-  color: var(--eq-navy) !important;
+  background: #DBEAFE !important;
+  color: #1A3F8F !important;
   font-weight: 700 !important;
-  border-left: 3px solid var(--eq-blue);
+  border-left: 3px solid #009FF1;
   padding-left: calc(0.75rem - 3px);
 }
 
@@ -194,7 +194,7 @@ body,
 .md-typeset {
   font-size: 0.875rem;   /* 14px — eski 15.2px'di */
   line-height: 1.7;
-  color: var(--eq-text);
+  color: #1A2640;
 }
 
 .md-typeset h1 {
@@ -228,9 +228,9 @@ body,
 }
 
 .md-typeset h3 {
-  font-size: 1rem;       /* eski 1.1rem */
+  font-size: 1rem;
   font-weight: 700;
-  color: var(--eq-text);
+  color: var(--eq-navy);
   margin-top: 1.25rem;
 }
 
@@ -354,7 +354,7 @@ body,
   text-transform: uppercase;
   padding: 0.65rem 1rem;
 }
-.md-typeset table tr:nth-child(even) { background: var(--eq-surface); }
+.md-typeset table tr:nth-child(even) { background: #F8FAFD; }
 .md-typeset table tr:hover { background: var(--eq-blue-light); transition: background 0.12s; }
 .md-typeset table td {
   padding: 0.55rem 1rem;
