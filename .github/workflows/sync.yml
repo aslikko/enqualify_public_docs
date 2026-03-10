@@ -23,7 +23,7 @@ jobs:
           python-version: '3.9'
 
       - name: Install Dependencies
-        run: pip install requests markdownify mkdocs-material
+        run: pip install requests markdownify mkdocs-material mkdocs-minify-plugin
 
       - name: Run Sync Script
         env:
