@@ -6,8 +6,7 @@ VideoCall modülü, arka veya ön kamera kullanarak müşterinin müşteri temsi
 
 ---
 
-Projeye Eklenmesi
------------------
+## Projeye Eklenmesi
 
 ### 1. `libs.versions.toml` dosyasına ekleyin:
 
@@ -32,8 +31,7 @@ wide760implementation(libs.enqualify.plus.videocall)
 
 ---
 
-İmplementasyon
---------------
+## İmplementasyon
 
 ### 1. İzinler
 
@@ -154,8 +152,7 @@ Initialize tamamlandığında `initializeCompleted` tetiklenir ve görüşme ba�
 
 ---
 
-VideoCall İşlemleri
--------------------
+## VideoCall İşlemleri
 
 ### Fonksiyonlar
 
@@ -265,15 +262,13 @@ enQualifyVideoCall.clear()
 
 ---
 
-Proguard Kuralları
-------------------
+## Proguard Kuralları
 
 wide760-keep class org.webrtc.\*\* { \*; }
 
 ---
 
-Callback Referansı
-------------------
+## Callback Referansı
 
 ### Token / Session / Settings
 

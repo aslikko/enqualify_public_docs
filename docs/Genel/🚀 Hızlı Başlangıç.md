@@ -4,8 +4,7 @@ Bu sayfa, EnQualify SDK'yı ilk kez deneyen developerlar için hazırlanmıştı
 
 ---
 
-Adım 1 — Demo Uygulamayı İndir
-------------------------------
+## Adım 1 — Demo Uygulamayı İndir
 
 iOS ve Android için ayrı demo uygulamalar mevcuttur. İkisini de indirebilir ya da çalıştığınız platforma göre birini seçebilirsiniz.
 
@@ -37,8 +36,7 @@ wide760EnQualifyDemo-Android/
 
 ---
 
-Adım 2 — Demo Ortamı Bilgileri
-------------------------------
+## Adım 2 — Demo Ortamı Bilgileri
 
 Aşağıdaki bilgiler EnQualify demo ortamına bağlanmak için hazır olarak sunulmaktadır. Herhangi bir kayıt veya hesap açma gerekmez.
 
@@ -55,8 +53,7 @@ Aşağıdaki bilgiler EnQualify demo ortamına bağlanmak için hazır olarak su
 
 ---
 
-Adım 3 — SSL Sertifikasını Projeye Ekle
----------------------------------------
+## Adım 3 — SSL Sertifikasını Projeye Ekle
 
 Demo ortamına bağlanabilmek için SSL sertifikasının projeye eklenmesi gerekir.
 
@@ -77,8 +74,7 @@ Sertifika kurulumu hakkında detaylı bilgi için ilgili sayfaya bakınız:
 
 ---
 
-Adım 4 — Demo Bilgilerini Yapılandır
-------------------------------------
+## Adım 4 — Demo Bilgilerini Yapılandır
 
 Demo uygulamasını açın ve aşağıdaki dosyada demo bilgilerini girin:
 
@@ -122,8 +118,7 @@ email = "demo@test.com"
 
 ---
 
-Adım 5 — Uygulamayı Çalıştır
-----------------------------
+## Adım 5 — Uygulamayı Çalıştır
 
 **iOS:**
 
@@ -141,8 +136,7 @@ Adım 5 — Uygulamayı Çalıştır
 
 ---
 
-Adım 6 — İlk Akışı Dene
------------------------
+## Adım 6 — İlk Akışı Dene
 
 Uygulama açıldığında aşağıdaki akışları deneyebilirsiniz:
 
@@ -157,8 +151,7 @@ Uygulama açıldığında aşağıdaki akışları deneyebilirsiniz:
 
 ---
 
-Sonraki Adımlar
----------------
+## Sonraki Adımlar
 
 Demo çalıştı, sıra entegrasyona geldi:
 
@@ -168,8 +161,7 @@ Demo çalıştı, sıra entegrasyona geldi:
 
 ---
 
-Takıldın mı?
-------------
+## Takıldın mı?
 
 Sık karşılaşılan ilk kurulum sorunları:
 

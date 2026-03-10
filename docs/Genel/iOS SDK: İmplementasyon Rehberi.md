@@ -4,8 +4,7 @@ EnQualify iOS SDK, mobil uygulamanıza uzaktan kimlik doğrulama yetenekleri kaz
 
 ---
 
-Bu Dokümanda Neler Var?
------------------------
+## Bu Dokümanda Neler Var?
 
 | Bölüm | Ne Bulursunuz? |
 | --- | --- |
@@ -20,8 +19,7 @@ Bu Dokümanda Neler Var?
 
 ---
 
-SDK'ya Genel Bakış
-------------------
+## SDK'ya Genel Bakış
 
 ### Modüler Yapı
 
@@ -50,8 +48,7 @@ Uygulamanızın akışına göre modül seçimini yapabilirsiniz:
 
 ---
 
-Minimum Gereksinimler
----------------------
+## Minimum Gereksinimler
 
 | Parametre | Değer |
 | --- | --- |
@@ -62,8 +59,7 @@ Minimum Gereksinimler
 
 ---
 
-Kurulum Yöntemleri
-------------------
+## Kurulum Yöntemleri
 
 SDK üç farklı yöntemle projeye eklenebilir. Detaylı adımlar Başlarken sayfasındadır.
 
@@ -75,8 +71,7 @@ SDK üç farklı yöntemle projeye eklenebilir. Detaylı adımlar Başlarken say
 
 ---
 
-Temel Kavramlar
----------------
+## Temel Kavramlar
 
 ### Initialization Lifecycle
 
@@ -94,8 +89,7 @@ SDK iki katmanlı güvenlik uygular: SSL pinning (ortadaki adam saldırılarına
 
 ---
 
-Hızlı Başlangıç Adımları
-------------------------
+## Hızlı Başlangıç Adımları
 
 Projenize ilk kez EnQualify SDK ekliyorsanız şu sırayı takip edin:
 

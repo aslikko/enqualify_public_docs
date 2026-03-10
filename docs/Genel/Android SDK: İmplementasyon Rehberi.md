@@ -4,8 +4,7 @@ EnQualify Android SDK, mobil uygulamanıza uzaktan kimlik doğrulama yetenekleri
 
 ---
 
-Bu Dokümanda Neler Var?
------------------------
+## Bu Dokümanda Neler Var?
 
 | Bölüm | Ne Bulursunuz? |
 | --- | --- |
@@ -20,8 +19,7 @@ Bu Dokümanda Neler Var?
 
 ---
 
-SDK'ya Genel Bakış
-------------------
+## SDK'ya Genel Bakış
 
 ### Modüler Yapı
 
@@ -50,8 +48,7 @@ Uygulamanızın akışına göre modül seçimini yapabilirsiniz:
 
 ---
 
-Minimum Gereksinimler
----------------------
+## Minimum Gereksinimler
 
 | Parametre | Değer |
 | --- | --- |
@@ -62,15 +59,13 @@ Minimum Gereksinimler
 
 ---
 
-Kurulum
--------
+## Kurulum
 
 SDK, Maven üzerinden projeye eklenir. Erişim bilgileri (repo URL, kullanıcı adı, şifre) size özel olarak iletilir. Detaylı kurulum adımları **Başlarken** sayfasındadır.
 
 ---
 
-Temel Kavramlar
----------------
+## Temel Kavramlar
 
 ### Initialization Lifecycle
 
@@ -98,8 +93,7 @@ Tüm modüller singleton olarak çalışır. `initialize()` ile oluşturulan ins
 
 ---
 
-Hızlı Başlangıç Adımları
-------------------------
+## Hızlı Başlangıç Adımları
 
 Projenize ilk kez EnQualify SDK ekliyorsanız şu sırayı takip edin:
 

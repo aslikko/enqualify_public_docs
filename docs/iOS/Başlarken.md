@@ -1,11 +1,10 @@
-# Başlarken
+# iOS - Başlarken
 
 Bu sayfa, EnQualify iOS SDK'yı projenize eklemek için gereken tüm adımları kapsar. Modül kurulumuna geçmeden önce bu sayfadaki adımları tamamlamanız gerekir.
 
 ---
 
-**1. Kurulum Yöntemi Seçin**
-----------------------------
+## **1. Kurulum Yöntemi Seçin**
 
 EnQualify iOS SDK üç farklı yöntemle projeye eklenebilir.
 
@@ -17,8 +16,7 @@ EnQualify iOS SDK üç farklı yöntemle projeye eklenebilir.
 
 ---
 
-**2. Private Repo Erişimi**
----------------------------
+## **2. Private Repo Erişimi**
 
 Her üç yöntem de EnQualify'ın private GitHub reposuna erişim gerektirir. Bunun için bir SSH key oluşturmanız ve bu key'i Enqura ekibine iletmeniz gerekmektedir.
 
@@ -68,8 +66,7 @@ ssh -T git@github.com
 
 ---
 
-**3. SDK Kurulumu**
--------------------
+## **3. SDK Kurulumu**
 
 ### CocoaPods
 
@@ -127,8 +124,7 @@ wide760ssh://git@github.com/EnquraTechnology/EnQualifyiOSPackages.git
 
 ---
 
-**4. Simülatör Desteği**
-------------------------
+## **4. Simülatör Desteği**
 
 EnQualify SDK kamera ve NFC donanımı gerektirdiğinden simülatörde çalışmaz; ancak başarıyla **derlenebilir**. Simülatörde derleme hatası alıyorsanız aşağıdaki adımı uygulayın.
 
@@ -141,8 +137,7 @@ Manuel düzenleme tercih ederseniz `.xcodeproj` paketini açıp `.pbxproj` dosya
 
 ---
 
-**5. Proje Konfigürasyonu**
----------------------------
+## **5. Proje Konfigürasyonu**
 
 ### Info.plist İzinleri
 
@@ -197,8 +192,7 @@ Bu ayar yapılmadan PiP moduna geçildiğinde görüntü yerine gri ekran görü
 
 ---
 
-**6. SSL Sertifikası Kurulumu**
--------------------------------
+## **6. SSL Sertifikası Kurulumu**
 
 EnQualify SDK, backend ile iletişimde SSL pinning kullanır. Sertifikanın projeye eklenmesi zorunludur.
 

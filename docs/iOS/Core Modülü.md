@@ -1,4 +1,4 @@
-# Core Modülü
+# iOS - Core Modülü
 
 Core Modülü, EnQualify SDK'nın tüm modüllerinin üzerine inşa edildiği temel altyapıdır. OCR, NFC, Face, VideoCall ve Utility modüllerinin her biri Core Modülü'ne bağımlıdır — bu nedenle herhangi bir modüle geçmeden önce Core'un doğru yapılandırılmış olması gerekir.
 
@@ -6,8 +6,7 @@ Bu sayfada anlatılanlar tüm modüller için geçerlidir. Modül sayfalarında 
 
 ---
 
-Initialization Lifecycle
-------------------------
+## Initialization Lifecycle
 
 Her modül `initialize()` çağrıldığında aynı başlatma döngüsünü izler. Bu adımlar SDK tarafından otomatik olarak yönetilir — sizin müdahaleniz gerekmez.
 
@@ -35,8 +34,7 @@ Her hata delegate'i bağımsız olarak ele alınmalıdır. SDK, hata durumunda o
 
 ---
 
-BaseModel
----------
+## BaseModel
 
 `BaseModel`, her modülün `initialize()` fonksiyonuna geçilen temel yapılandırma modelidir. SSL sertifikaları ve sunucu adresi burada tanımlanır.
 
@@ -70,7 +68,7 @@ var useEmbeddedLocalSound: NSNumber? = nil // Yalnızca CoreBaseModel'de
 | `locale` | `String?` | — | Sesli yönlendirme dili (örn. `"TR"`) |
 | `mobileUser` | `String?` | — | Authorization için anonymous user bilgisi |
 | `countryCode` | `String?` | — | Ülke/bölge özelinde veri edinimi için (örn. `"TUR"`) |
-| `useEmbeddedLocalSound` | `NSNumber?` | — | Yalnızca `CoreBaseModel`'de geçerlidir. Ses dosyası kaynağını belirler. Bkz. [Ses Dosyaları Yönetimi](https://enqura.atlassian.net/wiki/spaces/EDP/pages/25526291/Core+Mod+l#Ses-Dosyalar%C4%B1-Y%C3%B6netimi) |
+| `useEmbeddedLocalSound` | `NSNumber?` | — | Yalnızca `CoreBaseModel`'de geçerlidir. Ses dosyası kaynağını belirler. Bkz. [Ses Dosyaları Yönetimi](https://enqura.atlassian.net/wiki/spaces/EDP/pages/25526291/iOS+-+Core+Mod+l#Ses-Dosyalar%C4%B1-Y%C3%B6netimi) |
 
 Sertifikalar için `der` dosya adı ile Base64 string yöntemlerinden birini kullanmanız yeterlidir, ikisini birden doldurmanıza gerek yoktur.
 
@@ -92,8 +90,7 @@ countryCode: "TUR"
 
 ---
 
-SessionModel
-------------
+## SessionModel
 
 `SessionModel`, her modülün `initialize()` fonksiyonuna geçilen oturum bilgisi modelidir. Kullanıcıya ve çağrıya ait bilgileri taşır.
 
@@ -158,8 +155,7 @@ isContinue: false
 
 ---
 
-Ses Dosyaları Yönetimi
-----------------------
+## Ses Dosyaları Yönetimi
 
 SDK, akışlar sırasında kullanıcıya sesli yönlendirme yapar. Ses dosyaları üç farklı şekilde yönetilebilir.
 
@@ -190,15 +186,13 @@ snd\_ready\_to\_start\_chip
 
 ---
 
-UI Özelleştirme
----------------
+## UI Özelleştirme
 
 SDK arayüzü Backoffice üzerinden dinamik olarak özelleştirilebilir. Detaylar için UI Özelleştirme sayfasına bakınız.
 
 ---
 
-Ortak Delegate'ler
-------------------
+## Ortak Delegate'ler
 
 Tüm modüllerde aşağıdaki delegate'ler ortaktır. Modüle özgü delegate'ler ilgili modül sayfasında ele alınmıştır.
 

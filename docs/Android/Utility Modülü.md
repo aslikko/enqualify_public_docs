@@ -16,8 +16,7 @@ Utility modülü, doğrudan OCR, NFC, Face veya VideoCall ile ilgili olmayan anc
 
 ---
 
-Projeye Eklenmesi
------------------
+## Projeye Eklenmesi
 
 ### 1. `libs.versions.toml` dosyasına ekleyin:
 
@@ -42,8 +41,7 @@ wide760implementation(libs.enqualify.plus.utility)
 
 ---
 
-İmplementasyon
---------------
+## İmplementasyon
 
 ### 1. Activity Layout — FrameLayout
 
@@ -125,8 +123,7 @@ Initialize tamamlandığında `baseModelCompleted` tetiklenir ve tüm Utility fo
 
 ---
 
-Genel Yanıt Modeli — DataModel
-------------------------------
+## Genel Yanıt Modeli — DataModel
 
 Tüm Utility fonksiyonları sonuçlarını `DataModel<T>` üzerinden döndürür:
 
@@ -140,8 +137,7 @@ val errorMessage: String? = null
 
 ---
 
-Çağrı Tipi Listeleme
---------------------
+## Çağrı Tipi Listeleme
 
 Mevcut ortamdaki aktif çağrı tiplerini listeler. Dönen `code` değeri `SessionModel.callType` alanına set edilebilir.
 
@@ -161,8 +157,7 @@ var name: String? = null // Son kullanıcıya gösterilebilecek görünen ad
 
 ---
 
-Randevu Sistemi
----------------
+## Randevu Sistemi
 
 Parçalı başvuru (randevulu görüntülü görüşme) akışında kullanılır. Parçalı başvuru yapılacaksa `SessionModel.isContinue = true` olarak set edilmelidir.
 
@@ -254,8 +249,7 @@ var isPriorityCustomer: Boolean? = null
 
 ---
 
-Döküman Ekleme
---------------
+## Döküman Ekleme
 
 ### 1. Döküman Kategori Tipi Listeleme
 
@@ -303,8 +297,7 @@ documentAddListener = { dataModel: DataModel<Boolean> ->
 
 ---
 
-Döküman İmzalama
-----------------
+## Döküman İmzalama
 
 ### 1. İmza Ayarlama
 
@@ -328,8 +321,7 @@ signingFinishListener = { dataModel: DataModel<Boolean> ->
 
 ---
 
-Barkod Okuma
-------------
+## Barkod Okuma
 
 E-Devlet üzerinden alınan bir belgenin barkodunu okumak için kullanılır:
 
@@ -353,8 +345,7 @@ var expireDate: String? = null
 
 ---
 
-Adres Doğrulama
----------------
+## Adres Doğrulama
 
 E-Devlet üzerinden ikametgah belgesiyle kullanıcının adresini doğrulamak için kullanılır:
 
@@ -368,8 +359,7 @@ addressVerifyListener = { dataModel: DataModel<Boolean> ->
 
 ---
 
-Kurumsal Müşteri Edinimi (KYB)
-------------------------------
+## Kurumsal Müşteri Edinimi (KYB)
 
 ### 1. Müşteri Ekleme
 
@@ -475,8 +465,7 @@ documentAddListener = { dataModel: DataModel<Boolean> ->
 
 ---
 
-Callback Referansı
-------------------
+## Callback Referansı
 
 | Callback | Açıklama |
 | --- | --- |

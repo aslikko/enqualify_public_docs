@@ -4,8 +4,7 @@ EnQualify SDK arayüz bileşenleri, **Backoffice üzerinden tanımlanan parametr
 
 ---
 
-Çalışma Mantığı
----------------
+## Çalışma Mantığı
 
 Backoffice'te tanımlanan UI parametreleri, SDK tarafından `VerifyMobileFlexibleLayoutModel` yapısına parse edilerek arayüz bileşenlerine uygulanır.
 
@@ -20,8 +19,7 @@ SDK arayüz bileşenleri dinamik olarak güncellenir
 
 ---
 
-Özelleştirilebilir Kategoriler
-------------------------------
+## Özelleştirilebilir Kategoriler
 
 ### Font & Renk
 
@@ -74,8 +72,7 @@ Canlılık işlemi sırasında dairesel ilerleme (progress) halkasının görün
 
 ---
 
-Backoffice'te Yapılandırma
---------------------------
+## Backoffice'te Yapılandırma
 
 Yukarıdaki tüm parametreler Backoffice yönetim paneli üzerinden tanımlanır. Yapılandırma adımları için Backoffice yöneticinize veya EnQualify destek ekibine başvurunuz.
 

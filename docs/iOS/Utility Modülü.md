@@ -1,4 +1,4 @@
-# Utility Modülü
+# iOS - Utility Modülü
 
 Utility Modülü, kimlik doğrulama akışlarını destekleyen yardımcı servisleri sunar. Randevu yönetimi, doküman imzalama, adres doğrulama ve kurumsal müşteri doğrulama (KYB) işlemleri bu modül üzerinden gerçekleştirilir.
 
@@ -8,8 +8,7 @@ Utility Modülü diğer modüllerden farklı olarak delegate yerine `@escaping c
 
 ---
 
-Kurulum
--------
+## Kurulum
 
 `Podfile`'a aşağıdaki bağımlılığı ekleyin:
 
@@ -21,8 +20,7 @@ XCFramework olarak eklenecekse: `UtilityModule.xcframework` ve `CoreModule.xcfra
 
 ---
 
-Genel Kullanım Yapısı
----------------------
+## Genel Kullanım Yapısı
 
 Utility Modülü'ndeki tüm servisler aynı çağrı yapısını izler:
 
@@ -43,8 +41,7 @@ case .failure(let error):
 
 ---
 
-Servisler
----------
+## Servisler
 
 ---
 
@@ -329,8 +326,7 @@ print(error.localizedDescription)
 
 ---
 
-Hata Yönetimi
--------------
+## Hata Yönetimi
 
 Tüm Utility servisleri aynı hata yapısını kullanır:
 

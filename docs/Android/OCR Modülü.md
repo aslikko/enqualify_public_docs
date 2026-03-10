@@ -6,8 +6,7 @@ OCR modülü, arka kamera üzerinden alınan görüntülerle kimlik kartı veya 
 
 ---
 
-Projeye Eklenmesi
------------------
+## Projeye Eklenmesi
 
 ### 1. `libs.versions.toml` dosyasına ekleyin:
 
@@ -34,8 +33,7 @@ wide760implementation(libs.enqualify.plus.ocr)
 
 ---
 
-İmplementasyon
---------------
+## İmplementasyon
 
 ### 1. İzinler
 
@@ -162,8 +160,7 @@ Log.i(tag, "${object {}.javaClass.enclosingMethod?.name}")
 
 ---
 
-OCR İşlemleri
--------------
+## OCR İşlemleri
 
 ### Fonksiyonlar
 
@@ -281,8 +278,7 @@ enQualifyOCR.clear()
 
 ---
 
-Hata Yönetimi
--------------
+## Hata Yönetimi
 
 ### FailureCode (Core / Initialize Hataları)
 
@@ -334,8 +330,7 @@ Log.i(tag, "${object {}.javaClass.enclosingMethod?.name}")
 
 ---
 
-Sonuç Verisine Erişim
----------------------
+## Sonuç Verisine Erişim
 
 OCR okuma işlemi tamamlandıktan sonra okunan verilere `CustomerIDDoc` nesnesi üzerinden erişilir:
 
@@ -345,8 +340,7 @@ wide760CustomerIDDoc.getInstance()
 
 ---
 
-Callback Referansı
-------------------
+## Callback Referansı
 
 ### Token / Session / Settings
 

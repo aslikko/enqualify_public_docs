@@ -4,8 +4,7 @@ Bu sayfa, EnQualify Android SDK'yı projenize entegre etmek için gereken tüm �
 
 ---
 
-Minimum Gereksinimler
----------------------
+## Minimum Gereksinimler
 
 ### Desteklenen Android Sürümü
 
@@ -48,8 +47,7 @@ EnQualify SDK bazı modüllerde fiziksel cihaz donanımı gerektirir. Bu nedenle
 
 ---
 
-Maven Erişiminin Sağlanması
----------------------------
+## Maven Erişiminin Sağlanması
 
 EnQualify SDK'ları, Enqura tarafında güvenli bir GitHub Packages reposunda barındırılmaktadır. SDK'lara erişmek için size özel üretilen kullanıcı adı ve şifrenin projenize eklenmesi gerekmektedir.
 
@@ -82,8 +80,7 @@ Repository yapılandırmasından sonra Android Studio'da **"Sync Project with Gr
 
 ---
 
-İzinler
--------
+## İzinler
 
 SDK, çoğu gerekli izni otomatik olarak manifest dosyasına ekler. Ancak aşağıdaki izin **uygulama tarafından manuel olarak alınmalıdır**:
 
@@ -93,8 +90,7 @@ Bu izin, SDK'nın ağ bağlantı tipiyle ilgili detaylı bilgi alabilmesi (2G/3G
 
 ---
 
-Modül Kurulumu
---------------
+## Modül Kurulumu
 
 Her modül bağımsız olarak projeye eklenir ve aynı versiyon numarasını kullanmalıdır. Versiyon numarası size özel olarak Enqura tarafından iletilir.
 
@@ -127,8 +123,7 @@ Her modülün kurulum detayları ilgili modül sayfasında ayrıca belirtilmekte
 
 ---
 
-Sıradaki Adımlar
-----------------
+## Sıradaki Adımlar
 
 Kurulum tamamlandıktan sonra aşağıdaki sırayla ilerleyebilirsiniz:
 

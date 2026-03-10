@@ -1,4 +1,4 @@
-# Face Modülü
+# iOS - Face Modülü
 
 Face Modülü, kullanıcının canlılık kontrolünü (liveness detection) ve kimlik kartındaki fotoğrafla yüz karşılaştırmasını gerçekleştirir. Ayrıca isteğe bağlı olarak akış sırasında video kaydı alınabilir.
 
@@ -6,8 +6,7 @@ Face Modülü'nü kullanmadan önce **Core Modülü** projeye eklenmiş ve yapı
 
 ---
 
-Kurulum
--------
+## Kurulum
 
 `Podfile`'a aşağıdaki bağımlılıkları ekleyin:
 
@@ -20,8 +19,7 @@ XCFramework olarak eklenecekse: `FaceModule.xcframework` ve `CoreModule.xcframew
 
 ---
 
-Hızlı Başlangıç
----------------
+## Hızlı Başlangıç
 
 1. **Info.plist'e kamera izni ekle** → Başlarken → Info.plist İzinleri
 2. `EnQualifyFaceDelegate`**'i sınıfa ekle** ve delegate fonksiyonlarını implement et
@@ -31,8 +29,7 @@ Hızlı Başlangıç
 
 ---
 
-Delegate Implementasyonu
-------------------------
+## Delegate Implementasyonu
 
 ### Sınıfa Ekleme
 
@@ -62,8 +59,7 @@ Token / Session / Settings delegate'lerinin açıklamaları için Core Modülü 
 
 ---
 
-Initialize
-----------
+## Initialize
 
 wide760EnQualifyFace.initialize(
 self,
@@ -81,8 +77,7 @@ baseModel: baseModel // BaseModelFace
 
 ---
 
-Face Akışı
-----------
+## Face Akışı
 
 `initializeCompleted` geldikten sonra canlılık akışı başlatılır:
 
@@ -100,8 +95,7 @@ Veri + video backoffice'e gönderildi
 
 ---
 
-Fonksiyonlar
-------------
+## Fonksiyonlar
 
 ### `livenessStart` — Canlılık Kontrolü
 
@@ -143,8 +137,7 @@ Belirli bir adımda çalınacak sesi dinamik olarak değiştirir veya sessize al
 
 ---
 
-Video Kaydı
------------
+## Video Kaydı
 
 Video kaydı özelliği etkinleştirildiğinde canlılık akışı boyunca ön kamera görüntüsü kaydedilir.
 
@@ -160,8 +153,7 @@ Video kaydı backoffice ayarlarından da zorunlu hale getirilebilir. Bu durumda 
 
 ---
 
-Hata Yönetimi
--------------
+## Hata Yönetimi
 
 wide760func faceCompareFailed(error: EnQualifyFaceError) {
 switch error {

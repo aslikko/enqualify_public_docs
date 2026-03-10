@@ -4,8 +4,7 @@ Core Modülü, diğer tüm modüllerin kullanımı için temel yapı ve işlevse
 
 ---
 
-Projeye Eklenmesi
------------------
+## Projeye Eklenmesi
 
 Maven erişimlerinin sağlandığından emin olduktan sonra aşağıdaki adımları izleyin. (Bkz. Başlarken)
 
@@ -34,8 +33,7 @@ wide760implementation(libs.enqualify.plus.core)
 
 ---
 
-İzinler
--------
+## İzinler
 
 SDK, ağ bağlantı tipiyle ilgili detaylı bilgi alabilmek (2G/3G/4.5G) için aşağıdaki iznin **uygulama tarafından manuel olarak alınması** gerekir:
 
@@ -44,8 +42,7 @@ wide760<uses-permission android:name="android.permission.READ\_PHONE\_STATE" />
 
 ---
 
-Veri Modelleri
---------------
+## Veri Modelleri
 
 ### BaseModel
 
@@ -344,8 +341,7 @@ val data: String
 
 ---
 
-Proguard Kuralları
-------------------
+## Proguard Kuralları
 
 Release paketlerinde (`minifyEnabled = true`, `debuggable = false`) Core SDK'nın doğru çalışabilmesi için `proguard-rules.pro` dosyasına aşağıdaki kuralları ekleyin:
 
@@ -359,8 +355,7 @@ wide760-keep interface com.enqualify.plus.core.CoreCallbacks { \*; }
 
 ---
 
-Sıradaki Adımlar
-----------------
+## Sıradaki Adımlar
 
 Core Modülü kurulumunu tamamladıktan sonra ihtiyacınıza göre aşağıdaki modüllere geçebilirsiniz:
 

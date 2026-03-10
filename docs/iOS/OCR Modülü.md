@@ -6,8 +6,7 @@ OCR Modülü'nü kullanmadan önce **Core Modülü** projeye eklenmiş ve yapıl
 
 ---
 
-Kurulum
--------
+## Kurulum
 
 `Podfile`'a aşağıdaki bağımlılıkları ekleyin:
 
@@ -23,8 +22,7 @@ XCFramework olarak eklenecekse: `OCRModule.xcframework` ve `CoreModule.xcframewo
 
 ---
 
-Hızlı Başlangıç
----------------
+## Hızlı Başlangıç
 
 OCR Modülü'nü projeye entegre etmek için şu adımları izleyin:
 
@@ -36,8 +34,7 @@ OCR Modülü'nü projeye entegre etmek için şu adımları izleyin:
 
 ---
 
-Delegate Implementasyonu
-------------------------
+## Delegate Implementasyonu
 
 ### Sınıfa Ekleme
 
@@ -76,8 +73,7 @@ Token / Session / Settings delegate'lerinin açıklamaları için Core Modülü 
 
 ---
 
-Initialize
-----------
+## Initialize
 
 swift
 
@@ -97,8 +93,7 @@ baseModel: baseModel // BaseModelOCR
 
 ---
 
-OCR Akışı
----------
+## OCR Akışı
 
 `initializeCompleted` geldikten sonra kimlik okuma adımları sırasıyla çağrılır. Tipik bir akış aşağıdaki gibidir:
 
@@ -120,8 +115,7 @@ idDocComplete() → idDocCompleted() ← veri backoffice'e gönderildi
 
 ---
 
-Fonksiyonlar
-------------
+## Fonksiyonlar
 
 ### `idDocTypeCheckStart` — Kimlik Tipi Tanıma
 
@@ -236,8 +230,7 @@ wide760replaceSound(currentVoice: ["fail\_ocr\_voice"], newVoice: "go\_to\_video
 
 ---
 
-Hata Yönetimi
--------------
+## Hata Yönetimi
 
 swift
 
@@ -263,8 +256,7 @@ case .cameraSetup(let message):
 
 ---
 
-Okunan Verilere Erişim
-----------------------
+## Okunan Verilere Erişim
 
 OCR akışı tamamlandıktan sonra `CustomerIdentity.shared` üzerinden okunan verilere erişilebilir.
 

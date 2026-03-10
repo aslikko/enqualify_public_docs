@@ -6,8 +6,7 @@ Face modülü, ön kamera üzerinden alınan görüntülerle kişinin gerçek bi
 
 ---
 
-Projeye Eklenmesi
------------------
+## Projeye Eklenmesi
 
 ### 1. `libs.versions.toml` dosyasına ekleyin:
 
@@ -32,8 +31,7 @@ wide760implementation(libs.enqualify.plus.face)
 
 ---
 
-İmplementasyon
---------------
+## İmplementasyon
 
 ### 1. İzinler
 
@@ -143,8 +141,7 @@ stepCount = 3
 
 ---
 
-Face İşlemleri
---------------
+## Face İşlemleri
 
 ### Fonksiyonlar
 
@@ -243,8 +240,7 @@ enQualifyFace.clear()
 
 ---
 
-Hata Kodları
-------------
+## Hata Kodları
 
 ### FaceFailureCode
 
@@ -273,8 +269,7 @@ Log.i(tag, "${object {}.javaClass.enclosingMethod?.name}")
 
 ---
 
-Sonuç Verisine Erişim
----------------------
+## Sonuç Verisine Erişim
 
 Face işlemi tamamlandıktan sonra elde edilen verilere `CustomerFace` nesnesi üzerinden erişilir:
 
@@ -284,8 +279,7 @@ wide760CustomerFace.getInstance()
 
 ---
 
-Callback Referansı
-------------------
+## Callback Referansı
 
 ### Token / Session / Settings
 

@@ -8,8 +8,7 @@ Görüşme sırasında temsilcinin OCR veya Face adımlarını tekrarlatması is
 
 ---
 
-Kurulum
--------
+## Kurulum
 
 `Podfile`'a aşağıdaki bağımlılıkları ekleyin:
 
@@ -22,8 +21,7 @@ XCFramework olarak eklenecekse: `VideoCallModule.xcframework` ve `CoreModule.xcf
 
 ---
 
-Hızlı Başlangıç
----------------
+## Hızlı Başlangıç
 
 1. **Info.plist'e kamera ve mikrofon izni ekle** → Başlarken → Info.plist İzinleri
 2. **PiP kullanılacaksa capability'leri ekle** → Başlarken → Picture in Picture
@@ -34,8 +32,7 @@ Hızlı Başlangıç
 
 ---
 
-Delegate Implementasyonu
-------------------------
+## Delegate Implementasyonu
 
 ### Sınıfa Ekleme
 
@@ -73,8 +70,7 @@ Token / Session / Settings delegate'lerinin açıklamaları için Core Modülü 
 
 ---
 
-Initialize
-----------
+## Initialize
 
 wide760EnQualifyVideoCall.initialize(
 self,
@@ -100,8 +96,7 @@ EnQualifyVideoCall.startVideoCall(in: self)
 
 ---
 
-VideoCall Akışı
----------------
+## VideoCall Akışı
 
 wide760initialize()
 │
@@ -132,8 +127,7 @@ sessionClose()
 
 ---
 
-Fonksiyonlar
-------------
+## Fonksiyonlar
 
 ### `startVideoCall` — Görüşmeyi Başlatma
 
@@ -182,8 +176,7 @@ Session kapatıldıktan sonra modül tekrar kullanılacaksa `initialize()` yenid
 
 ---
 
-Picture in Picture (PiP)
-------------------------
+## Picture in Picture (PiP)
 
 PiP modu, görüşme sırasında kullanıcı uygulamayı arka plana aldığında ya da başka bir ekrana geçtiğinde görüşme penceresini küçük bir kayan panel olarak sürdürür.
 
@@ -205,8 +198,7 @@ func pipStopped() {
 
 ---
 
-Hata Yönetimi
--------------
+## Hata Yönetimi
 
 wide760func videoCallFailed(error: EnQualifyVideoCallError) {
 switch error {
@@ -230,8 +222,7 @@ case .microphoneSetup(let message):
 
 ---
 
-`videoCallFinished` — Kapanış Durumu
-------------------------------------
+## `videoCallFinished` — Kapanış Durumu
 
 Görüşme tamamlandığında `videoCallFinished(status: String)` tetiklenir. `status` parametresi görüşmenin nasıl sonuçlandığını taşır.
 

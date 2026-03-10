@@ -6,8 +6,7 @@ NFC modülü, kimlik kartları veya pasaportlar üzerindeki çip verilerini okum
 
 ---
 
-Gerekli Veriler
----------------
+## Gerekli Veriler
 
 Çip verilerinin başarıyla okunabilmesi için aşağıdaki bilgilerin sağlanması zorunludur:
 
@@ -21,8 +20,7 @@ Bu bilgiler sağlanmadan NFC okuma işlemi başarısız olur.
 
 ---
 
-Projeye Eklenmesi
------------------
+## Projeye Eklenmesi
 
 ### 1. `libs.versions.toml` dosyasına ekleyin:
 
@@ -47,8 +45,7 @@ wide760implementation(libs.enqualify.plus.nfc)
 
 ---
 
-İmplementasyon
---------------
+## İmplementasyon
 
 ### 1. `onNewIntent` Fonksiyonunun Override Edilmesi
 
@@ -188,8 +185,7 @@ Tüm adımlar tamamlandığında `initializeCompleted` tetiklenir ve NFC işleml
 
 ---
 
-NFC İşlemleri
--------------
+## NFC İşlemleri
 
 ### Fonksiyonlar
 
@@ -299,8 +295,7 @@ enQualifyNFC.clear()
 
 ---
 
-EnNFCBaseFragment
------------------
+## EnNFCBaseFragment
 
 `EnNFCBaseFragment`, NFC okuma işlemini gerçekleştiren özel fragment'in türetileceği temel sınıftır. Okuma aşamalarını yönetmek, ilerleme göstergelerini güncellemek ve hata mesajlarını işlemek için gerekli fonksiyonları içerir.
 
@@ -320,8 +315,7 @@ EnNFCBaseFragment
 
 ---
 
-Hata Kodları
-------------
+## Hata Kodları
 
 ### NFCFailureCode
 
@@ -356,8 +350,7 @@ HashMatchError("")
 
 ---
 
-Proguard Kuralları
-------------------
+## Proguard Kuralları
 
 Release paketlerinde NFC SDK'nın doğru çalışabilmesi için `proguard-rules.pro` dosyasına aşağıdaki kuralları ekleyin:
 
@@ -378,8 +371,7 @@ wide760-keep class net.sf.scuba.smartcards.\*\* { \*; }
 
 ---
 
-Sonuç Verisine Erişim
----------------------
+## Sonuç Verisine Erişim
 
 NFC okuma işlemi tamamlandıktan sonra okunan verilere `CustomerChip` nesnesi üzerinden erişilir:
 
@@ -389,8 +381,7 @@ wide760CustomerChip.getInstance()
 
 ---
 
-Callback Referansı
-------------------
+## Callback Referansı
 
 ### Token / Session / Settings
 
