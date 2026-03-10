@@ -190,13 +190,13 @@ body,
 }
 
 .md-typeset {
-  font-size: 0.875rem;   /* 14px — eski 15.2px'di */
+  font-size: 0.8125rem;  /* 13px */
   line-height: 1.7;
   color: #1A2640;
 }
 
 .md-typeset h1 {
-  font-size: 1.75rem;    /* eski 2.1rem */
+  font-size: 1.5rem;
   font-weight: 800;
   letter-spacing: -0.025em;
   line-height: 1.25;
@@ -216,7 +216,7 @@ body,
 }
 
 .md-typeset h2 {
-  font-size: 1.25rem;    /* eski 1.45rem */
+  font-size: 1.1rem;
   font-weight: 700;
   letter-spacing: -0.015em;
   color: var(--eq-navy);
@@ -226,7 +226,7 @@ body,
 }
 
 .md-typeset h3 {
-  font-size: 1rem;
+  font-size: 0.925rem;
   font-weight: 700;
   color: var(--eq-navy);
   margin-top: 1.25rem;
@@ -321,24 +321,60 @@ body,
   font-size: 0.875rem;
 }
 
-/* Admonition içindeki tüm textler okunabilir olsun */
+/* Tüm admonition kutular — beyaz arka plan, renkli sol border */
+.md-typeset .admonition,
+.md-typeset details {
+  background: #FFFFFF !important;
+  color: #1A2640 !important;
+  border: 1px solid var(--eq-border) !important;
+  border-left-width: 4px !important;
+}
+
 .md-typeset .admonition p,
 .md-typeset .admonition li,
-.md-typeset .admonition td,
+.md-typeset .admonition a,
 .md-typeset details p {
-  color: inherit;
+  color: #1A2640 !important;
 }
 
-/* Warning/caution tipi kutular — sarı arka planda koyu text */
-.md-typeset .warning > .admonition-title,
-.md-typeset .caution > .admonition-title {
-  color: #7A4F00;
-}
-
+/* Warning — sarı sol border */
 .md-typeset .warning,
 .md-typeset .caution {
-  background: #FFFBEB;
-  color: #1A2640;
+  border-left-color: #F59E0B !important;
+}
+.md-typeset .warning > .admonition-title,
+.md-typeset .caution > .admonition-title {
+  background: #FFFBEB !important;
+  color: #92400E !important;
+}
+
+/* Note — mavi sol border */
+.md-typeset .note {
+  border-left-color: var(--eq-blue) !important;
+}
+.md-typeset .note > .admonition-title {
+  background: var(--eq-blue-light) !important;
+  color: var(--eq-navy) !important;
+}
+
+/* Tip — yeşil sol border */
+.md-typeset .tip {
+  border-left-color: #10B981 !important;
+}
+.md-typeset .tip > .admonition-title {
+  background: #ECFDF5 !important;
+  color: #065F46 !important;
+}
+
+/* Danger/Error — kırmızı sol border */
+.md-typeset .danger,
+.md-typeset .error {
+  border-left-color: #EF4444 !important;
+}
+.md-typeset .danger > .admonition-title,
+.md-typeset .error > .admonition-title {
+  background: #FEF2F2 !important;
+  color: #991B1B !important;
 }
 .md-typeset .admonition-title,
 .md-typeset summary {
