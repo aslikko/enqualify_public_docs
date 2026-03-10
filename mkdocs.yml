@@ -59,6 +59,9 @@ edit_uri: ""
 extra_css:
   - assets/custom.css
 
+extra_javascript:
+  - assets/custom.js
+
 extra:
   social:
     - icon: fontawesome/brands/linkedin
