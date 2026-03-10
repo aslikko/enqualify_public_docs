@@ -1,19 +1,99 @@
 site_name: Enqualify Ürün Dokümantasyonu
 site_url: https://enquratechnology.github.io/enqualify_public_docs/
+site_description: Enqualify ürünleri için resmi kullanıcı dokümantasyonu
+site_author: Enqura Technology
+
 use_directory_urls: false
 
 theme:
   name: material
+  logo: assets/logo.png          # Logo dosyasını docs/assets/ klasörüne koy
+  favicon: assets/logo.png
+  language: tr
+
   palette:
-    primary: indigo
-    accent: indigo
+    # Aydınlık mod (varsayılan)
+    - scheme: default
+      primary: custom
+      accent: custom
+      toggle:
+        icon: material/brightness-7
+        name: Karanlık moda geç
+    # Karanlık mod
+    - scheme: slate
+      primary: custom
+      accent: custom
+      toggle:
+        icon: material/brightness-4
+        name: Aydınlık moda geç
+
+  font:
+    text: Inter
+    code: JetBrains Mono
 
   features:
-    - navigation.tabs
-    - navigation.sections
-    - navigation.expand
-    - search.suggest
-    - search.highlight
+    - navigation.tabs               # Üst sekme menüsü
+    - navigation.tabs.sticky        # Sekmeler kaydırmada sabit kalır
+    - navigation.sections           # Bölüm başlıkları sidebar'da görünür
+    - navigation.expand             # Sidebar otomatik açılır
+    - navigation.top                # "Başa dön" butonu
+    - navigation.footer             # Alt kısımda önceki/sonraki sayfa
+    - navigation.indexes            # Klasör index sayfaları
+    - toc.follow                    # İçindekiler tablosu scroll ile takip eder
+    - search.suggest                # Arama önerileri
+    - search.highlight              # Sonuçta kelimeyi vurgular
+    - search.share                  # Arama linkini paylaşma
+    - content.code.copy             # Kod bloklarına "Kopyala" butonu
+    - content.code.annotate         # Kod bloklarına açıklama ekleme
+
+extra_css:
+  - assets/custom.css
+
+extra:
+  social:
+    - icon: fontawesome/brands/linkedin
+      link: https://www.linkedin.com/company/enqura
+    - icon: fontawesome/solid/globe
+      link: https://enqualify.com
+  generator: false   # "Made with MkDocs" yazısını gizler
 
 plugins:
-  - search
+  - search:
+      lang: tr
+  - minify:
+      minify_html: true
+
+markdown_extensions:
+  # Kod blokları için syntax highlighting
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.superfences
+  - pymdownx.snippets
+  # Güzel uyarı kutuları (Note, Warning, Tip vb.)
+  - admonition
+  - pymdownx.details
+  # Tablolar
+  - tables
+  # Görev listeleri
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  # Sekmeli içerik
+  - pymdownx.tabbed:
+      alternate_style: true
+  # Emoji desteği
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  # İçindekiler tablosu
+  - toc:
+      permalink: true
+      title: İçindekiler
+  # Metin biçimlendirme
+  - pymdownx.mark
+  - pymdownx.caret
+  - pymdownx.keys
+  - attr_list
+  - md_in_html
