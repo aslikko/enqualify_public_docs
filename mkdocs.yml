@@ -1,19 +1,128 @@
-site_name: Enqualify Ürün Dokümantasyonu
-site_url: https://enquratechnology.github.io/enqualify_public_docs/
+site_name: EnQualify Docs
+site_url: https://aslikko.github.io/enqualify_public_docs/
+site_description: EnQualify ürünleri için resmi kullanıcı ve geliştirici dokümantasyonu
+site_author: Enqura Technology
+
 use_directory_urls: false
 
 theme:
   name: material
+  logo: assets/logo.svg
+  favicon: assets/logo.svg
+  language: tr
+
   palette:
-    primary: indigo
-    accent: indigo
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: custom
+      accent: custom
+      toggle:
+        icon: material/weather-night
+        name: Karanlık moda geç
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: custom
+      accent: custom
+      toggle:
+        icon: material/weather-sunny
+        name: Aydınlık moda geç
+
+  font:
+    text: Plus Jakarta Sans
+    code: JetBrains Mono
+
+  icon:
+    repo: fontawesome/brands/github
 
   features:
+    - navigation.instant
+    - navigation.instant.progress
     - navigation.tabs
+    - navigation.tabs.sticky
     - navigation.sections
     - navigation.expand
+    - navigation.top
+    - navigation.footer
+    - navigation.indexes
+    - toc.follow
     - search.suggest
     - search.highlight
+    - search.share
+    - content.code.copy
+    - content.code.annotate
+    - content.code.select
+    - content.tooltips
+    - content.tabs.link
+
+repo_url: https://github.com/aslikko/enqualify_public_docs
+repo_name: aslikko/enqualify_public_docs
+edit_uri: ""
+
+extra_css:
+  - assets/custom.css
+
+extra:
+  social:
+    - icon: fontawesome/brands/linkedin
+      link: https://www.linkedin.com/company/enqura
+      name: LinkedIn
+    - icon: fontawesome/solid/globe
+      link: https://enqualify.com
+      name: enqualify.com
+  generator: false
+
+copyright: "© 2025 Enqura Technology. Tüm hakları saklıdır."
 
 plugins:
-  - search
+  - search:
+      lang:
+        - tr
+        - en
+      separator: '[\s\-\.]+'
+  - minify:
+      minify_html: true
+      minify_js: true
+      minify_css: true
+      htmlmin_opts:
+        remove_comments: true
+
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+      auto_title: true
+  - pymdownx.inlinehilite
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.snippets
+  - admonition
+  - pymdownx.details
+  - pymdownx.tabbed:
+      alternate_style: true
+      combine_header_slug: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - def_list
+  - pymdownx.mark
+  - pymdownx.caret
+  - pymdownx.tilde
+  - pymdownx.keys
+  - pymdownx.smartsymbols
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - toc:
+      permalink: "¶"
+      permalink_title: Bu başlığa bağlantı kopyala
+      title: İçindekiler
+      toc_depth: 3
+  - tables
+  - footnotes
+  - abbr
+  - attr_list
+  - md_in_html
+  - meta
