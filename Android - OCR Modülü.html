@@ -2427,6 +2427,7 @@ override fun initializeFailed(failureCode: FailureCode, additionalMessage: Strin
 Log.i(tag, "${object {}.javaClass.enclosingMethod?.name}")
 }
 }</p>
+<p>IDDocFailed() callbacki üzerinden yakalanacak LuminosityFailed hatası iş kesici bir hata değildir.Sadece parlaklığın uygun olmadığını belirtir.Bu hata geldiğinde akış kesilmemelidir.İstenirse eğer parlaklık ile alakalı bir uyarı gösterilebilir.</p>
 <h3 id="4-enqualifyocrn-initialize-edilmesi">4. EnQualifyOCR'ın Initialize Edilmesi</h3>
 <p>OCR işlemlerine başlamadan önce <code>EnQualifyOCR.initialize()</code> çağrılmalıdır. Initialize edilmeden başka bir işlem yapılmaya çalışılırsa SDK çalışmaz.</p>
 <p>wide760val sessionModel = SessionModel(
@@ -2530,7 +2531,7 @@ Log.i(tag, "${object {}.javaClass.enclosingMethod?.name}")
 </tr>
 <tr>
 <td><code>iDDocTypeCheckStart(isFront: Boolean = true)</code></td>
-<td>Kimlik tipi tanıma işlemini başlatır</td>
+<td>Kimlik tipi tanıma işlemini başlatır.İçine aldığı parametre ile hangi yüz tanınması gerektiği belirtilir.</td>
 </tr>
 <tr>
 <td><code>hologramCheckStart()</code></td>
@@ -2538,11 +2539,11 @@ Log.i(tag, "${object {}.javaClass.enclosingMethod?.name}")
 </tr>
 <tr>
 <td><code>iDDocFrontStart(withVisualAnalysis: Boolean = false)</code></td>
-<td>Kimlik ön yüzü taramasını başlatır</td>
+<td>Kimlik ön yüzü taramasını başlatır.Parametre true olarak setlenirse görsel ögelerin analizi de yapılır.</td>
 </tr>
 <tr>
 <td><code>iDDocBackStart(withVisualAnalysis: Boolean = false)</code></td>
-<td>Kimlik arka yüzü taramasını başlatır</td>
+<td>Kimlik arka yüzü taramasını başlatır.Parametre true olarak setlenirse görsel ögelerin analizi de yapılır.</td>
 </tr>
 <tr>
 <td><code>iDDocComplete()</code></td>
@@ -2565,7 +2566,7 @@ Log.i(tag, "${object {}.javaClass.enclosingMethod?.name}")
 <hr />
 <h3 id="kimlik-tipi-tanma">Kimlik Tipi Tanıma</h3>
 <p>wide760enQualifyOCR.iDDocTypeCheckStart(isFront = true)</p>
-<p>İşlem tamamlandığında <code>IDDocTypeCheckVerified</code> tetiklenir. <code>isFront</code> parametresi, sürecin <code>iDDocFrontStart</code> mı yoksa <code>iDDocBackStart</code> mı ile devam edeceğini belirler:</p>
+<p>İşlem tamamlandığında <code>IDDocTypeCheckVerified</code> tetiklenir. <code>isFront</code> parametresi, kimliğin hangi yüzünün tanımlanacağını belirtir.</p>
 <p>wide760override fun IDDocTypeCheckVerified(isFront: Boolean) {
 Log.i(tag, "${object {}.javaClass.enclosingMethod?.name}")
 }</p>
