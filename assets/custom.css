@@ -36,6 +36,13 @@
   --md-code-font: 'JetBrains Mono', monospace;
 }
 
+/* ── OS dark mode zorlamasını yoksay, light mode varsayılan ── */
+body:not([data-md-color-scheme="slate"]) {
+  --md-default-bg-color: #FFFFFF !important;
+  --md-default-fg-color: #0F1B35 !important;
+  background-color: #FFFFFF !important;
+}
+
 /* ── Karanlık Mod ─────────────────────────────────────────────── */
 [data-md-color-scheme="slate"] {
   --eq-text:      #E2E8F0;
