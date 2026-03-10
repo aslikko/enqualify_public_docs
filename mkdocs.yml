@@ -1,5 +1,5 @@
 site_name: EnQualify Docs
-site_url: https://aslikko.github.io/enqualify_public_docs/
+site_url: https://enquratechnology.github.io/enqualify_public_docs/
 site_description: EnQualify ürünleri için resmi kullanıcı ve geliştirici dokümantasyonu
 site_author: Enqura Technology
 
@@ -7,20 +7,18 @@ use_directory_urls: false
 
 theme:
   name: material
-  logo: assets/logo.svg
-  favicon: assets/logo.svg
+  logo: assets/logo.png
+  favicon: assets/favicon.png
   language: tr
 
   palette:
-    - media: "(prefers-color-scheme: light)"
-      scheme: default
+    - scheme: default
       primary: custom
       accent: custom
       toggle:
         icon: material/weather-night
         name: Karanlık moda geç
-    - media: "(prefers-color-scheme: dark)"
-      scheme: slate
+    - scheme: slate
       primary: custom
       accent: custom
       toggle:
@@ -54,8 +52,8 @@ theme:
     - content.tooltips
     - content.tabs.link
 
-repo_url: https://github.com/aslikko/enqualify_public_docs
-repo_name: aslikko/enqualify_public_docs
+repo_url: https://github.com/EnquraTechnology/enqualify_public_docs
+repo_name: EnquraTechnology/enqualify_public_docs
 edit_uri: ""
 
 extra_css:
