@@ -8,13 +8,13 @@
       
       
       
-        <link rel="canonical" href="https://enquratechnology.github.io/enqualify_public_docs/iOS%20-%20UI%20%C3%96zelle%C5%9Ftirme.html">
+        <link rel="canonical" href="https://enquratechnology.github.io/enqualify_public_docs/Android%20SDK%3A%20%C4%B0mplementasyon%20Rehberi.html">
       
       
-        <link rel="prev" href="iOS%20-%20OCR%20Mod%C3%BCl%C3%BC.html">
+        <link rel="prev" href="Android%20-%20VideoCall%20Mod%C3%BCl%C3%BC.html">
       
       
-        <link rel="next" href="iOS%20-%20Utility%20Mod%C3%BCl%C3%BC.html">
+        <link rel="next" href="Ba%C5%9Flarken.html">
       
       
         
@@ -25,7 +25,7 @@
     
     
       
-        <title>iOS - UI Özelleştirme - Enqualify Ürün Dokümantasyonu</title>
+        <title>Android SDK: İmplementasyon Rehberi - Enqualify Ürün Dokümantasyonu</title>
       
     
     
@@ -74,7 +74,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#ios-ui-ozellestirme" class="md-skip">
+        <a href="#android-sdk-implementasyon-rehberi" class="md-skip">
           Skip to content
         </a>
       
@@ -108,7 +108,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              iOS - UI Özelleştirme
+              Android SDK: İmplementasyon Rehberi
             
           </span>
         </div>
@@ -352,8 +352,10 @@
   
   
   
+    
   
-    <li class="md-tabs__item">
+  
+    <li class="md-tabs__item md-tabs__item--active">
       <a href="Android%20SDK%3A%20%C4%B0mplementasyon%20Rehberi.html" class="md-tabs__link">
         
   
@@ -637,10 +639,8 @@
   
   
   
-    
   
-  
-    <li class="md-tabs__item md-tabs__item--active">
+    <li class="md-tabs__item">
       <a href="iOS%20-%20UI%20%C3%96zelle%C5%9Ftirme.html" class="md-tabs__link">
         
   
@@ -1029,10 +1029,37 @@
       
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="Android%20SDK%3A%20%C4%B0mplementasyon%20Rehberi.html" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Android SDK: İmplementasyon Rehberi
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="Android%20SDK%3A%20%C4%B0mplementasyon%20Rehberi.html" class="md-nav__link md-nav__link--active">
         
   
   
@@ -1048,6 +1075,181 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#bu-dokumanda-neler-var" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Bu Dokümanda Neler Var?
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sdkya-genel-baks" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        SDK'ya Genel Bakış
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="SDK&#39;ya Genel Bakış">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#moduler-yap" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Modüler Yapı
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#hangi-module-ihtiyacnz-var" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Hangi Modüle İhtiyacınız Var?
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#minimum-gereksinimler" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Minimum Gereksinimler
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#kurulum" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Kurulum
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#temel-kavramlar" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Temel Kavramlar
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Temel Kavramlar">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#initialization-lifecycle" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Initialization Lifecycle
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#callback-yaps" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Callback Yapısı
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fragment-framelayout" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fragment &amp; FrameLayout
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ssl-guvenligi" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        SSL Güvenliği
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#singleton-yap" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Singleton Yapı
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#hzl-baslangc-admlar" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Hızlı Başlangıç Adımları
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -1434,37 +1636,10 @@
       
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    iOS - UI Özelleştirme
-  
-
-    
-  </span>
-  
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="iOS%20-%20UI%20%C3%96zelle%C5%9Ftirme.html" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="iOS%20-%20UI%20%C3%96zelle%C5%9Ftirme.html" class="md-nav__link">
         
   
   
@@ -1480,131 +1655,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#ozellestirilebilir-alanlar" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Özelleştirilebilir Alanlar
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Özelleştirilebilir Alanlar">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#renkler" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Renkler
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#tipografi" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Tipografi
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#butonlar-ve-sekiller" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Butonlar ve Şekiller
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#ikonlar-ve-gorseller" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        İkonlar ve Görseller
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#metinler-ve-ceviri" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Metinler ve Çeviri
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#ekran-bazl-ozellestirme" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Ekran Bazlı Özelleştirme
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#sesli-yonlendirme-ozellestirme" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Sesli Yönlendirme Özelleştirme
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#ozellestirme-oncelik-sras" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Özelleştirme Öncelik Sırası
-      
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -1771,22 +1821,33 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#ozellestirilebilir-alanlar" class="md-nav__link">
+  <a href="#bu-dokumanda-neler-var" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Özelleştirilebilir Alanlar
+        Bu Dokümanda Neler Var?
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Özelleştirilebilir Alanlar">
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sdkya-genel-baks" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        SDK'ya Genel Bakış
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="SDK&#39;ya Genel Bakış">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#renkler" class="md-nav__link">
+  <a href="#moduler-yap" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Renkler
+        Modüler Yapı
       
     </span>
   </a>
@@ -1794,43 +1855,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#tipografi" class="md-nav__link">
+  <a href="#hangi-module-ihtiyacnz-var" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Tipografi
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#butonlar-ve-sekiller" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Butonlar ve Şekiller
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#ikonlar-ve-gorseller" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        İkonlar ve Görseller
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#metinler-ve-ceviri" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Metinler ve Çeviri
+        Hangi Modüle İhtiyacınız Var?
       
     </span>
   </a>
@@ -1843,10 +1871,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#ekran-bazl-ozellestirme" class="md-nav__link">
+  <a href="#minimum-gereksinimler" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Ekran Bazlı Özelleştirme
+        Minimum Gereksinimler
       
     </span>
   </a>
@@ -1854,10 +1882,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#sesli-yonlendirme-ozellestirme" class="md-nav__link">
+  <a href="#kurulum" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Sesli Yönlendirme Özelleştirme
+        Kurulum
       
     </span>
   </a>
@@ -1865,10 +1893,82 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#ozellestirme-oncelik-sras" class="md-nav__link">
+  <a href="#temel-kavramlar" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Özelleştirme Öncelik Sırası
+        Temel Kavramlar
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Temel Kavramlar">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#initialization-lifecycle" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Initialization Lifecycle
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#callback-yaps" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Callback Yapısı
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fragment-framelayout" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fragment &amp; FrameLayout
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ssl-guvenligi" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        SSL Güvenliği
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#singleton-yap" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Singleton Yapı
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#hzl-baslangc-admlar" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Hızlı Başlangıç Adımları
       
     </span>
   </a>
@@ -1892,218 +1992,156 @@
 
 
 
-<h1 id="ios-ui-ozellestirme">iOS - UI Özelleştirme</h1>
-<p>EnQualify SDK arayüzü Backoffice üzerinden dinamik olarak özelleştirilebilir. Renk, font, ikon ve metin gibi görsel parametreler kod değişikliği gerektirmeden Backoffice panelinden yönetilir; SDK her başlatıldığında güncel ayarları otomatik olarak çeker.</p>
-<p>UI özelleştirme parametreleri <code>settingGetCompleted</code> adımında SDK tarafından otomatik alınır. Herhangi bir kod entegrasyonu gerekmez.</p>
+<h1 id="android-sdk-implementasyon-rehberi">Android SDK: İmplementasyon Rehberi</h1>
+<p>EnQualify Android SDK, mobil uygulamanıza uzaktan kimlik doğrulama yetenekleri kazandırır. OCR, NFC, yüz tanıma ve görüntülü görüşme modüllerinden oluşan bu SDK; self-servis, hibrit ve tam temsilci destekli akışları destekler.</p>
 <hr />
-<h2 id="ozellestirilebilir-alanlar">Özelleştirilebilir Alanlar</h2>
-<h3 id="renkler">Renkler</h3>
+<h2 id="bu-dokumanda-neler-var">Bu Dokümanda Neler Var?</h2>
 <table>
 <thead>
 <tr>
-<th>Parametre</th>
-<th>Açıklama</th>
-<th>Örnek</th>
+<th>Bölüm</th>
+<th>Ne Bulursunuz?</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><code>primaryColor</code></td>
-<td>Ana renk — butonlar, vurgular, progress bar</td>
-<td><code>#1A56DB</code></td>
+<td>Başlarken</td>
+<td>Gereksinimler, Maven kurulumu, proje konfigürasyonu</td>
 </tr>
 <tr>
-<td><code>secondaryColor</code></td>
-<td>İkincil renk — başlıklar, ikonlar</td>
-<td><code>#0E3F9E</code></td>
+<td>Core Modülü</td>
+<td>BaseModel, SessionModel, SSL sertifikası, ses dosyaları yönetimi</td>
 </tr>
 <tr>
-<td><code>backgroundColor</code></td>
-<td>Ekran arka plan rengi</td>
-<td><code>#FFFFFF</code></td>
+<td>OCR Modülü</td>
+<td>Kimlik kartı ve pasaport okuma</td>
 </tr>
 <tr>
-<td><code>textColor</code></td>
-<td>Genel metin rengi</td>
-<td><code>#111928</code></td>
+<td>NFC Modülü</td>
+<td>Temassız çip okuma (RFID)</td>
 </tr>
 <tr>
-<td><code>errorColor</code></td>
-<td>Hata durumu rengi</td>
-<td><code>#E02424</code></td>
+<td>Face Modülü</td>
+<td>Canlılık kontrolü ve yüz karşılaştırma</td>
 </tr>
 <tr>
-<td><code>successColor</code></td>
-<td>Başarı durumu rengi</td>
-<td><code>#057A55</code></td>
+<td>VideoCall Modülü</td>
+<td>Müşteri-temsilci görüntülü görüşme</td>
 </tr>
 <tr>
-<td><code>overlayColor</code></td>
-<td>Kamera overlay rengi ve opaklığı</td>
-<td><code>#000000</code> + <code>%60</code></td>
-</tr>
-</tbody>
-</table>
-<h3 id="tipografi">Tipografi</h3>
-<table>
-<thead>
-<tr>
-<th>Parametre</th>
-<th>Açıklama</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>fontFamily</code></td>
-<td>Tüm SDK ekranlarında kullanılacak font ailesi</td>
+<td>Utility Modülü</td>
+<td>Randevu, doküman imzalama, adres doğrulama, KYB</td>
 </tr>
 <tr>
-<td><code>titleFontSize</code></td>
-<td>Başlık font boyutu</td>
-</tr>
-<tr>
-<td><code>bodyFontSize</code></td>
-<td>Gövde metin font boyutu</td>
-</tr>
-<tr>
-<td><code>buttonFontSize</code></td>
-<td>Buton metin font boyutu</td>
-</tr>
-</tbody>
-</table>
-<p>Özel font kullanılacaksa ilgili font dosyalarının uygulamaya eklenmiş ve <code>Info.plist</code>'te tanımlanmış olması gerekir. Aksi halde SDK sistem fontuna geri döner.</p>
-<h3 id="butonlar-ve-sekiller">Butonlar ve Şekiller</h3>
-<table>
-<thead>
-<tr>
-<th>Parametre</th>
-<th>Açıklama</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>buttonCornerRadius</code></td>
-<td>Buton köşe yuvarlaklığı (pt)</td>
-</tr>
-<tr>
-<td><code>buttonBorderWidth</code></td>
-<td>Buton kenarlık kalınlığı (pt)</td>
-</tr>
-<tr>
-<td><code>buttonBorderColor</code></td>
-<td>Buton kenarlık rengi</td>
-</tr>
-<tr>
-<td><code>cardCornerRadius</code></td>
-<td>Kart bileşenlerinin köşe yuvarlaklığı</td>
-</tr>
-</tbody>
-</table>
-<h3 id="ikonlar-ve-gorseller">İkonlar ve Görseller</h3>
-<table>
-<thead>
-<tr>
-<th>Parametre</th>
-<th>Açıklama</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>logoUrl</code></td>
-<td>Uygulama logosu URL'si — bekleme ve tamamlanma ekranlarında gösterilir</td>
-</tr>
-<tr>
-<td><code>successIconUrl</code></td>
-<td>Başarı ekranı ikonu</td>
-</tr>
-<tr>
-<td><code>errorIconUrl</code></td>
-<td>Hata ekranı ikonu</td>
-</tr>
-<tr>
-<td><code>loadingAnimationUrl</code></td>
-<td>Yükleme animasyonu (Lottie JSON formatında)</td>
-</tr>
-</tbody>
-</table>
-<h3 id="metinler-ve-ceviri">Metinler ve Çeviri</h3>
-<p>Tüm SDK ekranlarındaki metinler Backoffice üzerinden özelleştirilebilir. Bu sayede farklı dil desteği kod değişikliği gerektirmeden sağlanabilir.</p>
-<table>
-<thead>
-<tr>
-<th>Parametre</th>
-<th>Açıklama</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>strings</code></td>
-<td>Ekran bazlı metin tanımları — key-value formatında</td>
-</tr>
-<tr>
-<td><code>locale</code></td>
-<td>Varsayılan dil kodu (örn. <code>"TR"</code>, <code>"EN"</code>)</td>
-</tr>
-</tbody>
-</table>
-<p><code>locale</code> değeri <code>BaseModel</code>'deki <code>locale</code> parametresiyle de ayarlanabilir. Her ikisi tanımlanmışsa <code>BaseModel</code>'deki değer önceliklidir.</p>
-<hr />
-<h2 id="ekran-bazl-ozellestirme">Ekran Bazlı Özelleştirme</h2>
-<p>Her SDK ekranı Backoffice'te bağımsız olarak yapılandırılabilir. Özelleştirilebilir başlıca ekranlar:</p>
-<table>
-<thead>
-<tr>
-<th>Ekran</th>
-<th>Özelleştirilebilir Öğeler</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Karşılama ekranı</td>
-<td>Logo, başlık, açıklama metni, buton rengi</td>
-</tr>
-<tr>
-<td>Kimlik tarama ekranı</td>
-<td>Overlay rengi, yönlendirme metinleri, çerçeve rengi</td>
-</tr>
-<tr>
-<td>Hologram kontrol ekranı</td>
-<td>Yönlendirme metinleri, animasyon</td>
-</tr>
-<tr>
-<td>Canlılık ekranı</td>
-<td>Çerçeve rengi, hareket yönlendirme metinleri</td>
-</tr>
-<tr>
-<td>NFC okuma ekranı</td>
-<td>Yönlendirme metinleri, ikon</td>
-</tr>
-<tr>
-<td>Bekleme ekranı (VideoCall)</td>
-<td>Logo, bekleme metni, animasyon</td>
-</tr>
-<tr>
-<td>Görüşme ekranı</td>
-<td>Buton ikonları, PiP boyutu</td>
-</tr>
-<tr>
-<td>Tamamlanma ekranı</td>
-<td>Başarı/hata ikonu, mesaj metni, buton etiketi</td>
+<td>UI Özelleştirme</td>
+<td>Backoffice üzerinden arayüz parametreleri</td>
 </tr>
 </tbody>
 </table>
 <hr />
-<h2 id="sesli-yonlendirme-ozellestirme">Sesli Yönlendirme Özelleştirme</h2>
-<p>SDK ekranlarındaki sesli yönlendirmeler Backoffice üzerinden değiştirilebilir. Özel ses dosyası kullanmak istiyorsanız iki yöntem mevcuttur:</p>
-<p><strong>Backoffice üzerinden:</strong> Ses dosyaları Backoffice panelinden yüklenir, SDK her başlatmada güncel dosyaları indirir.</p>
-<p><strong>Uygulama bundle'ı üzerinden:</strong> Ses dosyalarını uygulama içine gömmek istiyorsanız, SDK'nın tanıdığı dosya adlarını kullanarak bundle'a eklemeniz yeterlidir. Detaylar için Core Modülü → Ses Dosyaları Yönetimi sayfasına bakınız.</p>
+<h2 id="sdkya-genel-baks">SDK'ya Genel Bakış</h2>
+<h3 id="moduler-yap">Modüler Yapı</h3>
+<p>EnQualify SDK bağımsız modüllerden oluşur. Her modül ayrı ayrı kurulabilir; ancak tümü Core Modülü'ne bağımlıdır.</p>
+<p>wide760CoreModule (zorunlu temel)
+├── OCRModule → Kimlik kartı / pasaport okuma
+├── NFCModule → NFC çip okuma
+├── FaceModule → Canlılık ve yüz karşılaştırma
+├── VideoCallModule → Görüntülü görüşme
+└── UtilityModule → Yardımcı servisler</p>
+<h3 id="hangi-module-ihtiyacnz-var">Hangi Modüle İhtiyacınız Var?</h3>
+<p>Uygulamanızın akışına göre modül seçimini yapabilirsiniz:</p>
+<table>
+<thead>
+<tr>
+<th>Akış Tipi</th>
+<th>Gerekli Modüller</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Sadece kimlik okuma (OCR)</td>
+<td>Core + OCR</td>
+</tr>
+<tr>
+<td>OCR + NFC çip doğrulama</td>
+<td>Core + OCR + NFC</td>
+</tr>
+<tr>
+<td>Tam self-servis (OCR + NFC + Yüz)</td>
+<td>Core + OCR + NFC + Face</td>
+</tr>
+<tr>
+<td>Görüntülü görüşmeli tam akış</td>
+<td>Core + OCR + NFC + Face + VideoCall</td>
+</tr>
+<tr>
+<td>Randevu / doküman imzalama</td>
+<td>Core + Utility</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>ℹ️ VideoCall akışında OCR ve Face tekrarlatma özelliğini kullanmak istiyorsanız, OCR ve Face modülleri de projeye eklenmiş olmalıdır.</p>
+</blockquote>
 <hr />
-<h2 id="ozellestirme-oncelik-sras">Özelleştirme Öncelik Sırası</h2>
-<p>Aynı parametre birden fazla yerde tanımlanmışsa SDK şu öncelik sırasını izler:</p>
-<p>wide7601. BaseModel parametreleri (en yüksek öncelik)
-2. Backoffice ayarları
-3. SDK varsayılan değerleri (en düşük öncelik)</p>
+<h2 id="minimum-gereksinimler">Minimum Gereksinimler</h2>
+<table>
+<thead>
+<tr>
+<th>Parametre</th>
+<th>Değer</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Minimum Android SDK</td>
+<td>API 25 (Android 7.1)</td>
+</tr>
+<tr>
+<td>Desteklenen Mimariler</td>
+<td><code>armeabi-v7a</code>, <code>arm64-v8a</code></td>
+</tr>
+<tr>
+<td>Build Sistemi</td>
+<td>Gradle (Kotlin DSL önerilir)</td>
+</tr>
+<tr>
+<td>Emülatör Desteği</td>
+<td>Derlenir; ancak kamera/NFC gerektiren akışlar çalışmaz</td>
+</tr>
+</tbody>
+</table>
 <hr />
+<h2 id="kurulum">Kurulum</h2>
+<p>SDK, Maven üzerinden projeye eklenir. Erişim bilgileri (repo URL, kullanıcı adı, şifre) size özel olarak iletilir. Detaylı kurulum adımları <strong>Başlarken</strong> sayfasındadır.</p>
+<hr />
+<h2 id="temel-kavramlar">Temel Kavramlar</h2>
+<h3 id="initialization-lifecycle">Initialization Lifecycle</h3>
+<p>Her modül aynı başlatma döngüsünü izler: <code>initialize()</code> çağrıldıktan sonra SDK sırasıyla <strong>token oluşturma → oturum açma → ayarları alma</strong> adımlarını otomatik olarak yönetir. Tüm adımlar tamamlandığında <code>initializeCompleted(module: EnModules)</code> callback'i tetiklenir; bu noktadan itibaren modüle ait işlemler başlatılabilir.</p>
+<p>Hata durumunda her adım için ayrı callback mevcuttur: <code>tokenCreateFailed()</code>, <code>sessionAddFailed()</code>, <code>settingsGetFailed()</code>. Detaylar için Core Modülü sayfasına bakınız.</p>
+<blockquote>
+<p>ℹ️ Utility Modülü bu akıştan farklıdır: <code>SessionModel</code> almaz, yalnızca <code>BaseModel</code> ile başlatılır ve <code>baseModelCompleted()</code> callback'i ile hazır hale gelir.</p>
+</blockquote>
+<h3 id="callback-yaps">Callback Yapısı</h3>
+<p>SDK, sonuçları ve hataları <strong>callback (interface) pattern'i</strong> üzerinden iletir. Her modülün kendi <code>Callbacks</code> interface'i vardır ve ilgili <code>Activity</code>'e implement edilmesi gerekir.</p>
+<h3 id="fragment-framelayout">Fragment &amp; FrameLayout</h3>
+<p>Tüm modüller kamera ekranlarını ve sayfa geçişlerini bir <code>FrameLayout</code> üzerinden yönetir. İlgili Activity'nin layout'unda tam ekran kaplayan bir <code>FrameLayout</code> bulunması zorunludur.</p>
+<h3 id="ssl-guvenligi">SSL Güvenliği</h3>
+<p>SDK iki katmanlı güvenlik uygular: <strong>SSL pinning</strong> (ortadaki adam saldırılarına karşı) ve oturum başına yenilenen RSA imzalama. Sertifika yapılandırması <code>BaseModel.signallingCertificateList</code> ve <code>mapiCertificateList</code> alanları üzerinden yapılır. Canlı ortamlarda SSL pinning'in devre dışı bırakılması kesinlikle önerilmez.</p>
+<h3 id="singleton-yap">Singleton Yapı</h3>
+<p>Tüm modüller singleton olarak çalışır. <code>initialize()</code> ile oluşturulan instance, uygulama oturumu boyunca <code>getInstance()</code> ile erişilebilir. Mevcut bir session varsa yeni session oluşturulmaz.</p>
+<hr />
+<h2 id="hzl-baslangc-admlar">Hızlı Başlangıç Adımları</h2>
+<p>Projenize ilk kez EnQualify SDK ekliyorsanız şu sırayı takip edin:</p>
+<ol>
+<li><strong>Başlarken</strong> → Maven erişim bilgilerini al, <code>libs.versions.toml</code> ve <code>settings.gradle.kts</code> dosyalarını yapılandır</li>
+<li><strong>Başlarken</strong> → <code>AndroidManifest.xml</code> izinlerini ekle, NFC ve kamera ayarlarını yap</li>
+<li><strong>Core Modülü</strong> → <code>BaseModel</code> ve <code>SessionModel</code> tanımla</li>
+<li><strong>İlgili modülün sayfasına geç</strong> → <code>initialize()</code> et, callback'leri implement et, akışı başlat</li>
+</ol>
+<blockquote>
+<p>Sorularınız veya entegrasyon sırasında karşılaştığınız sorunlar için destek ekibimizle iletişime geçebilirsiniz.</p>
+</blockquote>
 
 
 

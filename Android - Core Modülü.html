@@ -1,0 +1,3070 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://enquratechnology.github.io/enqualify_public_docs/Android%20-%20Core%20Mod%C3%BCl%C3%BC.html">
+      
+      
+        <link rel="prev" href="Android%20-%20Ba%C5%9Flarken.html">
+      
+      
+        <link rel="next" href="Android%20-%20Face%20Mod%C3%BCl%C3%BC.html">
+      
+      
+        
+      
+      
+      <link rel="icon" href="assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.4">
+    
+    
+      
+        <title>Android - Core Modülü - Enqualify Ürün Dokümantasyonu</title>
+      
+    
+    
+      <link rel="stylesheet" href="assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#android-core-modulu" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="index.html" title="Enqualify Ürün Dokümantasyonu" class="md-header__button md-logo" aria-label="Enqualify Ürün Dokümantasyonu" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Enqualify Ürün Dokümantasyonu
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Android - Core Modülü
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="index.html" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Enqualify Ürün Dokümantasyonu
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="Android%20-%20Ba%C5%9Flarken.html" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Android - Başlarken
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    <li class="md-tabs__item md-tabs__item--active">
+      <a href="Android%20-%20Core%20Mod%C3%BCl%C3%BC.html" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Android - Core Modülü
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="Android%20-%20Face%20Mod%C3%BCl%C3%BC.html" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Android - Face Modülü
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="Android%20-%20NFC%20Mod%C3%BCl%C3%BC.html" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Android - NFC Modülü
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="Android%20-%20OCR%20Mod%C3%BCl%C3%BC.html" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Android - OCR Modülü
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="Android%20-%20UI%20%C3%96zelle%C5%9Ftirme.html" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Android - UI Özelleştirme
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="Android%20-%20Utility%20Mod%C3%BCl%C3%BC.html" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Android - Utility Modülü
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="Android%20-%20VideoCall%20Mod%C3%BCl%C3%BC.html" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Android - VideoCall Modülü
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="Android%20SDK%3A%20%C4%B0mplementasyon%20Rehberi.html" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Android SDK: İmplementasyon Rehberi
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="Ba%C5%9Flarken.html" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Başlarken
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="Core%20Mod%C3%BCl%C3%BC.html" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Core Modülü
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="EnQualify%27a%20Ho%C5%9F%20Geldiniz.html" class="md-tabs__link">
+        
+  
+  
+    
+  
+  EnQualify'a Hoş Geldiniz
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="Face%20Mod%C3%BCl%C3%BC.html" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Face Modülü
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="NFC%20Mod%C3%BCl%C3%BC.html" class="md-tabs__link">
+        
+  
+  
+    
+  
+  NFC Modülü
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="OCR%20Mod%C3%BCl%C3%BC.html" class="md-tabs__link">
+        
+  
+  
+    
+  
+  OCR Modülü
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="UI%20%C3%96zelle%C5%9Ftirme.html" class="md-tabs__link">
+        
+  
+  
+    
+  
+  UI Özelleştirme
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="Utility%20Mod%C3%BCl%C3%BC.html" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Utility Modülü
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="VideoCall%20Mod%C3%BCl%C3%BC.html" class="md-tabs__link">
+        
+  
+  
+    
+  
+  VideoCall Modülü
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="iOS%20-%20Ba%C5%9Flarken.html" class="md-tabs__link">
+        
+  
+  
+    
+  
+  iOS - Başlarken
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="iOS%20-%20Core%20Mod%C3%BCl%C3%BC.html" class="md-tabs__link">
+        
+  
+  
+    
+  
+  iOS - Core Modülü
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="iOS%20-%20Face%20Mod%C3%BCl%C3%BC.html" class="md-tabs__link">
+        
+  
+  
+    
+  
+  iOS - Face Modülü
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="iOS%20-%20NFC%20Mod%C3%BCl%C3%BC.html" class="md-tabs__link">
+        
+  
+  
+    
+  
+  iOS - NFC Modülü
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="iOS%20-%20OCR%20Mod%C3%BCl%C3%BC.html" class="md-tabs__link">
+        
+  
+  
+    
+  
+  iOS - OCR Modülü
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="iOS%20-%20UI%20%C3%96zelle%C5%9Ftirme.html" class="md-tabs__link">
+        
+  
+  
+    
+  
+  iOS - UI Özelleştirme
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="iOS%20-%20Utility%20Mod%C3%BCl%C3%BC.html" class="md-tabs__link">
+        
+  
+  
+    
+  
+  iOS - Utility Modülü
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="iOS%20-%20VideoCall%20Mod%C3%BCl%C3%BC.html" class="md-tabs__link">
+        
+  
+  
+    
+  
+  iOS - VideoCall Modülü
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="iOS%20SDK%3A%20%C4%B0mplementasyon%20Rehberi.html" class="md-tabs__link">
+        
+  
+  
+    
+  
+  iOS SDK: İmplementasyon Rehberi
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="%F0%9F%93%B1%20Mobile%20SDKs%20-%20%C4%B0mplementasyon%20Dok%C3%BCmanlar%C4%B1.html" class="md-tabs__link">
+        
+  
+  
+    
+  
+  📱 Mobile SDKs - İmplementasyon Dokümanları
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="%F0%9F%9A%80%20H%C4%B1zl%C4%B1%20Ba%C5%9Flang%C4%B1%C3%A7.html" class="md-tabs__link">
+        
+  
+  
+    
+  
+  🚀 Hızlı Başlangıç
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="index.html" title="Enqualify Ürün Dokümantasyonu" class="md-nav__button md-logo" aria-label="Enqualify Ürün Dokümantasyonu" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Enqualify Ürün Dokümantasyonu
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="index.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Enqualify Ürün Dokümantasyonu
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="Android%20-%20Ba%C5%9Flarken.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Android - Başlarken
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Android - Core Modülü
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="Android%20-%20Core%20Mod%C3%BCl%C3%BC.html" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Android - Core Modülü
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#projeye-eklenmesi" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Projeye Eklenmesi
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Projeye Eklenmesi">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-libsversionstoml-dosyasna-ekleyin" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. libs.versions.toml dosyasına ekleyin:
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-buildgradlekts-dosyasna-bagmllg-ekleyin" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. build.gradle.kts dosyasına bağımlılığı ekleyin:
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-gradle-sync" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Gradle Sync
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#izinler" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        İzinler
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#veri-modelleri" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Veri Modelleri
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Veri Modelleri">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#basemodel" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        BaseModel
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="BaseModel">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ozellikler" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Özellikler
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#kullanm-ornegi" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Kullanım Örneği
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sessionmodel" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        SessionModel
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="SessionModel">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ozellikler_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Özellikler
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#kullanm-ornegi_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Kullanım Örneği
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#customeriddoc" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        CustomerIDDoc
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="CustomerIDDoc">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ozellikler_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Özellikler
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#kullanm-ornegi_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Kullanım Örneği
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#customerchip" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        CustomerChip
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="CustomerChip">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#temel-ozellikler" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Temel Özellikler
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#nfc-guvenlik-protokolu-sonuclar" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        NFC Güvenlik Protokolü Sonuçları
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#kullanm-ornegi_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Kullanım Örneği
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#customerface" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        CustomerFace
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="CustomerFace">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#temel-ozellikler_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Temel Özellikler
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#integrationmodel" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        IntegrationModel
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#proguard-kurallar" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Proguard Kuralları
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sradaki-admlar" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Sıradaki Adımlar
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="Android%20-%20Face%20Mod%C3%BCl%C3%BC.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Android - Face Modülü
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="Android%20-%20NFC%20Mod%C3%BCl%C3%BC.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Android - NFC Modülü
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="Android%20-%20OCR%20Mod%C3%BCl%C3%BC.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Android - OCR Modülü
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="Android%20-%20UI%20%C3%96zelle%C5%9Ftirme.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Android - UI Özelleştirme
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="Android%20-%20Utility%20Mod%C3%BCl%C3%BC.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Android - Utility Modülü
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="Android%20-%20VideoCall%20Mod%C3%BCl%C3%BC.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Android - VideoCall Modülü
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="Android%20SDK%3A%20%C4%B0mplementasyon%20Rehberi.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Android SDK: İmplementasyon Rehberi
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="Ba%C5%9Flarken.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Başlarken
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="Core%20Mod%C3%BCl%C3%BC.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Core Modülü
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="EnQualify%27a%20Ho%C5%9F%20Geldiniz.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    EnQualify'a Hoş Geldiniz
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="Face%20Mod%C3%BCl%C3%BC.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Face Modülü
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="NFC%20Mod%C3%BCl%C3%BC.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    NFC Modülü
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="OCR%20Mod%C3%BCl%C3%BC.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    OCR Modülü
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="UI%20%C3%96zelle%C5%9Ftirme.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    UI Özelleştirme
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="Utility%20Mod%C3%BCl%C3%BC.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Utility Modülü
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="VideoCall%20Mod%C3%BCl%C3%BC.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    VideoCall Modülü
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="iOS%20-%20Ba%C5%9Flarken.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    iOS - Başlarken
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="iOS%20-%20Core%20Mod%C3%BCl%C3%BC.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    iOS - Core Modülü
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="iOS%20-%20Face%20Mod%C3%BCl%C3%BC.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    iOS - Face Modülü
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="iOS%20-%20NFC%20Mod%C3%BCl%C3%BC.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    iOS - NFC Modülü
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="iOS%20-%20OCR%20Mod%C3%BCl%C3%BC.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    iOS - OCR Modülü
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="iOS%20-%20UI%20%C3%96zelle%C5%9Ftirme.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    iOS - UI Özelleştirme
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="iOS%20-%20Utility%20Mod%C3%BCl%C3%BC.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    iOS - Utility Modülü
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="iOS%20-%20VideoCall%20Mod%C3%BCl%C3%BC.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    iOS - VideoCall Modülü
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="iOS%20SDK%3A%20%C4%B0mplementasyon%20Rehberi.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    iOS SDK: İmplementasyon Rehberi
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="%F0%9F%93%B1%20Mobile%20SDKs%20-%20%C4%B0mplementasyon%20Dok%C3%BCmanlar%C4%B1.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    📱 Mobile SDKs - İmplementasyon Dokümanları
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="%F0%9F%9A%80%20H%C4%B1zl%C4%B1%20Ba%C5%9Flang%C4%B1%C3%A7.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    🚀 Hızlı Başlangıç
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#projeye-eklenmesi" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Projeye Eklenmesi
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Projeye Eklenmesi">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-libsversionstoml-dosyasna-ekleyin" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. libs.versions.toml dosyasına ekleyin:
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-buildgradlekts-dosyasna-bagmllg-ekleyin" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. build.gradle.kts dosyasına bağımlılığı ekleyin:
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-gradle-sync" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Gradle Sync
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#izinler" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        İzinler
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#veri-modelleri" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Veri Modelleri
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Veri Modelleri">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#basemodel" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        BaseModel
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="BaseModel">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ozellikler" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Özellikler
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#kullanm-ornegi" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Kullanım Örneği
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sessionmodel" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        SessionModel
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="SessionModel">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ozellikler_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Özellikler
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#kullanm-ornegi_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Kullanım Örneği
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#customeriddoc" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        CustomerIDDoc
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="CustomerIDDoc">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ozellikler_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Özellikler
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#kullanm-ornegi_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Kullanım Örneği
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#customerchip" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        CustomerChip
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="CustomerChip">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#temel-ozellikler" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Temel Özellikler
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#nfc-guvenlik-protokolu-sonuclar" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        NFC Güvenlik Protokolü Sonuçları
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#kullanm-ornegi_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Kullanım Örneği
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#customerface" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        CustomerFace
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="CustomerFace">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#temel-ozellikler_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Temel Özellikler
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#integrationmodel" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        IntegrationModel
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#proguard-kurallar" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Proguard Kuralları
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sradaki-admlar" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Sıradaki Adımlar
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="android-core-modulu">Android - Core Modülü</h1>
+<p>Core Modülü, diğer tüm modüllerin kullanımı için temel yapı ve işlevsellikleri sağlayan modüldür. Proje genelinde tekrar kullanılabilir bileşenleri ve altyapıyı barındırır. <strong>Diğer tüm modülleri kullanmadan önce Core Modülü projeye eklenmiş olmalıdır.</strong></p>
+<hr />
+<h2 id="projeye-eklenmesi">Projeye Eklenmesi</h2>
+<p>Maven erişimlerinin sağlandığından emin olduktan sonra aşağıdaki adımları izleyin. (Bkz. Başlarken)</p>
+<h3 id="1-libsversionstoml-dosyasna-ekleyin">1. <code>libs.versions.toml</code> dosyasına ekleyin:</h3>
+<p>wide760[versions]
+...
+enqualify-plus = "x.x.x.x"
+[libraries]
+...
+enqualify-plus-core = {
+group = "com.enqualify.plus",
+name = "core",
+version.ref = "enqualify-plus"
+}</p>
+<h3 id="2-buildgradlekts-dosyasna-bagmllg-ekleyin">2. <code>build.gradle.kts</code> dosyasına bağımlılığı ekleyin:</h3>
+<p>wide760implementation(libs.enqualify.plus.core)</p>
+<h3 id="3-gradle-sync">3. Gradle Sync</h3>
+<p>"Sync Now" seçeneğine tıklayarak Gradle dosyalarını senkronize edin.</p>
+<blockquote>
+<p>ℹ️ Kullanılacak versiyon numarası size özel olarak iletilir. Tüm modüller aynı versiyonu kullanmalıdır.</p>
+</blockquote>
+<hr />
+<h2 id="izinler">İzinler</h2>
+<p>SDK, ağ bağlantı tipiyle ilgili detaylı bilgi alabilmek (2G/3G/4.5G) için aşağıdaki iznin <strong>uygulama tarafından manuel olarak alınması</strong> gerekir:</p>
+<p>wide760<uses-permission android:name="android.permission.READ\_PHONE\_STATE" /></p>
+<blockquote>
+<p>⚠️ Bu izin SDK tarafından otomatik olarak talep edilmez. İzin verilmezse mobil veri tipi yalnızca <code>"Mobile"</code> olarak görüntülenir.</p>
+</blockquote>
+<hr />
+<h2 id="veri-modelleri">Veri Modelleri</h2>
+<h3 id="basemodel">BaseModel</h3>
+<p>Doğrulama süreçlerinde kullanılan sunucu (backoffice) bağlantı adresini ve SSL sertifika bilgilerini içeren veri modelidir.</p>
+<p>Signalling (Görüntülü Görüşme) ve MAPI sertifikaları hem dosya formatında hem de Base64 formatında verilebilir; iki formatın birlikte verilmesine gerek yoktur. Sertifika dosyaları Android projesi içinde <code>res/raw</code> klasörüne eklenmelidir ve aynı dosya adı bu modelde parametre olarak verilmelidir. Sertifika verilmezse SDK, SSL Pinning özelliği olmadan çalışır.</p>
+<p>wide760data class BaseModel(
+var baseURL: String, // Zorunlu alan
+var signallingCertificateList: List<String>? = null,
+var mapiCertificateList: List<String>? = null,
+var signallingCertificateBase64List: List<String>? = null,
+var mapiCertificateBase64List: List<String>? = null,
+var mobileUser: String, // Zorunlu alan
+var countryCode: String? = null, // Default: "TUR"
+var locale: String = "TR",
+var useEmbeddedLocalSound: Boolean = false
+)</p>
+<h4 id="ozellikler">Özellikler</h4>
+<table>
+<thead>
+<tr>
+<th>Özellik</th>
+<th>Tip</th>
+<th>Zorunlu</th>
+<th>Açıklama</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>baseURL</code></td>
+<td><code>String</code></td>
+<td>✅</td>
+<td>API doğrulama işlemleri için kullanılan temel sunucu adresi</td>
+</tr>
+<tr>
+<td><code>mobileUser</code></td>
+<td><code>String</code></td>
+<td>✅</td>
+<td>Token işlemi sırasında kullanılan özel keyword</td>
+</tr>
+<tr>
+<td><code>signallingCertificateList</code></td>
+<td><code>List&lt;String?&gt;?</code></td>
+<td>—</td>
+<td>Signalling (GG) sertifikalarının metin formatındaki dizisi</td>
+</tr>
+<tr>
+<td><code>mapiCertificateList</code></td>
+<td><code>List&lt;String?&gt;?</code></td>
+<td>—</td>
+<td>MAPI sertifikalarının metin formatındaki dizisi</td>
+</tr>
+<tr>
+<td><code>signallingCertificateBase64List</code></td>
+<td><code>List&lt;String?&gt;?</code></td>
+<td>—</td>
+<td>Signalling sertifikalarının Base64 formatındaki dizisi</td>
+</tr>
+<tr>
+<td><code>mapiCertificateBase64List</code></td>
+<td><code>List&lt;String?&gt;?</code></td>
+<td>—</td>
+<td>MAPI sertifikalarının Base64 formatındaki dizisi</td>
+</tr>
+<tr>
+<td><code>countryCode</code></td>
+<td><code>String</code></td>
+<td>—</td>
+<td>Okuma işlemi yapılacak kimliğin ülke kodu</td>
+</tr>
+<tr>
+<td><code>locale</code></td>
+<td><code>String</code></td>
+<td>—</td>
+<td>Sesli yönlendirmeler ve metinlerin dili (varsayılan: <code>"TR"</code>)</td>
+</tr>
+<tr>
+<td><code>useEmbeddedLocalSound</code></td>
+<td><code>Boolean</code></td>
+<td>—</td>
+<td>Seslerin lokalden mi yoksa servisten mi kullanılacağını belirler (varsayılan: <code>false</code>)</td>
+</tr>
+</tbody>
+</table>
+<h4 id="kullanm-ornegi">Kullanım Örneği</h4>
+<p>wide760val baseModel = BaseModel(
+signallingCertificateList = listOf("AI_CERT_1", "AI_CERT_2"),
+mapiCertificateList = listOf("MAPI_CERT_1", "MAPI_CERT_2"),
+signallingCertificateBase64List = listOf("QUlDRVJU...", "Q0VSVF8y..."),
+mapiCertificateBase64List = listOf("TU9SRSB...", "Q0VSVF8z..."),
+baseURL = "API_SERVER_URL",
+mobileUser = "mobile",
+countryCode = "TUR",
+locale = "TR",
+useEmbeddedLocalSound = false
+)</p>
+<hr />
+<h3 id="sessionmodel">SessionModel</h3>
+<p>Bir çağrı oturumu sırasında kullanıcı ve kimlik bilgilerini içeren veri modelidir. Çağrı türü, kullanıcı detayları, kimlik bilgileri ve oturumla ilgili ek parametreleri içerir.</p>
+<p>wide760data class SessionModel(
+var callType: String, // Zorunlu alan
+var reference: String, // Zorunlu alan
+var userName: String? = null,
+var surname: String? = null,
+var phone: String? = null,
+var email: String? = null,
+var identityType: String? = null,
+var identityNo: String? = null,
+var canAutoClose: Boolean = false,
+var isContinue: Boolean = false, // Kotlin'de 'continue' rezerve olduğu için isContinue
+var category: String? = null,
+var taxNumber: String? = null,
+var businessReference: String? = null,
+var handicapped: Boolean? = false
+)</p>
+<h4 id="ozellikler_1">Özellikler</h4>
+<table>
+<thead>
+<tr>
+<th>Özellik</th>
+<th>Tip</th>
+<th>Zorunlu</th>
+<th>Açıklama</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>callType</code></td>
+<td><code>String</code></td>
+<td>✅</td>
+<td>Çağrı türünü belirten parametre (örn. <code>"NewCustomer"</code>)</td>
+</tr>
+<tr>
+<td><code>reference</code></td>
+<td><code>String</code></td>
+<td>✅</td>
+<td>Oturum için referans ID'si</td>
+</tr>
+<tr>
+<td><code>userName</code></td>
+<td><code>String?</code></td>
+<td>—</td>
+<td>Kullanıcının adı</td>
+</tr>
+<tr>
+<td><code>surname</code></td>
+<td><code>String?</code></td>
+<td>—</td>
+<td>Kullanıcının soyadı</td>
+</tr>
+<tr>
+<td><code>phone</code></td>
+<td><code>String?</code></td>
+<td>—</td>
+<td>Kullanıcının telefon numarası</td>
+</tr>
+<tr>
+<td><code>email</code></td>
+<td><code>String?</code></td>
+<td>—</td>
+<td>Kullanıcının e-posta adresi</td>
+</tr>
+<tr>
+<td><code>identityType</code></td>
+<td><code>String?</code></td>
+<td>—</td>
+<td>Kimlik türü (örn. <code>"I"</code>, <code>"P"</code>)</td>
+</tr>
+<tr>
+<td><code>identityNo</code></td>
+<td><code>String?</code></td>
+<td>—</td>
+<td>Kullanıcının kimlik numarası</td>
+</tr>
+<tr>
+<td><code>canAutoClose</code></td>
+<td><code>Boolean</code></td>
+<td>—</td>
+<td>Oturumun otomatik kapanıp kapanmayacağını belirler (varsayılan: <code>false</code>)</td>
+</tr>
+<tr>
+<td><code>isContinue</code></td>
+<td><code>Boolean</code></td>
+<td>—</td>
+<td>Oturumun devam eden bir işlem olup olmadığını belirler (varsayılan: <code>false</code>)</td>
+</tr>
+<tr>
+<td><code>category</code></td>
+<td><code>String?</code></td>
+<td>—</td>
+<td>Oturumun ait olduğu kategori</td>
+</tr>
+<tr>
+<td><code>taxNumber</code></td>
+<td><code>String?</code></td>
+<td>—</td>
+<td>Kullanıcıya ait vergi numarası</td>
+</tr>
+<tr>
+<td><code>businessReference</code></td>
+<td><code>String?</code></td>
+<td>—</td>
+<td>İşletme ile ilgili referans bilgisi</td>
+</tr>
+<tr>
+<td><code>handicapped</code></td>
+<td><code>Boolean?</code></td>
+<td>—</td>
+<td>Kullanıcının engelli olup olmadığını belirten bayrak (varsayılan: <code>false</code>)</td>
+</tr>
+</tbody>
+</table>
+<h4 id="kullanm-ornegi_1">Kullanım Örneği</h4>
+<p>wide760val session = SessionModel(
+callType = "NewCustomer",
+reference = UUID.randomUUID().toString(),
+userName = "Enqura",
+surname = "Information",
+phone = "+905551234567",
+email = "enqualifyplus@enqura.com",
+identityType = "TC. Kimlik Kartı",
+identityNo = "12345678901",
+canAutoClose = true,
+isContinue = false,
+category = "category",
+taxNumber = "9876543210",
+businessReference = "COMPANY",
+handicapped = false
+)</p>
+<hr />
+<h3 id="customeriddoc">CustomerIDDoc</h3>
+<p>OCR işlemi sonucunda kimlik belgesi üzerinden okunan verilerin depolandığı veri modelidir. Singleton yapıda çalışır; veriye <code>CustomerIDDoc.getInstance()</code> ile erişilir.</p>
+<blockquote>
+<p>Detaylı bilgi için OCR Modülü sayfasına bakınız.</p>
+</blockquote>
+<p>wide760class CustomerIDDoc {
+var identityType: String = ""
+var name: String = ""
+var surname: String = ""
+var identityNumber: String = ""
+var issuingState: String = ""
+var documentNumber: String = ""
+var dateOfBirthDay: String = ""
+var expiryDate: String = ""
+var nationality: String = ""
+var gender: String = ""
+var frontImage: Bitmap? = null
+var mrzImage: Bitmap? = null
+var holoImage: Bitmap? = null
+var face: Bitmap? = null
+var frontIdentityNumber: String? = null
+var frontExpiryDate: String? = null
+var frontBirthDate: String? = null
+var frontGender: String? = null
+var frontDocumentNumber: String? = null
+var optionalData1: String? = null
+var optionalData2: String? = null
+var mrzText: String? = null
+val visualItems: MutableMap<String, VisualItem> = mutableMapOf()
+var digitDocumentNumber: Char? = null
+var digitDateOfBirth: Char? = null
+var digitExpiryDate: Char? = null
+var sumDigit: Char? = null
+}</p>
+<h4 id="ozellikler_2">Özellikler</h4>
+<table>
+<thead>
+<tr>
+<th>Özellik</th>
+<th>Tip</th>
+<th>Açıklama</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>identityType</code></td>
+<td><code>String</code></td>
+<td>Kimlik türü (<code>"I"</code> veya <code>"P"</code>)</td>
+</tr>
+<tr>
+<td><code>name</code></td>
+<td><code>String</code></td>
+<td>Kimlik sahibinin adı</td>
+</tr>
+<tr>
+<td><code>surname</code></td>
+<td><code>String</code></td>
+<td>Kimlik sahibinin soyadı</td>
+</tr>
+<tr>
+<td><code>identityNumber</code></td>
+<td><code>String</code></td>
+<td>Kimlik numarası</td>
+</tr>
+<tr>
+<td><code>issuingState</code></td>
+<td><code>String</code></td>
+<td>Kimliğin verildiği ülke/bölge kodu</td>
+</tr>
+<tr>
+<td><code>documentNumber</code></td>
+<td><code>String</code></td>
+<td>Kimliğin belge numarası</td>
+</tr>
+<tr>
+<td><code>dateOfBirthDay</code></td>
+<td><code>String</code></td>
+<td>Kimlik sahibinin doğum tarihi</td>
+</tr>
+<tr>
+<td><code>expiryDate</code></td>
+<td><code>String</code></td>
+<td>Kimliğin son geçerlilik tarihi</td>
+</tr>
+<tr>
+<td><code>nationality</code></td>
+<td><code>String</code></td>
+<td>Kimlik sahibinin vatandaşlık ülkesi kodu</td>
+</tr>
+<tr>
+<td><code>gender</code></td>
+<td><code>String</code></td>
+<td>Cinsiyet (E/M, K/F vb.)</td>
+</tr>
+<tr>
+<td><code>frontImage</code></td>
+<td><code>Bitmap?</code></td>
+<td>Kimliğin ön yüzü görseli (MRZ önde olan kimliklerde boş gelir)</td>
+</tr>
+<tr>
+<td><code>mrzImage</code></td>
+<td><code>Bitmap?</code></td>
+<td>MRZ alanının görseli</td>
+</tr>
+<tr>
+<td><code>holoImage</code></td>
+<td><code>Bitmap?</code></td>
+<td>Hologram alanının görseli</td>
+</tr>
+<tr>
+<td><code>face</code></td>
+<td><code>Bitmap?</code></td>
+<td>Kimlik üzerindeki fotoğraf (18 yaş altı kimliklerde boş gelebilir)</td>
+</tr>
+<tr>
+<td><code>frontIdentityNumber</code></td>
+<td><code>String?</code></td>
+<td>Ön yüzden alınan kimlik numarası</td>
+</tr>
+<tr>
+<td><code>frontExpiryDate</code></td>
+<td><code>String?</code></td>
+<td>Ön yüzden alınan son geçerlilik tarihi</td>
+</tr>
+<tr>
+<td><code>frontBirthDate</code></td>
+<td><code>String?</code></td>
+<td>Ön yüzden alınan doğum tarihi</td>
+</tr>
+<tr>
+<td><code>frontGender</code></td>
+<td><code>String?</code></td>
+<td>Ön yüzden alınan cinsiyet bilgisi</td>
+</tr>
+<tr>
+<td><code>frontDocumentNumber</code></td>
+<td><code>String?</code></td>
+<td>Ön yüzden alınan belge numarası</td>
+</tr>
+<tr>
+<td><code>optionalData1</code></td>
+<td><code>String?</code></td>
+<td>MRZ alanındaki opsiyonel veri 1</td>
+</tr>
+<tr>
+<td><code>optionalData2</code></td>
+<td><code>String?</code></td>
+<td>MRZ alanındaki opsiyonel veri 2</td>
+</tr>
+<tr>
+<td><code>mrzText</code></td>
+<td><code>String?</code></td>
+<td>MRZ alanındaki tam metin</td>
+</tr>
+<tr>
+<td><code>visualItems</code></td>
+<td><code>MutableMap&lt;String, VisualItem&gt;</code></td>
+<td>Görsel analiz sonrası tespit edilen objelerin görselleri</td>
+</tr>
+<tr>
+<td><code>digitDocumentNumber</code></td>
+<td><code>Char?</code></td>
+<td>Belge numarasının MRZ doğrulama rakamı</td>
+</tr>
+<tr>
+<td><code>digitDateOfBirth</code></td>
+<td><code>Char?</code></td>
+<td>Doğum tarihinin MRZ doğrulama rakamı</td>
+</tr>
+<tr>
+<td><code>digitExpiryDate</code></td>
+<td><code>Char?</code></td>
+<td>Son geçerlilik tarihinin MRZ doğrulama rakamı</td>
+</tr>
+<tr>
+<td><code>sumDigit</code></td>
+<td><code>Char?</code></td>
+<td>MRZ alanının genel doğrulama rakamı</td>
+</tr>
+</tbody>
+</table>
+<h4 id="kullanm-ornegi_2">Kullanım Örneği</h4>
+<p>wide760private lateinit var customerIdDoc: CustomerIDDoc
+override fun init() {
+customerIdDoc = CustomerIDDoc.getInstance()
+initPage()
+}</p>
+<hr />
+<h3 id="customerchip">CustomerChip</h3>
+<p>NFC okuma işlemi sonucunda kimlik çipinden okunan verilerin depolandığı veri modelidir. BAC, CA, HT, AA ve CS gibi NFC güvenlik protokollerinin sonuçlarını da içerir. Singleton yapıda çalışır; veriye <code>CustomerChip.getInstance()</code> ile erişilir.</p>
+<blockquote>
+<p>Detaylı bilgi için NFC Modülü sayfasına bakınız.</p>
+</blockquote>
+<p>wide760class CustomerChip {
+var documentCode: DocumentCode = DocumentCode.I
+var identityType: String? = null
+var identityNo: String? = null
+var documentNo: String? = null
+var firstName: String? = null
+var lastName: String? = null
+var gender: String? = null
+var birthDate: String? = null
+var nationality: String? = null
+var expiryDate: String? = null
+var faceImage: Bitmap? = null
+var nameOfHolder: String? = null
+var surnameOfHolder: String? = null
+var placeOfBirth: String? = null
+var fullDateOfBirth: String? = null
+var BAC: NFCFeatureWithResult<Boolean> = NFCFeatureWithResult()
+var CA: NFCFeatureWithResult<EACCAResult> = NFCFeatureWithResult()
+var HT: NFCFeatureWithResult<MutableMap\<Int, HashMatchResult>?> = NFCFeatureWithResult()
+var AA: NFCFeatureWithResult<AAResult> = NFCFeatureWithResult()
+var CS: NFCFeatureWithResult<Boolean> = NFCFeatureWithResult()
+}</p>
+<h4 id="temel-ozellikler">Temel Özellikler</h4>
+<table>
+<thead>
+<tr>
+<th>Özellik</th>
+<th>Tip</th>
+<th>Açıklama</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>documentCode</code></td>
+<td><code>DocumentCode</code></td>
+<td>Belge türünü belirten enum değeri</td>
+</tr>
+<tr>
+<td><code>identityType</code></td>
+<td><code>String?</code></td>
+<td>Kimlik belgesinin türü</td>
+</tr>
+<tr>
+<td><code>identityNo</code></td>
+<td><code>String?</code></td>
+<td>Kimlik belgesi numarası</td>
+</tr>
+<tr>
+<td><code>documentNo</code></td>
+<td><code>String?</code></td>
+<td>Resmi belge numarası</td>
+</tr>
+<tr>
+<td><code>firstName</code></td>
+<td><code>String?</code></td>
+<td>Belge sahibinin adı</td>
+</tr>
+<tr>
+<td><code>lastName</code></td>
+<td><code>String?</code></td>
+<td>Belge sahibinin soyadı</td>
+</tr>
+<tr>
+<td><code>gender</code></td>
+<td><code>String?</code></td>
+<td>Cinsiyet bilgisi</td>
+</tr>
+<tr>
+<td><code>birthDate</code></td>
+<td><code>String?</code></td>
+<td>Doğum tarihi</td>
+</tr>
+<tr>
+<td><code>nationality</code></td>
+<td><code>String?</code></td>
+<td>Vatandaşlık ülkesi</td>
+</tr>
+<tr>
+<td><code>expiryDate</code></td>
+<td><code>String?</code></td>
+<td>Belgenin son geçerlilik tarihi</td>
+</tr>
+<tr>
+<td><code>faceImage</code></td>
+<td><code>Bitmap?</code></td>
+<td>Çipten alınan biyometrik fotoğraf (Face modülüyle karşılaştırmada kullanılır)</td>
+</tr>
+<tr>
+<td><code>nameOfHolder</code></td>
+<td><code>String?</code></td>
+<td>Belge sahibinin yerel adı</td>
+</tr>
+<tr>
+<td><code>surnameOfHolder</code></td>
+<td><code>String?</code></td>
+<td>Belge sahibinin yerel soyadı</td>
+</tr>
+<tr>
+<td><code>placeOfBirth</code></td>
+<td><code>String?</code></td>
+<td>Doğum yeri</td>
+</tr>
+<tr>
+<td><code>fullDateOfBirth</code></td>
+<td><code>String?</code></td>
+<td>Tam doğum tarihi (gün, ay, yıl)</td>
+</tr>
+</tbody>
+</table>
+<h4 id="nfc-guvenlik-protokolu-sonuclar">NFC Güvenlik Protokolü Sonuçları</h4>
+<table>
+<thead>
+<tr>
+<th>Özellik</th>
+<th>Tip</th>
+<th>Açıklama</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>BAC</code></td>
+<td><code>NFCFeatureWithResult&lt;Boolean&gt;</code></td>
+<td>Basic Access Control — belge okuma güvenlik protokolü sonucu (<code>true</code>: başarılı)</td>
+</tr>
+<tr>
+<td><code>CA</code></td>
+<td><code>NFCFeatureWithResult&lt;EACCAResult&gt;</code></td>
+<td>Chip Authentication — chip kimlik doğrulama sonucu</td>
+</tr>
+<tr>
+<td><code>HT</code></td>
+<td><code>NFCFeatureWithResult&lt;MutableMap&lt;Int, HashMatchResult&gt;?&gt;</code></td>
+<td>Hash Table — hash değeri doğrulama sonuçları</td>
+</tr>
+<tr>
+<td><code>AA</code></td>
+<td><code>NFCFeatureWithResult&lt;AAResult&gt;</code></td>
+<td>Active Authentication — asimetrik şifreleme ile kimlik doğrulama sonucu</td>
+</tr>
+<tr>
+<td><code>CS</code></td>
+<td><code>NFCFeatureWithResult&lt;Boolean&gt;</code></td>
+<td>Chip Signature — chip imzası geçerlilik sonucu (<code>true</code>: geçerli)</td>
+</tr>
+</tbody>
+</table>
+<h4 id="kullanm-ornegi_3">Kullanım Örneği</h4>
+<p>wide760private lateinit var customerChip: CustomerChip
+override fun init() {
+customerChip = CustomerChip.getInstance()
+initPage()
+}</p>
+<hr />
+<h3 id="customerface">CustomerFace</h3>
+<p>Yüz tanıma ve canlılık kontrolü işlemi sonucunda elde edilen verilerin depolandığı veri modelidir. Singleton yapıda çalışır; veriye <code>CustomerFace.getInstance()</code> ile erişilir.</p>
+<blockquote>
+<p>Detaylı bilgi için Face Modülü sayfasına bakınız.</p>
+</blockquote>
+<h4 id="temel-ozellikler_1">Temel Özellikler</h4>
+<table>
+<thead>
+<tr>
+<th>Özellik</th>
+<th>Tip</th>
+<th>Açıklama</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>faceDetectedImage</code></td>
+<td><code>Bitmap?</code></td>
+<td>Kamerada algılanan yüzün görüntüsü</td>
+</tr>
+<tr>
+<td><code>smilingDetectedImage</code></td>
+<td><code>Bitmap?</code></td>
+<td>Gülümseme algılandığında elde edilen görüntü</td>
+</tr>
+<tr>
+<td><code>possibilityOfSmiling</code></td>
+<td><code>Float?</code></td>
+<td>Gülümseme olasılığı (0–1 arası)</td>
+</tr>
+<tr>
+<td><code>faceLeftDetectedImage</code></td>
+<td><code>Bitmap?</code></td>
+<td>Baş sola döndüğünde elde edilen görüntü</td>
+</tr>
+<tr>
+<td><code>faceRightDetectedImage</code></td>
+<td><code>Bitmap?</code></td>
+<td>Baş sağa döndüğünde elde edilen görüntü</td>
+</tr>
+<tr>
+<td><code>faceUpDetectedImage</code></td>
+<td><code>Bitmap?</code></td>
+<td>Baş yukarıya kaldırıldığında elde edilen görüntü</td>
+</tr>
+<tr>
+<td><code>eyeCloseDetectedImage</code></td>
+<td><code>Bitmap?</code></td>
+<td>Gözler kapalı olduğunda elde edilen görüntü</td>
+</tr>
+<tr>
+<td><code>antiSpoofing</code></td>
+<td><code>Double?</code></td>
+<td>Sahtecilik tespiti skoru</td>
+</tr>
+<tr>
+<td><code>antiSpoofingValidityLevel</code></td>
+<td><code>Int?</code></td>
+<td>Anti-spoofing geçerlilik seviyesi</td>
+</tr>
+<tr>
+<td><code>idDocConfidence</code></td>
+<td><code>Int?</code></td>
+<td>Kimlik fotoğrafı ile yüz karşılaştırma güven derecesi</td>
+</tr>
+<tr>
+<td><code>idDocDistance</code></td>
+<td><code>Double?</code></td>
+<td>Kimlik belgesi ile yüz arasındaki mesafe</td>
+</tr>
+<tr>
+<td><code>chipConfidence</code></td>
+<td><code>Int?</code></td>
+<td>NFC çipi biyometriği ile yüz karşılaştırma güven derecesi</td>
+</tr>
+<tr>
+<td><code>chipDistance</code></td>
+<td><code>Double?</code></td>
+<td>NFC çipi ile yüz arasındaki mesafe</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3 id="integrationmodel">IntegrationModel</h3>
+<p><code>addIntegration</code> fonksiyonu aracılığıyla entegrasyon aşamasında SDK üzerinden veri göndermek için kullanılan veri modelidir.</p>
+<p>wide760data class IntegrationModel(
+val phone: String? = null,
+val email: String? = null,
+val formUrl: String? = null,
+val idRegistration: IDRegistration? = null,
+val addressRegistration: AddressRegistration? = null,
+val data: String
+)</p>
+<hr />
+<h2 id="proguard-kurallar">Proguard Kuralları</h2>
+<p>Release paketlerinde (<code>minifyEnabled = true</code>, <code>debuggable = false</code>) Core SDK'nın doğru çalışabilmesi için <code>proguard-rules.pro</code> dosyasına aşağıdaki kuralları ekleyin:</p>
+<p>wide760-keep interface com.enqualify.plus.core.CoreCallbacks { *; }
+-keep public class com.enqualify.plus.core.** { *; }
+-keepclassmembers class * { public static <methods>; }
+-keep interface com.enqualify.plus.core.** { *; }
+-keep class com.enqualify.plus.core.** { abstract *; }
+-keep @androidx.annotation.Keep class * { *; }
+-keepclassmembers,allowobfuscation class * { @androidx.annotation.Keep *; }</p>
+<hr />
+<h2 id="sradaki-admlar">Sıradaki Adımlar</h2>
+<p>Core Modülü kurulumunu tamamladıktan sonra ihtiyacınıza göre aşağıdaki modüllere geçebilirsiniz:</p>
+<ul>
+<li>OCR Modülü — Kimlik belgelerinden optik karakter tanıma</li>
+<li>NFC Modülü — Kimlik çiplerinden NFC okuma</li>
+<li>Face Modülü — Yüz tanıma ve canlılık kontrolü</li>
+<li>VideoCall Modülü — Görüntülü görüşme entegrasyonu</li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": ".", "features": ["navigation.tabs", "navigation.sections", "navigation.expand", "search.suggest", "search.highlight"], "search": "assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+    
+  </body>
+</html>

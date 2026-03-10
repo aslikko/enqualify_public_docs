@@ -8,13 +8,13 @@
       
       
       
-        <link rel="canonical" href="https://enquratechnology.github.io/enqualify_public_docs/Core%20Mod%C3%BCl%C3%BC.html">
+        <link rel="canonical" href="https://enquratechnology.github.io/enqualify_public_docs/Android%20-%20OCR%20Mod%C3%BCl%C3%BC.html">
       
       
-        <link rel="prev" href="Ba%C5%9Flarken.html">
+        <link rel="prev" href="Android%20-%20NFC%20Mod%C3%BCl%C3%BC.html">
       
       
-        <link rel="next" href="EnQualify%27a%20Ho%C5%9F%20Geldiniz.html">
+        <link rel="next" href="Android%20-%20UI%20%C3%96zelle%C5%9Ftirme.html">
       
       
         
@@ -25,7 +25,7 @@
     
     
       
-        <title>Core Modülü - Enqualify Ürün Dokümantasyonu</title>
+        <title>Android - OCR Modülü - Enqualify Ürün Dokümantasyonu</title>
       
     
     
@@ -74,7 +74,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#core-modulu" class="md-skip">
+        <a href="#android-ocr-modulu" class="md-skip">
           Skip to content
         </a>
       
@@ -108,7 +108,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Core Modülü
+              Android - OCR Modülü
             
           </span>
         </div>
@@ -276,8 +276,10 @@
   
   
   
+    
   
-    <li class="md-tabs__item">
+  
+    <li class="md-tabs__item md-tabs__item--active">
       <a href="Android%20-%20OCR%20Mod%C3%BCl%C3%BC.html" class="md-tabs__link">
         
   
@@ -390,10 +392,8 @@
   
   
   
-    
   
-  
-    <li class="md-tabs__item md-tabs__item--active">
+    <li class="md-tabs__item">
       <a href="Core%20Mod%C3%BCl%C3%BC.html" class="md-tabs__link">
         
   
@@ -921,10 +921,37 @@
       
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="Android%20-%20OCR%20Mod%C3%BCl%C3%BC.html" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Android - OCR Modülü
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="Android%20-%20OCR%20Mod%C3%BCl%C3%BC.html" class="md-nav__link md-nav__link--active">
         
   
   
@@ -940,6 +967,359 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#projeye-eklenmesi" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Projeye Eklenmesi
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Projeye Eklenmesi">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-libsversionstoml-dosyasna-ekleyin" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. libs.versions.toml dosyasına ekleyin:
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-buildgradlekts-dosyasna-bagmllg-ekleyin" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. build.gradle.kts dosyasına bağımlılığı ekleyin:
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-gradle-sync" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Gradle Sync
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#implementasyon" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        İmplementasyon
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="İmplementasyon">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-izinler" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. İzinler
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-activity-layout-framelayout" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Activity Layout — FrameLayout
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-ocrcallbacks-interfaceinin-eklenmesi" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. OCRCallbacks Interface'inin Eklenmesi
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-enqualifyocrn-initialize-edilmesi" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. EnQualifyOCR'ın Initialize Edilmesi
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4. EnQualifyOCR&#39;ın Initialize Edilmesi">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#initialize-parametreleri" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Initialize Parametreleri
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#initialize-sonras-otomatik-aks" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Initialize Sonrası Otomatik Akış
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ocr-islemleri" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        OCR İşlemleri
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="OCR İşlemleri">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#fonksiyonlar" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fonksiyonlar
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#kimlik-tipi-tanma" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Kimlik Tipi Tanıma
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#kimlik-on-yuzu-tarama" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Kimlik Ön Yüzü Tarama
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#hologram-tespiti" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Hologram Tespiti
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#kimlik-arka-yuzu-tarama" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Kimlik Arka Yüzü Tarama
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#kimlik-okuma-aksn-bitirme" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Kimlik Okuma Akışını Bitirme
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#entegrasyon-verisi-ekleme" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Entegrasyon Verisi Ekleme
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#session-kapatma-ve-temizleme" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Session Kapatma ve Temizleme
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#hata-yonetimi" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Hata Yönetimi
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Hata Yönetimi">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#failurecode-core-initialize-hatalar" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        FailureCode (Core / Initialize Hataları)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ocrfailurecode-ocr-islem-hatalar" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        OCRFailureCode (OCR İşlem Hataları)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sonuc-verisine-erisim" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Sonuç Verisine Erişim
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#callback-referans" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Callback Referansı
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Callback Referansı">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#token-session-settings" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Token / Session / Settings
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ocr" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        OCR
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -1083,37 +1463,10 @@
       
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Core Modülü
-  
-
-    
-  </span>
-  
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="Core%20Mod%C3%BCl%C3%BC.html" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="Core%20Mod%C3%BCl%C3%BC.html" class="md-nav__link">
         
   
   
@@ -1129,226 +1482,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#initialization-lifecycle" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Initialization Lifecycle
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#basemodel" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        BaseModel
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="BaseModel">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#model-tanm" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Model Tanımı
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#ozellikler" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Özellikler
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#kullanm-ornegi" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Kullanım Örneği
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#sessionmodel" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        SessionModel
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="SessionModel">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#model-tanm_1" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Model Tanımı
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#ozellikler_1" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Özellikler
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#kullanm-ornegi_1" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Kullanım Örneği
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#ses-dosyalar-yonetimi" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Ses Dosyaları Yönetimi
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Ses Dosyaları Yönetimi">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#useembeddedlocalsound-parametresi" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        useEmbeddedLocalSound Parametresi
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#ozel-ses-dosyas-kullanm-local-override" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Özel Ses Dosyası Kullanımı (Local Override)
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#ui-ozellestirme" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        UI Özelleştirme
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#ortak-delegateler" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Ortak Delegate'ler
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Ortak Delegate&#39;ler">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#token-session-settings" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Token / Session / Settings
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#session-kapatma" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Session Kapatma
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -1866,33 +1999,22 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#initialization-lifecycle" class="md-nav__link">
+  <a href="#projeye-eklenmesi" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Initialization Lifecycle
+        Projeye Eklenmesi
       
     </span>
   </a>
   
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#basemodel" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        BaseModel
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="BaseModel">
+    <nav class="md-nav" aria-label="Projeye Eklenmesi">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#model-tanm" class="md-nav__link">
+  <a href="#1-libsversionstoml-dosyasna-ekleyin" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Model Tanımı
+        1. libs.versions.toml dosyasına ekleyin:
       
     </span>
   </a>
@@ -1900,10 +2022,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#ozellikler" class="md-nav__link">
+  <a href="#2-buildgradlekts-dosyasna-bagmllg-ekleyin" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Özellikler
+        2. build.gradle.kts dosyasına bağımlılığı ekleyin:
       
     </span>
   </a>
@@ -1911,10 +2033,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#kullanm-ornegi" class="md-nav__link">
+  <a href="#3-gradle-sync" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Kullanım Örneği
+        3. Gradle Sync
       
     </span>
   </a>
@@ -1927,22 +2049,22 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#sessionmodel" class="md-nav__link">
+  <a href="#implementasyon" class="md-nav__link">
     <span class="md-ellipsis">
       
-        SessionModel
+        İmplementasyon
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="SessionModel">
+    <nav class="md-nav" aria-label="İmplementasyon">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#model-tanm_1" class="md-nav__link">
+  <a href="#1-izinler" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Model Tanımı
+        1. İzinler
       
     </span>
   </a>
@@ -1950,10 +2072,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#ozellikler_1" class="md-nav__link">
+  <a href="#2-activity-layout-framelayout" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Özellikler
+        2. Activity Layout — FrameLayout
       
     </span>
   </a>
@@ -1961,10 +2083,154 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#kullanm-ornegi_1" class="md-nav__link">
+  <a href="#3-ocrcallbacks-interfaceinin-eklenmesi" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Kullanım Örneği
+        3. OCRCallbacks Interface'inin Eklenmesi
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-enqualifyocrn-initialize-edilmesi" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. EnQualifyOCR'ın Initialize Edilmesi
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4. EnQualifyOCR&#39;ın Initialize Edilmesi">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#initialize-parametreleri" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Initialize Parametreleri
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#initialize-sonras-otomatik-aks" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Initialize Sonrası Otomatik Akış
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ocr-islemleri" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        OCR İşlemleri
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="OCR İşlemleri">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#fonksiyonlar" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fonksiyonlar
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#kimlik-tipi-tanma" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Kimlik Tipi Tanıma
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#kimlik-on-yuzu-tarama" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Kimlik Ön Yüzü Tarama
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#hologram-tespiti" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Hologram Tespiti
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#kimlik-arka-yuzu-tarama" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Kimlik Arka Yüzü Tarama
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#kimlik-okuma-aksn-bitirme" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Kimlik Okuma Akışını Bitirme
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#entegrasyon-verisi-ekleme" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Entegrasyon Verisi Ekleme
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#session-kapatma-ve-temizleme" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Session Kapatma ve Temizleme
       
     </span>
   </a>
@@ -1977,22 +2243,22 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#ses-dosyalar-yonetimi" class="md-nav__link">
+  <a href="#hata-yonetimi" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Ses Dosyaları Yönetimi
+        Hata Yönetimi
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Ses Dosyaları Yönetimi">
+    <nav class="md-nav" aria-label="Hata Yönetimi">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#useembeddedlocalsound-parametresi" class="md-nav__link">
+  <a href="#failurecode-core-initialize-hatalar" class="md-nav__link">
     <span class="md-ellipsis">
       
-        useEmbeddedLocalSound Parametresi
+        FailureCode (Core / Initialize Hataları)
       
     </span>
   </a>
@@ -2000,10 +2266,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#ozel-ses-dosyas-kullanm-local-override" class="md-nav__link">
+  <a href="#ocrfailurecode-ocr-islem-hatalar" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Özel Ses Dosyası Kullanımı (Local Override)
+        OCRFailureCode (OCR İşlem Hataları)
       
     </span>
   </a>
@@ -2016,10 +2282,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#ui-ozellestirme" class="md-nav__link">
+  <a href="#sonuc-verisine-erisim" class="md-nav__link">
     <span class="md-ellipsis">
       
-        UI Özelleştirme
+        Sonuç Verisine Erişim
       
     </span>
   </a>
@@ -2027,15 +2293,15 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#ortak-delegateler" class="md-nav__link">
+  <a href="#callback-referans" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Ortak Delegate'ler
+        Callback Referansı
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Ortak Delegate&#39;ler">
+    <nav class="md-nav" aria-label="Callback Referansı">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -2050,10 +2316,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#session-kapatma" class="md-nav__link">
+  <a href="#ocr" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Session Kapatma
+        OCR
       
     </span>
   </a>
@@ -2082,365 +2348,428 @@
 
 
 
-<h1 id="core-modulu">Core Modülü</h1>
-<p>Core Modülü, EnQualify SDK'nın tüm modüllerinin üzerine inşa edildiği temel altyapıdır. OCR, NFC, Face, VideoCall ve Utility modüllerinin her biri Core Modülü'ne bağımlıdır — bu nedenle herhangi bir modüle geçmeden önce Core'un doğru yapılandırılmış olması gerekir.</p>
-<p>Bu sayfada anlatılanlar tüm modüller için geçerlidir. Modül sayfalarında yalnızca o modüle özgü farklılıklar ele alınacaktır.</p>
-<hr />
-<h2 id="initialization-lifecycle">Initialization Lifecycle</h2>
-<p>Her modül <code>initialize()</code> çağrıldığında aynı başlatma döngüsünü izler. Bu adımlar SDK tarafından otomatik olarak yönetilir — sizin müdahaleniz gerekmez.</p>
-<p>wide760initialize() çağrıldı
-│
-▼
-1. Token oluşturma
-✓ → devam ✗ → tokenCreateFailed()
-│
-▼
-2. Oturum açma (Session)
-✓ → devam ✗ → sessionAddFailed()
-│
-▼
-3. Backoffice ayarları alınıyor
-✓ → devam ✗ → settingGetFailed()
-│
-▼
-initializeCompleted(moduleName:)
-→ Artık modüle ait işlemler başlatılabilir</p>
-<p><code>initializeCompleted</code> <strong>gelmeden modül fonksiyonlarını çağırmayın.</strong> Örneğin VideoCall'da <code>startVideoCall()</code>, bu delegate tetiklenmeden ve <code>moduleName</code> değeri <code>EnQualifyVideoCall</code> olarak doğrulanmadan çağrılırsa görüşme başlamaz.</p>
-<p>Her hata delegate'i bağımsız olarak ele alınmalıdır. SDK, hata durumunda otomatik retry yapmaz.</p>
-<hr />
-<h2 id="basemodel">BaseModel</h2>
-<p><code>BaseModel</code>, her modülün <code>initialize()</code> fonksiyonuna geçilen temel yapılandırma modelidir. SSL sertifikaları ve sunucu adresi burada tanımlanır.</p>
-<p>Her modülün kendi <code>BaseModel</code> türü vardır (<code>BaseModelOCR</code>, <code>BaseModelNFC</code>, <code>BaseModelFace</code>, <code>BaseModelVideoCall</code>, <code>BaseModelUtility</code>) ancak içerdikleri alanlar aynıdır.</p>
-<h3 id="model-tanm">Model Tanımı</h3>
-<p>swift</p>
-<p>wide760class BaseModel(
-var signallingCertificateList: [String]? = nil, // .der dosya adları
-var mapiCertificateList: [String]? = nil, // .der dosya adları
-var signallingCertificateBase64List: [String]? = nil, // Base64 string
-var mapiCertificateBase64List: [String]? = nil, // Base64 string
-var baseURL: String, // Zorunlu
-var locale: String? = nil,
-var mobileUser: String? = nil,
-var countryCode: String? = nil,
-var useEmbeddedLocalSound: NSNumber? = nil // Yalnızca CoreBaseModel'de
-)</p>
-<h3 id="ozellikler">Özellikler</h3>
-<table>
-<thead>
-<tr>
-<th>Özellik</th>
-<th>Tip</th>
-<th>Zorunlu</th>
-<th>Açıklama</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>signallingCertificateList</code></td>
-<td><code>[String]?</code></td>
-<td>—</td>
-<td>Signalling sertifikalarının <code>.der</code> dosya adları</td>
-</tr>
-<tr>
-<td><code>mapiCertificateList</code></td>
-<td><code>[String]?</code></td>
-<td>—</td>
-<td>MAPI sertifikalarının <code>.der</code> dosya adları</td>
-</tr>
-<tr>
-<td><code>signallingCertificateBase64List</code></td>
-<td><code>[String]?</code></td>
-<td>—</td>
-<td>Signalling sertifikalarının Base64 halleri</td>
-</tr>
-<tr>
-<td><code>mapiCertificateBase64List</code></td>
-<td><code>[String]?</code></td>
-<td>—</td>
-<td>MAPI sertifikalarının Base64 halleri</td>
-</tr>
-<tr>
-<td><code>baseURL</code></td>
-<td><code>String</code></td>
-<td>✅</td>
-<td>Doğrulama platformunun sunucu adresi</td>
-</tr>
-<tr>
-<td><code>locale</code></td>
-<td><code>String?</code></td>
-<td>—</td>
-<td>Sesli yönlendirme dili (örn. <code>"TR"</code>)</td>
-</tr>
-<tr>
-<td><code>mobileUser</code></td>
-<td><code>String?</code></td>
-<td>—</td>
-<td>Authorization için anonymous user bilgisi</td>
-</tr>
-<tr>
-<td><code>countryCode</code></td>
-<td><code>String?</code></td>
-<td>—</td>
-<td>Ülke/bölge özelinde veri edinimi için (örn. <code>"TUR"</code>)</td>
-</tr>
-<tr>
-<td><code>useEmbeddedLocalSound</code></td>
-<td><code>NSNumber?</code></td>
-<td>—</td>
-<td>Yalnızca <code>CoreBaseModel</code>'de geçerlidir. Ses dosyası kaynağını belirler. Bkz. <a href="https://enqura.atlassian.net/wiki/spaces/EDP/pages/25526291/Core+Mod+l#Ses-Dosyalar%C4%B1-Y%C3%B6netimi">Ses Dosyaları Yönetimi</a></td>
-</tr>
-</tbody>
-</table>
-<p>Sertifikalar için <code>der</code> dosya adı ile Base64 string yöntemlerinden birini kullanmanız yeterlidir, ikisini birden doldurmanıza gerek yoktur.</p>
-<p><strong>Sertifika adı eşleşmeli:</strong> <code>signallingCertificateList</code> veya <code>mapiCertificateList</code>'e verdiğiniz dosya adı, Xcode'a eklediğiniz <code>.der</code> dosyasının adıyla birebir eşleşmelidir. Eşleşmezse runtime'da <code>ResponseValidation</code> hatası alırsınız.</p>
-<h3 id="kullanm-ornegi">Kullanım Örneği</h3>
-<p>swift</p>
-<p>wide760let baseModel = BaseModelOCR(
-signallingCertificateList: ["enqura"],
-mapiCertificateList: ["enqura"],
-baseURL: "https://yourcompany-mapi.enqura.com",
-locale: "TR",
-mobileUser: "mobile",
-countryCode: "TUR"
-)</p>
+<h1 id="android-ocr-modulu">Android - OCR Modülü</h1>
+<p>OCR modülü, arka kamera üzerinden alınan görüntülerle kimlik kartı veya pasaport üzerindeki verileri okur. Görsel obje analizi, hologram tespiti, kimlik ön/arka yüz okuma ve MRZ alanı okuma işlemlerini gerçekleştirir.</p>
 <blockquote>
-<p><strong>SSL Pinning'i devre dışı bırakmak</strong> için sertifika alanlarını boş bırakın. Canlı ortamlarda bu <strong>kesinlikle önerilmez</strong> — ciddi güvenlik açığı oluşturur.</p>
+<p>⚠️ <strong>Ön Koşul:</strong> OCR Modülünü kullanmadan önce Maven erişimi sağlanmış ve Core Modülü projeye eklenmiş olmalıdır.</p>
 </blockquote>
 <hr />
-<h2 id="sessionmodel">SessionModel</h2>
-<p><code>SessionModel</code>, her modülün <code>initialize()</code> fonksiyonuna geçilen oturum bilgisi modelidir. Kullanıcıya ve çağrıya ait bilgileri taşır.</p>
-<p>Her modülün kendi <code>SessionModel</code> türü vardır (<code>SessionModelOCR</code>, <code>SessionModelNFC</code>, vb.) ancak içerdikleri alanlar aynıdır.</p>
-<h3 id="model-tanm_1">Model Tanımı</h3>
-<p>swift</p>
-<p>wide760class SessionModel(
-var callType: String, // Zorunlu
-var reference: String, // Zorunlu
-var userName: String? = nil,
-var surname: String? = nil,
-var phone: String? = nil,
-var email: String? = nil,
-var identityType: String? = nil,
-var identityNo: String? = nil,
-var canAutoClose: Bool = false,
-var isContinue: Bool = false,
-var category: String? = nil,
-var taxNumber: String? = nil,
-var businessReference: String? = nil,
-var handicapped: Bool? = false
+<h2 id="projeye-eklenmesi">Projeye Eklenmesi</h2>
+<h3 id="1-libsversionstoml-dosyasna-ekleyin">1. <code>libs.versions.toml</code> dosyasına ekleyin:</h3>
+<p>wide760[versions]
+...
+enqualify-plus = "x.x.x.x"
+[libraries]
+...
+enqualify-plus-ocr = {
+group = "com.enqualify.plus",
+name = "ocr",
+version.ref = "enqualify-plus"
+}</p>
+<h3 id="2-buildgradlekts-dosyasna-bagmllg-ekleyin">2. <code>build.gradle.kts</code> dosyasına bağımlılığı ekleyin:</h3>
+<p>wide760implementation(libs.enqualify.plus.ocr)</p>
+<h3 id="3-gradle-sync">3. Gradle Sync</h3>
+<p>"Sync Now" seçeneğine tıklayarak Gradle dosyalarını senkronize edin.</p>
+<blockquote>
+<p>ℹ️ Versiyon numarası tüm modüllerde aynı olmalıdır.</p>
+</blockquote>
+<hr />
+<h2 id="implementasyon">İmplementasyon</h2>
+<h3 id="1-izinler">1. İzinler</h3>
+<p>Kamera izni SDK tarafından manifeste otomatik olarak eklenir ve gerekli noktalarda yine SDK tarafından istenir. Aşağıdaki satır yalnızca bilgi amaçlıdır:</p>
+<p>wide760<uses-permission android:name="android.permission.CAMERA" /></p>
+<blockquote>
+<p>Kamera izni verilmezse OCR modülü çalışmaz.</p>
+</blockquote>
+<h3 id="2-activity-layout-framelayout">2. Activity Layout — FrameLayout</h3>
+<p>OCR işleminin yapılacağı Activity'nin layout'una tam ekran kaplayan bir <code>FrameLayout</code> eklenmelidir. SDK, kamera ekranlarını ve sayfa geçişlerini bu bileşen üzerinden yönetir:</p>
+<p>wide760&lt;FrameLayout
+android:id="@+id/fragmentContainer"
+android:layout_width="match_parent"
+android:layout_height="match_parent" /&gt;</p>
+<h3 id="3-ocrcallbacks-interfaceinin-eklenmesi">3. OCRCallbacks Interface'inin Eklenmesi</h3>
+<p><code>OCRCallbacks</code> interface'i OCR işlemlerini yönetmek için gerekli callback metodlarını içerir ve mutlaka bir <strong>Activity</strong> ile çalışmalıdır.</p>
+<p><strong>Sınıfa eklenmesi:</strong></p>
+<p>wide760class EnQualifyPlusActivity : AppCompatActivity(), OCRCallbacks</p>
+<p><strong>Callback'lerin override edilmesi:</strong></p>
+<p>wide760class EnQualifyPlusActivity : AppCompatActivity(), OCRCallbacks {
+override fun IDDocTypeCheckVerified(isFront: Boolean) {
+Log.i(tag, "${object {}.javaClass.enclosingMethod?.name}")
+}
+override fun IDDocFrontCompleted() {
+Log.i(tag, "${object {}.javaClass.enclosingMethod?.name}")
+}
+override fun hologramCheckVerified() {
+Log.i(tag, "${object {}.javaClass.enclosingMethod?.name}")
+}
+override fun IDDocBackCompleted() {
+Log.i(tag, "${object {}.javaClass.enclosingMethod?.name}")
+}
+override fun IDDocSaveStarted() {
+Log.i(tag, "${object {}.javaClass.enclosingMethod?.name}")
+}
+override fun IDDocCompleted() {
+Log.i(tag, "${object {}.javaClass.enclosingMethod?.name}")
+}
+override fun IDDocFailed(ocrFailureCode: OCRFailureCode, additionalMessage: String?) {
+Log.i(tag, "${object {}.javaClass.enclosingMethod?.name}")
+// LuminosityFailed iş kesici bir hata değildir; okuma durdurulmamalıdır.
+}
+override fun initializeCompleted(module: EnModules) {
+Log.i(tag, "${object {}.javaClass.enclosingMethod?.name}")
+when (module) {
+EnModules.OCR -&gt; {
+// OCR işlemleri başlatılabilir
+}
+}
+}
+override fun initializeFailed(failureCode: FailureCode, additionalMessage: String) {
+Log.i(tag, "${object {}.javaClass.enclosingMethod?.name}")
+}
+}</p>
+<h3 id="4-enqualifyocrn-initialize-edilmesi">4. EnQualifyOCR'ın Initialize Edilmesi</h3>
+<p>OCR işlemlerine başlamadan önce <code>EnQualifyOCR.initialize()</code> çağrılmalıdır. Initialize edilmeden başka bir işlem yapılmaya çalışılırsa SDK çalışmaz.</p>
+<p>wide760val sessionModel = SessionModel(
+callType = "NewCustomer",
+reference = UUID.randomUUID().toString()
+)
+val baseModel = BaseModel(
+baseURL = "https://deveqmapi.enqura.com",
+signallingCertificateList = listOf("enqura"),
+mapiCertificateList = listOf("enqura"),
+mobileUser = "mobile",
+countryCode = "TUR",
+locale = "TR",
+useEmbeddedLocalSound = false
+)
+EnQualifyOCR.initialize(
+context = this,
+fragmentManager = supportFragmentManager,
+containerID = R.id.fragmentContainer,
+sessionModel = sessionModel,
+baseModel = baseModel
 )</p>
-<h3 id="ozellikler_1">Özellikler</h3>
+<h4 id="initialize-parametreleri">Initialize Parametreleri</h4>
 <table>
 <thead>
 <tr>
-<th>Özellik</th>
+<th>Parametre</th>
 <th>Tip</th>
-<th>Zorunlu</th>
 <th>Açıklama</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><code>callType</code></td>
-<td><code>String</code></td>
-<td>✅</td>
-<td>Çağrı türü. Backoffice'den alınan değerler kullanılmalıdır (örn. <code>"NewCustomer"</code>). Mevcut tipler için Utility Modülü → Çağrı Tiplerinin Alınması sayfasına bakınız.</td>
+<td><code>context</code></td>
+<td><code>Context</code></td>
+<td>Uygulamanın çalışma zamanı bağlamı</td>
 </tr>
 <tr>
-<td><code>reference</code></td>
-<td><code>String</code></td>
-<td>✅</td>
-<td>Oturuma ait referans ID'si</td>
+<td><code>sessionModel</code></td>
+<td><code>SessionModel</code></td>
+<td>OCR işlemi sırasında kullanılacak oturum bilgileri</td>
 </tr>
 <tr>
-<td><code>userName</code></td>
-<td><code>String?</code></td>
-<td>—</td>
-<td>Kullanıcı adı</td>
+<td><code>baseModel</code></td>
+<td><code>BaseModel</code></td>
+<td>Doğrulama sürecinde temel verileri taşıyan model</td>
 </tr>
 <tr>
-<td><code>surname</code></td>
-<td><code>String?</code></td>
-<td>—</td>
-<td>Kullanıcı soyadı</td>
+<td><code>fragmentManager</code></td>
+<td><code>FragmentManager</code></td>
+<td>OCR fragment'lerinin yönetimini sağlar</td>
 </tr>
 <tr>
-<td><code>phone</code></td>
-<td><code>String?</code></td>
-<td>—</td>
-<td>Telefon numarası</td>
-</tr>
-<tr>
-<td><code>email</code></td>
-<td><code>String?</code></td>
-<td>—</td>
-<td>E-posta adresi</td>
-</tr>
-<tr>
-<td><code>identityType</code></td>
-<td><code>String?</code></td>
-<td>—</td>
-<td>Kimlik türü: <code>"I"</code> (T.C. Kimlik Kartı), <code>"P"</code> (Pasaport)</td>
-</tr>
-<tr>
-<td><code>identityNo</code></td>
-<td><code>String?</code></td>
-<td>—</td>
-<td>Kimlik numarası</td>
-</tr>
-<tr>
-<td><code>canAutoClose</code></td>
-<td><code>Bool</code></td>
-<td>—</td>
-<td>Oturumun otomatik kapanıp kapanmayacağı. Varsayılan: <code>false</code></td>
-</tr>
-<tr>
-<td><code>isContinue</code></td>
-<td><code>Bool</code></td>
-<td>—</td>
-<td>Oturumun devam eden bir işlem olup olmadığı. Varsayılan: <code>false</code></td>
-</tr>
-<tr>
-<td><code>category</code></td>
-<td><code>String?</code></td>
-<td>—</td>
-<td>Oturumun ait olduğu kategori</td>
-</tr>
-<tr>
-<td><code>taxNumber</code></td>
-<td><code>String?</code></td>
-<td>—</td>
-<td>Kullanıcıya ait vergi numarası</td>
-</tr>
-<tr>
-<td><code>businessReference</code></td>
-<td><code>String?</code></td>
-<td>—</td>
-<td>İşletme referans bilgisi (KYB akışları için)</td>
-</tr>
-<tr>
-<td><code>handicapped</code></td>
-<td><code>Bool?</code></td>
-<td>—</td>
-<td>Kullanıcının özel gereksinimi olup olmadığı. Varsayılan: <code>false</code></td>
+<td><code>containerID</code></td>
+<td><code>Int</code></td>
+<td>OCR fragment'inin ekleneceği container'ın ID'si</td>
 </tr>
 </tbody>
 </table>
-<h3 id="kullanm-ornegi_1">Kullanım Örneği</h3>
-<p>swift</p>
-<p>wide760let sessionModel = SessionModelOCR(
-callType: "NewCustomer",
-reference: "REF123456",
-userName: "Ahmet",
-surname: "Yılmaz",
-phone: "+905551234567",
-email: "ahmet@example.com",
-identityType: "I",
-identityNo: "12345678901",
-canAutoClose: true,
-isContinue: false
-)</p>
+<h4 id="initialize-sonras-otomatik-aks">Initialize Sonrası Otomatik Akış</h4>
+<p><code>initialize()</code> çağrıldıktan sonra SDK sırasıyla şu adımları otomatik olarak yürütür:</p>
+<ol>
+<li><strong>Token Oluşturma</strong> Token oluşturma başarısız olursa <code>tokenCreateFailed</code> tetiklenir:</li>
+</ol>
+<p>wide760override fun tokenCreateFailed(errorMessage: String) {
+Log.i(tag, "${object {}.javaClass.enclosingMethod?.name} $errorMessage")
+}</p>
+<ol>
+<li><strong>Oturum Başlatma</strong> Oturum başlatma başarısız olursa <code>sessionAddFailed</code> tetiklenir:</li>
+</ol>
+<p>wide760override fun sessionAddFailed(errorMessage: String) {
+Log.i(tag, "${object {}.javaClass.enclosingMethod?.name}")
+}</p>
+<ol>
+<li><strong>Ayarların Alınması</strong> Ayarlar alınamazsa <code>settingsGetFailed</code> tetiklenir:</li>
+</ol>
+<p>wide760override fun settingsGetFailed(errorMessage: String) {
+Log.i(tag, "${object {}.javaClass.enclosingMethod?.name}")
+}</p>
+<ol>
+<li><strong>Tamamlanma</strong> Tüm adımlar başarıyla tamamlandığında <code>initializeCompleted</code> tetiklenir ve OCR işlemleri başlatılabilir.</li>
+</ol>
 <hr />
-<h2 id="ses-dosyalar-yonetimi">Ses Dosyaları Yönetimi</h2>
-<p>SDK, akışlar sırasında kullanıcıya sesli yönlendirme yapar. Ses dosyaları üç farklı şekilde yönetilebilir.</p>
-<h3 id="useembeddedlocalsound-parametresi"><code>useEmbeddedLocalSound</code> Parametresi</h3>
-<p><code>CoreBaseModel</code> içindeki bu parametre SDK'nın ses kaynağını belirler.</p>
+<h2 id="ocr-islemleri">OCR İşlemleri</h2>
+<h3 id="fonksiyonlar">Fonksiyonlar</h3>
 <table>
 <thead>
 <tr>
-<th>Değer</th>
-<th>Davranış</th>
+<th>Fonksiyon</th>
+<th>Açıklama</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><code>1</code> (true)</td>
-<td>SDK yalnızca uygulamaya gömülü ses dosyalarını kullanır. Ağ isteği atmaz.</td>
+<td><code>addFragment(fragment)</code></td>
+<td>Mevcut fragment üzerine yeni bir fragment ekler</td>
 </tr>
 <tr>
-<td><code>0</code> (false)</td>
-<td>SDK başlatıldığında Backoffice'e bağlanır, güncel olmayan ses dosyalarını indirir ve günceller.</td>
+<td><code>replaceFragment(fragment)</code></td>
+<td>Mevcut fragment'i yenisiyle değiştirir</td>
+</tr>
+<tr>
+<td><code>iDDocTypeCheckStart(isFront: Boolean = true)</code></td>
+<td>Kimlik tipi tanıma işlemini başlatır</td>
+</tr>
+<tr>
+<td><code>hologramCheckStart()</code></td>
+<td>Hologram tespit işlemini başlatır</td>
+</tr>
+<tr>
+<td><code>iDDocFrontStart(withVisualAnalysis: Boolean = false)</code></td>
+<td>Kimlik ön yüzü taramasını başlatır</td>
+</tr>
+<tr>
+<td><code>iDDocBackStart(withVisualAnalysis: Boolean = false)</code></td>
+<td>Kimlik arka yüzü taramasını başlatır</td>
+</tr>
+<tr>
+<td><code>iDDocComplete()</code></td>
+<td>Tüm kimlik okuma adımlarının tamamlandığını SDK'ya bildirir</td>
+</tr>
+<tr>
+<td><code>addIntegration(integrationModel)</code></td>
+<td>Entegrasyon verisi ekler</td>
+</tr>
+<tr>
+<td><code>closeSession(isFinished: Boolean)</code></td>
+<td>Session'ı kapatır</td>
+</tr>
+<tr>
+<td><code>clear()</code></td>
+<td>SDK'yı temizler</td>
 </tr>
 </tbody>
 </table>
-<h3 id="ozel-ses-dosyas-kullanm-local-override">Özel Ses Dosyası Kullanımı (Local Override)</h3>
-<p>SDK'nın varsayılan seslerini kendi ses dosyalarınızla değiştirmek istiyorsanız, aşağıdaki listedeki dosya adlarıyla birebir aynı isimde ses dosyalarınızı uygulama bundle'ına ekleyin. SDK bu dosyaları otomatik olarak algılar ve varsayılan sesler yerine kullanır.</p>
-<p>wide760snd_start_face snd_start_face_left snd_start_face_right
-snd_start_face_up snd_face_fail snd_end_liveness
-snd_liveness_timeout snd_liveness_completed snd_start_eye_close
-snd_end_eye_close snd_start_smile snd_end_smile
-snd_start_id_front snd_end_id_front snd_start_id_back
-snd_end_id_read snd_id_read_timeout snd_id_type_check_timeout
-snd_start_type_check_front snd_start_type_check_back
-snd_cross_check_fail snd_start_holo snd_end_chip
-snd_start_chip_front snd_detect_chip snd_chip_timeout
-snd_chip_fail snd_waiting_agent snd_ready_to_start_id
-snd_ready_to_start_chip</p>
 <hr />
-<h2 id="ui-ozellestirme">UI Özelleştirme</h2>
-<p>SDK arayüzü Backoffice üzerinden dinamik olarak özelleştirilebilir. Detaylar için UI Özelleştirme sayfasına bakınız.</p>
+<h3 id="kimlik-tipi-tanma">Kimlik Tipi Tanıma</h3>
+<p>wide760enQualifyOCR.iDDocTypeCheckStart(isFront = true)</p>
+<p>İşlem tamamlandığında <code>IDDocTypeCheckVerified</code> tetiklenir. <code>isFront</code> parametresi, sürecin <code>iDDocFrontStart</code> mı yoksa <code>iDDocBackStart</code> mı ile devam edeceğini belirler:</p>
+<p>wide760override fun IDDocTypeCheckVerified(isFront: Boolean) {
+Log.i(tag, "${object {}.javaClass.enclosingMethod?.name}")
+}</p>
 <hr />
-<h2 id="ortak-delegateler">Ortak Delegate'ler</h2>
-<p>Tüm modüllerde aşağıdaki delegate'ler ortaktır. Modüle özgü delegate'ler ilgili modül sayfasında ele alınmıştır.</p>
+<h3 id="kimlik-on-yuzu-tarama">Kimlik Ön Yüzü Tarama</h3>
+<p>wide760enQualifyOCR.iDDocFrontStart(withVisualAnalysis = true)</p>
+<p>İşlem tamamlandığında <code>IDDocFrontCompleted</code> tetiklenir:</p>
+<p>wide760override fun IDDocFrontCompleted() {
+Log.i(tag, "${object {}.javaClass.enclosingMethod?.name}")
+}</p>
+<hr />
+<h3 id="hologram-tespiti">Hologram Tespiti</h3>
+<p>wide760enQualifyOCR.hologramCheckStart()</p>
+<p>İşlem tamamlandığında <code>hologramCheckVerified</code> tetiklenir:</p>
+<p>wide760override fun hologramCheckVerified() {
+Log.i(tag, "${object {}.javaClass.enclosingMethod?.name}")
+}</p>
+<hr />
+<h3 id="kimlik-arka-yuzu-tarama">Kimlik Arka Yüzü Tarama</h3>
+<p>wide760enQualifyOCR.iDDocBackStart(withVisualAnalysis = true)</p>
+<p>İşlem tamamlandığında <code>IDDocBackCompleted</code> tetiklenir:</p>
+<p>wide760override fun IDDocBackCompleted() {
+Log.i(tag, "${object {}.javaClass.enclosingMethod?.name}")
+}</p>
+<hr />
+<h3 id="kimlik-okuma-aksn-bitirme">Kimlik Okuma Akışını Bitirme</h3>
+<p>Tüm adımlar tamamlandığında <code>iDDocComplete()</code> çağrılır. Bu fonksiyon kamera analizini durdurur, işlem sürecini sonlandırır ve okunan verilerin backoffice'e gönderilmesini başlatır:</p>
+<p>wide760enQualifyOCR.iDDocComplete()</p>
+<p>Veriler backoffice'e başarıyla iletildiğinde <code>IDDocCompleted</code> tetiklenir:</p>
+<p>wide760override fun IDDocCompleted() {
+Log.i(tag, "${object {}.javaClass.enclosingMethod?.name}")
+}</p>
+<hr />
+<h3 id="entegrasyon-verisi-ekleme">Entegrasyon Verisi Ekleme</h3>
+<p>wide760val integrationModel = IntegrationModel(
+idRegistration = IDRegistration(),
+addressRegistration = AddressRegistration(),
+data = ""
+)
+enQualifyOCR.addIntegration(integrationModel)</p>
+<p>Sonuçlar aşağıdaki callback'lerle dinlenir:</p>
+<p>wide760override fun integrationAddCompleted() {
+Log.i(TAG, "integrationAddCompleted")
+}
+override fun integrationAddFailed(errorMessage: String) {
+Log.i(TAG, "integrationAddFailed: $errorMessage")
+}</p>
+<hr />
+<h3 id="session-kapatma-ve-temizleme">Session Kapatma ve Temizleme</h3>
+<p>wide760// Session'ı kapat
+enQualifyOCR.closeSession(isFinished = true)
+// Session kapatma callback'leri
+override fun sessionCloseCompleted() {
+Log.i(tag, "${object {}.javaClass.enclosingMethod?.name}")
+}
+override fun sessionCloseFailed(errorMessage: String) {
+Log.i(tag, "${object {}.javaClass.enclosingMethod?.name} $errorMessage")
+}
+// SDK'yı temizle (session kapatıldıktan sonra çağrılmalıdır)
+enQualifyOCR.clear()</p>
+<blockquote>
+<p>ℹ️ Session kapatıldıktan sonra SDK'yı tekrar kullanmak için <code>initialize()</code> yeniden çağrılmalıdır.</p>
+</blockquote>
+<hr />
+<h2 id="hata-yonetimi">Hata Yönetimi</h2>
+<h3 id="failurecode-core-initialize-hatalar">FailureCode (Core / Initialize Hataları)</h3>
+<p>wide760enum class FailureCode(val errorMessage: String) {
+CameraError("Unable to access the camera. Please check device settings and retry."),
+CameraStartError(""),
+CameraNotSupported("Failed to initialize the camera. Device may not support required resolution or FPS."),
+SdkInitializationError("Required sdk initialization did not completed."),
+CameraPermissionDenied("Camera permission denied"),
+CertificateFailed("Certificate failed"),
+AIModelNotFound("AI model not found"),
+NfcCertificateNotFound("Nfc Certificate not found")
+}</p>
+<p><code>initializeFailed</code> callback'i aracılığıyla iletilir:</p>
+<p>wide760override fun initializeFailed(failureCode: FailureCode, additionalMessage: String) {
+Log.i(tag, "${object {}.javaClass.enclosingMethod?.name}")
+}</p>
+<h3 id="ocrfailurecode-ocr-islem-hatalar">OCRFailureCode (OCR İşlem Hataları)</h3>
+<p>wide760enum class OCRFailureCode(errorMessage: String) {
+IDDocSaveFailed("save failed"),
+LuminosityFailed("Luminosity failed"), // İş kesici değildir — okuma durdurulmamalıdır
+TypeCheckFailed(""),
+HologramCheckError(""),
+VisualAnalysingFrontError(""),
+VisualAnalysingBackError(""),
+ReadIdDocFrontError(""),
+ReadIdDocBackError(""),
+ReadPassportError(""),
+IDDocError(""),
+CameraError("Unable to access the camera. Please check device settings and retry."),
+CameraStartError(""),
+CameraNotSupported("Failed to initialize the camera. Device may not support required resolution or FPS."),
+SdkInitializationError("Required sdk initialization did not completed."),
+CameraPermissionDenied("Camera permission denied"),
+Failed(""),
+IDDocTimeout("Timeout")
+}</p>
+<p><code>IDDocFailed</code> callback'i aracılığıyla iletilir:</p>
+<p>wide760override fun IDDocFailed(ocrFailureCode: OCRFailureCode, additionalMessage: String?) {
+Log.i(tag, "${object {}.javaClass.enclosingMethod?.name}")
+}</p>
+<blockquote>
+<p>⚠️ <strong>Önemli:</strong> <code>LuminosityFailed</code> bir uyarı niteliğindedir ve iş kesici değildir. Bu hata geldiğinde okuma işlemi durdurulmamalıdır.</p>
+</blockquote>
+<hr />
+<h2 id="sonuc-verisine-erisim">Sonuç Verisine Erişim</h2>
+<p>OCR okuma işlemi tamamlandıktan sonra okunan verilere <code>CustomerIDDoc</code> nesnesi üzerinden erişilir:</p>
+<p>wide760CustomerIDDoc.getInstance()</p>
+<p><code>CustomerIDDoc</code> modeli ve tüm alanlarının açıklaması için Core Modülü — CustomerIDDoc sayfasına bakınız.</p>
+<hr />
+<h2 id="callback-referans">Callback Referansı</h2>
 <h3 id="token-session-settings">Token / Session / Settings</h3>
 <table>
 <thead>
 <tr>
-<th>Delegate</th>
-<th>Ne Zaman Tetiklenir?</th>
+<th>Callback</th>
+<th>Açıklama</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><code>tokenCreateCompleted()</code></td>
-<td>Token başarıyla oluşturulduğunda. Mevcut token varsa yeniden oluşturulmaz.</td>
+<td><code>tokenCreateCompleted(isNewCreatedToken: Boolean)</code></td>
+<td>Token oluşturulduğunda tetiklenir</td>
 </tr>
 <tr>
-<td><code>tokenCreateFailed()</code></td>
-<td>Token oluşturulurken hata alındığında</td>
+<td><code>tokenCreateFailed(errorMessage: String)</code></td>
+<td>Token oluşturma hatası</td>
 </tr>
 <tr>
-<td><code>sessionAddFailed()</code></td>
-<td>Yeni oturum açılırken hata alındığında</td>
+<td><code>sessionAddFailed(errorMessage: String)</code></td>
+<td>Session oluşturma hatası</td>
 </tr>
 <tr>
-<td><code>settingGetFailed()</code></td>
-<td>Backoffice ayarları çekilirken hata alındığında</td>
+<td><code>settingsGetFailed(errorMessage: String)</code></td>
+<td>Ayarlar alınamadığında tetiklenir</td>
 </tr>
 <tr>
-<td><code>sessionCloseCompleted(status: String)</code></td>
-<td>Oturum başarıyla kapatıldığında. <code>status</code> parametresi oturumun kapanış durumunu taşır.</td>
+<td><code>sessionCloseCompleted(status: CallSessionTypeStatus)</code></td>
+<td>Session kapatıldığında tetiklenir</td>
 </tr>
 <tr>
-<td><code>sessionCloseFailed()</code></td>
-<td>Oturum kapatılırken hata alındığında</td>
+<td><code>sessionCloseFailed(errorMessage: String)</code></td>
+<td>Session kapatma hatası</td>
 </tr>
 <tr>
 <td><code>integrationAddCompleted()</code></td>
-<td>IntegrationAdd servisi başarıyla tamamlandığında</td>
+<td>Entegrasyon verisi başarıyla eklendi</td>
 </tr>
 <tr>
-<td><code>integrationAddFailed()</code></td>
-<td>IntegrationAdd servisinde hata alındığında</td>
+<td><code>integrationAddFailed(errorMessage: String)</code></td>
+<td>Entegrasyon verisi eklenemedi</td>
 </tr>
 <tr>
-<td><code>initializeCompleted(moduleName: String)</code></td>
-<td>Tüm başlatma adımları tamamlandığında. <code>moduleName</code> ile hangi modülün hazır olduğu doğrulanabilir.</td>
-</tr>
-<tr>
-<td><code>initializeFailed(with key: CustomNSError)</code></td>
-<td>Başlatma sırasında (genellikle kamera izni verilmediğinde) hata alındığında</td>
+<td><code>initializeFailed(failureCode: FailureCode, additionalMessage: String)</code></td>
+<td>Core initialize hatası</td>
 </tr>
 </tbody>
 </table>
-<h3 id="session-kapatma">Session Kapatma</h3>
-<p>Her modülde <code>sessionClose()</code> aynı şekilde çalışır:</p>
-<p>swift</p>
-<p>wide760EnQualifyOCR.sessionClose(finished: false)
-// finished: true → akış tamamlandı
-// finished: false → akış iptal edildi veya yarıda bırakıldı</p>
-<p>⚠️ Session kapatıldıktan sonra aynı modül tekrar kullanılacaksa <code>initialize()</code> yeniden çağrılmalıdır.</p>
-<hr />
-<p>Modül sayfalarına geçmek için: OCR Modülü · NFC Modülü · Face Modülü · VideoCall Modülü · Utility Modülü</p>
+<h3 id="ocr">OCR</h3>
+<table>
+<thead>
+<tr>
+<th>Callback</th>
+<th>Açıklama</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>initializeCompleted(module: EnModules)</code></td>
+<td>Initialize tamamlandı, OCR hazır</td>
+</tr>
+<tr>
+<td><code>IDDocTypeCheckVerified(isFront: Boolean)</code></td>
+<td>Kimlik tipi başarıyla tespit edildi</td>
+</tr>
+<tr>
+<td><code>hologramCheckVerified()</code></td>
+<td>Hologram başarıyla tespit edildi</td>
+</tr>
+<tr>
+<td><code>IDDocFrontCompleted()</code></td>
+<td>Ön yüz okuma tamamlandı</td>
+</tr>
+<tr>
+<td><code>IDDocBackCompleted()</code></td>
+<td>Arka yüz okuma tamamlandı</td>
+</tr>
+<tr>
+<td><code>IDDocSaveStarted()</code></td>
+<td>Veriler backoffice'e gönderilmeye başlandı</td>
+</tr>
+<tr>
+<td><code>IDDocCompleted()</code></td>
+<td>Veriler backoffice'e başarıyla iletildi</td>
+</tr>
+<tr>
+<td><code>IDDocFailed(ocrFailureCode, additionalMessage)</code></td>
+<td>OCR işlem hatası</td>
+</tr>
+</tbody>
+</table>
 
 
 
