@@ -1,0 +1,508 @@
+/* ================================================================
+   EnQualify Docs — Custom Theme
+   Yerleştirme: docs/assets/custom.css
+   Renkler: #102D69 (lacivert) · #009FF1 (açık mavi)
+   ================================================================ */
+
+/* ── Google Fonts ──────────────────────────────────────────────── */
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap');
+
+/* ── Marka Değişkenleri ─────────────────────────────────────────── */
+:root {
+  --eq-navy:        #102D69;
+  --eq-navy-dark:   #0A1E47;
+  --eq-navy-mid:    #1A3F8F;
+  --eq-blue:        #009FF1;
+  --eq-blue-light:  #E6F6FE;
+  --eq-blue-mid:    #33B5F5;
+  --eq-white:       #FFFFFF;
+  --eq-text:        #0F1B35;
+  --eq-text-soft:   #4A5568;
+  --eq-border:      #E2E8F0;
+  --eq-surface:     #F8FAFD;
+  --eq-code-bg:     #F1F5F9;
+  --eq-radius:      8px;
+  --eq-radius-lg:   12px;
+
+  /* Material override */
+  --md-primary-fg-color:        var(--eq-navy);
+  --md-primary-fg-color--light: var(--eq-navy-mid);
+  --md-primary-fg-color--dark:  var(--eq-navy-dark);
+  --md-primary-bg-color:        var(--eq-white);
+  --md-accent-fg-color:         var(--eq-blue);
+  --md-typeset-a-color:         var(--eq-navy-mid);
+
+  --md-text-font: 'Plus Jakarta Sans', sans-serif;
+  --md-code-font: 'JetBrains Mono', monospace;
+}
+
+/* ── Karanlık Mod ─────────────────────────────────────────────── */
+[data-md-color-scheme="slate"] {
+  --eq-text:      #E2E8F0;
+  --eq-text-soft: #94A3B8;
+  --eq-border:    #2D3748;
+  --eq-surface:   #1A2744;
+  --eq-code-bg:   #0F1B35;
+  --eq-blue-light:#0D2E50;
+
+  --md-primary-fg-color:  #009FF1;
+  --md-accent-fg-color:   #33B5F5;
+  --md-typeset-a-color:   #33B5F5;
+  --md-default-bg-color:  #0A1629;
+}
+
+/* ════════════════════════════════════════════════════════════════
+   HEADER
+   ════════════════════════════════════════════════════════════════ */
+.md-header {
+  background: var(--eq-navy);
+  box-shadow: 0 1px 0 rgba(255,255,255,0.08), 0 4px 20px rgba(10,30,71,0.35);
+  border-bottom: 1px solid rgba(0,159,241,0.2);
+  padding: 0 8px;
+}
+
+/* Logo — header arka planı lacivert olduğu için logo görünür */
+.md-header__button.md-logo {
+  padding: 6px 4px;
+}
+
+.md-header__button.md-logo img {
+  height: 28px;
+  width: auto;
+  /* Logonun lacivert kısmı header'a karışmasın diye parlaklık artır */
+  filter: brightness(0) invert(1);
+  opacity: 0.95;
+}
+
+.md-header__title {
+  display: none;   /* Logo varken site adı gizle */
+}
+
+/* ── Arama ─────────────────────────────── */
+.md-search__form {
+  background: rgba(255,255,255,0.1);
+  border: 1px solid rgba(255,255,255,0.15);
+  border-radius: 8px;
+  transition: background 0.2s, border-color 0.2s;
+}
+
+.md-search__form:focus-within {
+  background: rgba(255,255,255,0.18);
+  border-color: rgba(0,159,241,0.6);
+  box-shadow: 0 0 0 3px rgba(0,159,241,0.15);
+}
+
+.md-search__input::placeholder { color: rgba(255,255,255,0.5); }
+.md-search__icon { color: rgba(255,255,255,0.7) !important; }
+
+/* ── Dark/Light toggle ─────────────────── */
+.md-header__option .md-icon {
+  color: rgba(255,255,255,0.75);
+  transition: color 0.2s;
+}
+.md-header__option .md-icon:hover { color: var(--eq-blue); }
+
+/* ════════════════════════════════════════════════════════════════
+   NAVIGATION TABS (üst sekme çubuğu)
+   ════════════════════════════════════════════════════════════════ */
+.md-tabs {
+  background: var(--eq-navy-dark);
+  border-bottom: 1px solid rgba(0,159,241,0.15);
+}
+
+.md-tabs__link {
+  color: rgba(255,255,255,0.65) !important;
+  font-weight: 500;
+  font-size: 0.85rem;
+  letter-spacing: 0.01em;
+  padding: 0 4px;
+  transition: color 0.2s;
+}
+
+.md-tabs__link:hover,
+.md-tabs__link--active {
+  color: var(--eq-white) !important;
+}
+
+.md-tabs__link--active {
+  font-weight: 700;
+  box-shadow: inset 0 -3px 0 var(--eq-blue);
+}
+
+/* ════════════════════════════════════════════════════════════════
+   SIDEBAR — Sol Navigasyon
+   ════════════════════════════════════════════════════════════════ */
+.md-sidebar--primary .md-sidebar__scrollwrap {
+  border-right: 1px solid var(--eq-border);
+}
+
+/* Bölüm başlıkları */
+.md-nav__title {
+  color: var(--eq-navy);
+  font-weight: 800;
+  font-size: 0.68rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  padding: 1.2rem 0.75rem 0.5rem;
+  opacity: 1;
+}
+
+[data-md-color-scheme="slate"] .md-nav__title { color: var(--eq-blue); }
+
+/* Navigasyon linkleri */
+.md-nav__link {
+  border-radius: 6px;
+  margin: 1px 0;
+  padding: 0.42rem 0.75rem;
+  font-size: 0.875rem;
+  color: var(--eq-text-soft);
+  font-weight: 500;
+  transition: background 0.15s, color 0.15s;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.md-nav__link:hover {
+  background: var(--eq-blue-light);
+  color: var(--eq-navy);
+}
+
+/* Aktif link */
+.md-nav__item--active > .md-nav__link,
+.md-nav__link--active {
+  background: var(--eq-blue-light) !important;
+  color: var(--eq-navy) !important;
+  font-weight: 700 !important;
+  border-left: 3px solid var(--eq-blue);
+  padding-left: calc(0.75rem - 3px);
+}
+
+[data-md-color-scheme="slate"] .md-nav__link:hover { background: var(--eq-blue-light); color: #E2E8F0; }
+[data-md-color-scheme="slate"] .md-nav__item--active > .md-nav__link { color: #E2E8F0 !important; }
+
+/* ── TOC (sağ içindekiler) ────────────── */
+.md-sidebar--secondary .md-nav__link {
+  font-size: 0.82rem;
+  font-weight: 400;
+  color: var(--eq-text-soft);
+}
+
+.md-sidebar--secondary .md-nav__link--active {
+  color: var(--eq-navy) !important;
+  font-weight: 600 !important;
+  background: transparent !important;
+  border-left: 2px solid var(--eq-blue);
+  padding-left: calc(0.75rem - 2px);
+}
+
+/* ════════════════════════════════════════════════════════════════
+   İÇERİK TİPOGRAFİSİ
+   ════════════════════════════════════════════════════════════════ */
+.md-typeset {
+  font-size: 0.95rem;
+  line-height: 1.75;
+  color: var(--eq-text);
+}
+
+/* H1 */
+.md-typeset h1 {
+  font-size: 2.1rem;
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  line-height: 1.2;
+  color: var(--eq-navy);
+  margin-bottom: 0.5rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 2px solid var(--eq-border);
+}
+
+/* H1 altında mavi çizgi aksanı */
+.md-typeset h1::after {
+  content: '';
+  display: block;
+  width: 48px;
+  height: 3px;
+  background: linear-gradient(90deg, var(--eq-blue), var(--eq-navy-mid));
+  border-radius: 2px;
+  margin-top: 8px;
+}
+
+/* H2 */
+.md-typeset h2 {
+  font-size: 1.45rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  color: var(--eq-navy);
+  margin-top: 2.5rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--eq-border);
+}
+
+/* H3 */
+.md-typeset h3 {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--eq-text);
+  margin-top: 1.5rem;
+}
+
+/* Linkler */
+.md-typeset a {
+  color: var(--eq-navy-mid);
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: border-color 0.15s, color 0.15s;
+  font-weight: 500;
+}
+
+.md-typeset a:hover {
+  color: var(--eq-blue);
+  border-bottom-color: var(--eq-blue);
+}
+
+/* ════════════════════════════════════════════════════════════════
+   KOD BLOKLARI — Developer docs'un kalbi
+   ════════════════════════════════════════════════════════════════ */
+
+/* Inline kod */
+.md-typeset code {
+  background: var(--eq-code-bg);
+  border: 1px solid var(--eq-border);
+  border-radius: 5px;
+  padding: 0.12em 0.45em;
+  font-size: 0.87em;
+  color: #C7254E;
+  font-family: 'JetBrains Mono', monospace;
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+[data-md-color-scheme="slate"] .md-typeset code {
+  background: rgba(0,159,241,0.1);
+  border-color: rgba(0,159,241,0.2);
+  color: #F472B6;
+}
+
+/* Blok kod wrapper */
+.md-typeset pre {
+  border-radius: var(--eq-radius-lg);
+  border: 1px solid var(--eq-border);
+  box-shadow: 0 2px 12px rgba(10,30,71,0.08), 0 1px 3px rgba(10,30,71,0.06);
+  overflow: hidden;
+  margin: 1.5rem 0;
+}
+
+/* Dil etiket şeridi (auto_title: true) */
+.md-typeset .highlight > .filename,
+.md-typeset .highlight span.filename {
+  background: linear-gradient(135deg, var(--eq-navy) 0%, var(--eq-navy-mid) 100%);
+  color: rgba(255,255,255,0.9);
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  padding: 0.5rem 1rem;
+  border-bottom: 1px solid rgba(0,159,241,0.25);
+}
+
+/* Kod içeriği */
+.md-typeset pre code {
+  background: transparent;
+  border: none;
+  padding: 1.1rem 1.25rem;
+  font-size: 0.875rem;
+  line-height: 1.7;
+  display: block;
+}
+
+/* Kopyala butonu */
+.md-clipboard {
+  color: rgba(255,255,255,0.4);
+  border-radius: 6px;
+  padding: 4px;
+  transition: all 0.2s;
+}
+
+.md-clipboard:hover {
+  background: rgba(0,159,241,0.25);
+  color: var(--eq-blue);
+}
+
+/* Satır numaraları */
+.md-typeset .linenums {
+  border-right: 1px solid var(--eq-border);
+}
+
+/* ════════════════════════════════════════════════════════════════
+   UYARI KUTULARI (Admonition)
+   ════════════════════════════════════════════════════════════════ */
+.md-typeset .admonition,
+.md-typeset details {
+  border-radius: var(--eq-radius-lg);
+  border: none;
+  box-shadow: 0 1px 8px rgba(10,30,71,0.08);
+  overflow: hidden;
+}
+
+.md-typeset .admonition-title,
+.md-typeset summary {
+  font-weight: 700;
+  font-size: 0.875rem;
+  letter-spacing: 0.01em;
+}
+
+/* Note → mavi */
+.md-typeset .note { border-left: 4px solid var(--eq-blue); }
+.md-typeset .note > .admonition-title { background: var(--eq-blue-light); color: var(--eq-navy); }
+
+/* Tip → yeşil kalır (Material default güzel) */
+/* Warning → turuncu kalır */
+
+/* ════════════════════════════════════════════════════════════════
+   TABLOLAR
+   ════════════════════════════════════════════════════════════════ */
+.md-typeset table {
+  border-radius: var(--eq-radius-lg);
+  overflow: hidden;
+  border: 1px solid var(--eq-border);
+  box-shadow: 0 1px 6px rgba(10,30,71,0.07);
+  width: 100%;
+  font-size: 0.9rem;
+}
+
+.md-typeset table th {
+  background: linear-gradient(135deg, var(--eq-navy) 0%, var(--eq-navy-mid) 100%);
+  color: white;
+  font-weight: 700;
+  font-size: 0.78rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  padding: 0.75rem 1rem;
+}
+
+.md-typeset table tr:nth-child(even) { background: var(--eq-surface); }
+.md-typeset table tr:hover { background: var(--eq-blue-light); transition: background 0.15s; }
+
+.md-typeset table td {
+  padding: 0.65rem 1rem;
+  border-bottom: 1px solid var(--eq-border);
+  vertical-align: top;
+}
+
+/* ════════════════════════════════════════════════════════════════
+   FOOTER
+   ════════════════════════════════════════════════════════════════ */
+.md-footer {
+  background: var(--eq-navy-dark);
+  border-top: 1px solid rgba(0,159,241,0.15);
+}
+
+.md-footer__title { font-weight: 700; font-size: 0.85rem; }
+.md-footer-meta { background: #060F20; }
+
+.md-footer-meta__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.75rem 0;
+}
+
+/* Sosyal ikonlar */
+.md-social__link svg { fill: rgba(255,255,255,0.5); transition: fill 0.2s; }
+.md-social__link:hover svg { fill: var(--eq-blue); }
+
+/* ════════════════════════════════════════════════════════════════
+   SCROLL-TO-TOP
+   ════════════════════════════════════════════════════════════════ */
+.md-top {
+  background: var(--eq-navy);
+  border: 1px solid rgba(0,159,241,0.4);
+  border-radius: 50px;
+  box-shadow: 0 4px 16px rgba(10,30,71,0.3);
+  color: white !important;
+  font-size: 0.8rem;
+  font-weight: 600;
+  gap: 4px;
+  padding: 6px 14px;
+  transition: all 0.2s;
+}
+
+.md-top:hover {
+  background: var(--eq-navy-mid);
+  box-shadow: 0 6px 20px rgba(10,30,71,0.4);
+  transform: translateY(-1px);
+}
+
+/* ════════════════════════════════════════════════════════════════
+   SAYFA BAŞLIĞI (breadcrumb alanı)
+   ════════════════════════════════════════════════════════════════ */
+.md-content__button {
+  color: var(--eq-text-soft);
+}
+
+/* ════════════════════════════════════════════════════════════════
+   ARAMA SONUÇLARI
+   ════════════════════════════════════════════════════════════════ */
+.md-search-result__link:hover,
+.md-search-result__link:focus {
+  background: var(--eq-blue-light);
+}
+
+.md-search-result__title {
+  font-weight: 700;
+  color: var(--eq-navy);
+}
+
+mark {
+  background: rgba(0,159,241,0.2);
+  color: var(--eq-navy);
+  border-radius: 3px;
+  padding: 0 2px;
+}
+
+/* ════════════════════════════════════════════════════════════════
+   MİNİK DOKUNUŞLAR
+   ════════════════════════════════════════════════════════════════ */
+
+/* Sayfa geçiş animasyonu */
+.md-content {
+  animation: fadeIn 0.25s ease;
+}
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(6px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* Permalink ikonu */
+.md-typeset .headerlink {
+  color: var(--eq-blue) !important;
+  opacity: 0;
+  transition: opacity 0.2s;
+}
+.md-typeset h1:hover .headerlink,
+.md-typeset h2:hover .headerlink,
+.md-typeset h3:hover .headerlink { opacity: 1; }
+
+/* Blok alıntı */
+.md-typeset blockquote {
+  border-left: 4px solid var(--eq-blue);
+  background: var(--eq-blue-light);
+  border-radius: 0 var(--eq-radius) var(--eq-radius) 0;
+  padding: 0.75rem 1rem;
+  color: var(--eq-navy);
+  font-style: normal;
+  font-weight: 500;
+}
+
+/* Yatay çizgi */
+.md-typeset hr {
+  border-color: var(--eq-border);
+  margin: 2.5rem 0;
+}
+
+/* Görev listesi checkbox'ları */
+.md-typeset .task-list-item [type="checkbox"] + label::before {
+  border-color: var(--eq-blue);
+}
