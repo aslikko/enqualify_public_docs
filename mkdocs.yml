@@ -3,7 +3,7 @@ site_url: site_url: https://docs-enqualify.com/
 site_description: EnQualify ürünleri için resmi kullanıcı ve geliştirici dokümantasyonu
 site_author: Enqura Technology
 
-use_directory_urls: false
+use_directory_urls: true
 
 theme:
   name: material
