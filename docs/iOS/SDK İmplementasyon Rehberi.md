@@ -1,4 +1,4 @@
-# iOS SDK: İmplementasyon Rehberi
+# iOS - SDK İmplementasyon Rehberi
 
 EnQualify iOS SDK, mobil uygulamanıza uzaktan kimlik doğrulama yetenekleri kazandırır. OCR, NFC, yüz tanıma ve görüntülü görüşme modüllerinden oluşan bu SDK; self-servis, hibrit ve tam temsilci destekli akışları destekler.
 

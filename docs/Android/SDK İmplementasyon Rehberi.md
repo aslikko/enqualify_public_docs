@@ -1,4 +1,4 @@
-# Android SDK: İmplementasyon Rehberi
+# Android - SDK İmplementasyon Rehberi
 
 EnQualify Android SDK, mobil uygulamanıza uzaktan kimlik doğrulama yetenekleri kazandırır. OCR, NFC, yüz tanıma ve görüntülü görüşme modüllerinden oluşan bu SDK; self-servis, hibrit ve tam temsilci destekli akışları destekler.
 
